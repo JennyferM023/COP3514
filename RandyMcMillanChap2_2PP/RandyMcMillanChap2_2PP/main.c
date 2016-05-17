@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
     for (i=0;i < (sizeof (argv[i]));i++) {
         printf("LINE:22 i = %d\n",i);
         printf("LINE:23 argv[%d] - %s\n",i,argv[i]);
-        printf("argv[%s] - %s\n\n",argv[i],argv[i]);
+        printf("argv[%d] - %s\n\n",i,argv[i]);
     }
    
      /*output();*/
