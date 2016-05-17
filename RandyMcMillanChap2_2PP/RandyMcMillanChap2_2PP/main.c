@@ -19,8 +19,15 @@ int main(int argc, const char * argv[]) {
       
       */
     
+    int i;
+    for (i=0;i < (sizeof (argv[i]));i++) {
+        printf("print - %s\n",argv[i]);
+        printf("argc - %d,\nargv[%s] - %s\n",argc,argv[i],argv[i]);
+    }
+    
     volume = ((4.0f/3.0f) * (3.141592654) * radius * radius* radius);
-    printf("The Volume of the Sphere with a 10 meter radius os %f \n",volume);
+    printf("The Volume of the Sphere with a %d meter radiusis %f \n",radius,volume);
+    
     
     return 0;
 }
