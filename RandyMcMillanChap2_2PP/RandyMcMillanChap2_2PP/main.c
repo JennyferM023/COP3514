@@ -12,16 +12,19 @@
     int radius = 10;
     int i;
 
+    int output();
+
 int main(int argc, const char * argv[]) {
 
     
     int i;
     for (i=0;i < (sizeof (argv[i]));i++) {
-        printf("print - %s\n",argv[i]);
+        printf("LINE:22 i = %d\n",i);
+        printf("LINE:23 argv[%d] - %s\n",i,argv[i]);
         printf("argc - %d,\nargv[%s] - %s\n",argc,argv[i],argv[i]);
     }
    
-    int output();
+     output();
     
     return 0;
 }
