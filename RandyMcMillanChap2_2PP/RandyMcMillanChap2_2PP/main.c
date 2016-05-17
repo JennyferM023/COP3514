@@ -17,7 +17,8 @@
 int main(int argc, const char * argv[]) {
 
     
-    printf("argc - %d\n",argc);
+    printf("\nargc - %d\n\n",argc);
+    
     for (i=0;i < (sizeof (argv[i]));i++) {
         printf("LINE:22 i = %d\n",i);
         printf("LINE:23 argv[%d] - %s\n",i,argv[i]);
