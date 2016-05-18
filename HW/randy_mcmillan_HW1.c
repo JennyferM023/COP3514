@@ -87,7 +87,6 @@ int errorCheckFraction1()
   if (slash1 != *slashChar)
   {
     printf("Please reenter the first fraction in in the form of ###/### \n");
-    //promptForRestart();
     return 1;
   }
 return 0;
@@ -96,7 +95,6 @@ int errorCheckFraction2()
 {
   if (slash2 != *slashChar){
     printf("Please reenter the second fraction in in the form of ###/### \n");
-    //promptForRestart();
   return 1;
 }
 return 0;
