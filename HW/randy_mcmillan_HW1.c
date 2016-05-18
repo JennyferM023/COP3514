@@ -62,13 +62,9 @@ int errorCheck()
 {
 printf("slash11 = %c \nslash22 = %c\n",*slash11,*slash22 );
 
-  if ((slash11 != slashChar) || (slash22 != slashChar)){
-
-    printf("WTF\n");
+  if ((slash1 != *slash11) || (slash2 != *slash11)){
     printf("Please reenter fractions in in the form of ###/### \n");
-
     promptForRestart();
-
   }
 
 return 0;
