@@ -63,7 +63,7 @@ int report()/* begins an error checking loop */
 
       return 0;
 
-    }else if (error1 == 1) {
+    } else if (error1 == 1) {
 
       printf("error1 = %d\n",error1);
       enterFirstFraction();
@@ -101,15 +101,15 @@ return 0;
 }
 void promptForRestart()
 {
-    printf("restart? y or n?\n");
-    scanf( "%s", &bool1);
-      switch (bool1)
-      {
-        case 'y':
-          main();
-        case 'n':
-          break;
-        default:
-          break;
-      }
+  printf("restart? y or n?\n");
+  scanf( "%s", &bool1);
+    switch (bool1)
+    {
+      case 'y':
+      main();
+      case 'n':
+      break;
+      default:
+      break;
+    }
 }
