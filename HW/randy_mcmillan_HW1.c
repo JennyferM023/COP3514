@@ -21,10 +21,11 @@ char slash2;
 char *slash22 = &slash2;
 char bool1;
 char bool2;
-/* Declare some functions*/
-void report();
+/*Declare some functions*/
+void myMain();
 void enterFirstFraction();
 void enterSecondFraction();
+int report();
 int errorCheckFraction1();
 int errorCheckFraction2();
 void promptForRestart();
@@ -32,10 +33,15 @@ void promptForRestart();
 int main()
 {
     a=b=c=d=0;
+    myMain();
+  return 0;
+}
+void myMain(){
+
     enterFirstFraction();
     enterSecondFraction();
     report();
-  return 0;
+
 }
 void enterFirstFraction()
 {
@@ -51,33 +57,25 @@ void enterSecondFraction()
       /* Receieve the user input*/
       scanf( "%d%c%d", &c,&slash2,&d);
 }
-void report()
+int report()
 {
     bool1 = errorCheckFraction1();
-    if (bool1 == 0) {
+    bool2 = errorCheckFraction2();
+    if (bool1 == 0 && bool2 == 0) {
+
+    }else if (bool1 == 1) {
+
     printf("bool1 = %d\n",bool1);
-    }else if(bool1 ==1){
-    printf("bool1 = %d\n",bool1);
+
+    }else if (bool1 == 1) {
+
+    printf("bool2 = %d\n",bool2);
     }
 
-    bool2 = errorCheckFraction2();
-    if (bool2 == 0) {
-    printf("bool2 = %d\n",bool2);
-    }else if(bool2 ==1){
-    printf("bool2 = %d\n",bool2);
-    }
-    //printf("first fraction  is %d/%d\n" ,a,b );
-    //printf("second fraction  is %d/%d\n",c,d );
+
 }
 int errorCheckFraction1()
 {
-
-/*
-  printf("slash1 = %c \nslash2 = %c\n",slash1,slash2 );
-  printf("*slash11 = %c \n*slash22 = %c\n",*slash11,*slash22 );
-  printf("slashchar = %s \n*slashChar = %c\n",slashchar,*slashChar );
-*/
-
   if (slash1 != *slashChar)
   {
     printf("Please reenter fractions in in the form of ###/### \n");
@@ -88,14 +86,6 @@ return 0;
 }
 int errorCheckFraction2()
 {
-
-/*
-  printf("slash1 = %c \nslash2 = %c\n",slash1,slash2 );
-  printf("*slash11 = %c \n*slash22 = %c\n",*slash11,*slash22 );
-  printf("slashchar = %s \n*slashChar = %c\n",slashchar,*slashChar );
-*/
-
-
   if (slash2 != *slashChar){
     printf("Please reenter fractions in in the form of ###/### \n");
     //promptForRestart();
