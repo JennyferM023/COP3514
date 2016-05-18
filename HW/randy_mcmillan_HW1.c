@@ -1,11 +1,8 @@
 /*
 
   Randy McMillan
-
   U8173-5382
-
   Homework 1
-
   COP 3514
 
 */
@@ -31,20 +28,23 @@ void enterSecondFraction();
 int errorCheck();
 void promptForRestart();
 
-  int main() {
+int main()
+{
     a=b=c=d=0;
     enterFirstFraction();
     enterSecondFraction();
     report();
   return 0;
-  }
-void enterFirstFraction(){
+}
+void enterFirstFraction()
+{
       /* Prompt user to input variable*/
       printf("Enter a fraction (a/b): \n");
       /* Receieve the user input*/
       scanf( "%d%c%d", &a,&slash1,&b);
 }
-void enterSecondFraction(){
+void enterSecondFraction()
+{
       /* Prompt user to input variable*/
       printf("Enter a fraction (c/d): \n");
       /* Receieve the user input*/
@@ -53,7 +53,11 @@ void enterSecondFraction(){
 void report()
 {
     bool1 = errorCheck();
-    printf("bool1 = %d\nbool2 = %d",bool1,bool2 );
+    if (bool1 == 0) {
+    printf("bool1 = %d\nbool2 = %d\n",bool1,bool2 );
+    }else if(bool1 ==1){
+    printf("bool1 = %d\nbool2 = %d\n",bool1,bool2 );
+    }
     //printf("first fraction  is %d/%d\n" ,a,b );
     //printf("second fraction  is %d/%d\n",c,d );
 }
@@ -66,7 +70,8 @@ int errorCheck()
   printf("slashchar = %s \n*slashChar = %c\n",slashchar,*slashChar );
 */
 
-  if (slash1 != *slashChar){
+  if (slash1 != *slashChar)
+  {
     printf("Please reenter fractions in in the form of ###/### \n");
     //promptForRestart();
     return 1;
@@ -77,11 +82,12 @@ int errorCheck()
   }
 return 0;
 }
-void promptForRestart(){
-
+void promptForRestart()
+{
     printf("restart? y or n?\n");
     scanf( "%s", &bool1);
-      switch (bool1) {
+      switch (bool1)
+      {
         case 'y':
           main();
         case 'n':
