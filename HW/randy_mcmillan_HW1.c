@@ -1,10 +1,8 @@
 /*
-
   Randy McMillan
   U8173-5382
   Homework 1
   COP 3514
-
 */
 
 #include <stdio.h>/*preprocessor directive*/
@@ -36,49 +34,53 @@ int main()
     myMain();
   return 0;
 }
-void myMain(){
-
+void myMain()
+{
     enterFirstFraction();
     enterSecondFraction();
     report();
-
 }
 void enterFirstFraction()
 {
       /* Prompt user to input variable*/
-      printf("Enter a fraction (a/b): \n");
+      printf("Enter the first fraction (a/b): \n");
       /* Receieve the user input*/
       scanf( "%d%c%d", &a,&slash1,&b);
 }
 void enterSecondFraction()
 {
       /* Prompt user to input variable*/
-      printf("Enter a fraction (c/d): \n");
+      printf("Enter the second fraction (c/d): \n");
       /* Receieve the user input*/
       scanf( "%d%c%d", &c,&slash2,&d);
 }
-int report()
+int report()/* begins an error checking loop */
 {
     bool1 = errorCheckFraction1();
     bool2 = errorCheckFraction2();
     if (bool1 == 0 && bool2 == 0) {
 
-    }else if (bool1 == 1) {
-
-    printf("bool1 = %d\n",bool1);
+      return 0;
 
     }else if (bool1 == 1) {
 
-    printf("bool2 = %d\n",bool2);
+      printf("bool1 = %d\n",bool1);
+      enterFirstFraction();
+      report();
+
+    } else if (bool2 == 1) {
+
+      printf("bool2 = %d\n",bool2);
+      enterSecondFraction();
+      report();
+
     }
-
-
 }
 int errorCheckFraction1()
 {
   if (slash1 != *slashChar)
   {
-    printf("Please reenter fractions in in the form of ###/### \n");
+    printf("Please reenter the first fraction in in the form of ###/### \n");
     //promptForRestart();
     return 1;
   }
@@ -87,10 +89,10 @@ return 0;
 int errorCheckFraction2()
 {
   if (slash2 != *slashChar){
-    printf("Please reenter fractions in in the form of ###/### \n");
+    printf("Please reenter the second fraction in in the form of ###/### \n");
     //promptForRestart();
-    return 1;
-  }
+  return 1;
+}
 return 0;
 }
 void promptForRestart()
