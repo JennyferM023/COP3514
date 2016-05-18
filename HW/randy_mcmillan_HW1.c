@@ -19,6 +19,7 @@ char slash2;
 char *slash22 = &slash2;
 char bool1;
 char bool2;
+int error1,error2;
 /*Declare some functions*/
 void myMain();
 void enterFirstFraction();
@@ -56,21 +57,21 @@ void enterSecondFraction()
 }
 int report()/* begins an error checking loop */
 {
-    bool1 = errorCheckFraction1();
-    bool2 = errorCheckFraction2();
-    if (bool1 == 0 && bool2 == 0) {
+    error1 = errorCheckFraction1();
+    error2 = errorCheckFraction2();
+    if (error1 == 0 && error2 == 0) {
 
       return 0;
 
-    }else if (bool1 == 1) {
+    }else if (error1 == 1) {
 
-      printf("bool1 = %d\n",bool1);
+      printf("error1 = %d\n",error1);
       enterFirstFraction();
       report();
 
-    } else if (bool2 == 1) {
+    } else if (error2 == 1) {
 
-      printf("bool2 = %d\n",bool2);
+      printf("error2 = %d\n",error2);
       enterSecondFraction();
       report();
 
