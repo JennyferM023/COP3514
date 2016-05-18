@@ -9,7 +9,7 @@
   COP 3514
 
 */
-
+#include <stdio.h>
 
 int main()
 {
