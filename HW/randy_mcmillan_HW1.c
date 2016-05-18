@@ -25,7 +25,8 @@ char bool2;
 void report();
 void enterFirstFraction();
 void enterSecondFraction();
-int errorCheck();
+int errorCheckFraction1();
+int errorCheckFraction2();
 void promptForRestart();
 
 int main()
@@ -52,16 +53,23 @@ void enterSecondFraction()
 }
 void report()
 {
-    bool1 = errorCheck();
+    bool1 = errorCheckFraction1();
     if (bool1 == 0) {
-    printf("bool1 = %d\nbool2 = %d\n",bool1,bool2 );
+    printf("bool1 = %d\n",bool1);
     }else if(bool1 ==1){
-    printf("bool1 = %d\nbool2 = %d\n",bool1,bool2 );
+    printf("bool1 = %d\n",bool1);
+    }
+
+    bool2 = errorCheckFraction2();
+    if (bool2 == 0) {
+    printf("bool2 = %d\n",bool2);
+    }else if(bool2 ==1){
+    printf("bool2 = %d\n",bool2);
     }
     //printf("first fraction  is %d/%d\n" ,a,b );
     //printf("second fraction  is %d/%d\n",c,d );
 }
-int errorCheck()
+int errorCheckFraction1()
 {
 
 /*
@@ -75,7 +83,20 @@ int errorCheck()
     printf("Please reenter fractions in in the form of ###/### \n");
     //promptForRestart();
     return 1;
-  }else if (slash2 != *slashChar){
+  }
+return 0;
+}
+int errorCheckFraction2()
+{
+
+/*
+  printf("slash1 = %c \nslash2 = %c\n",slash1,slash2 );
+  printf("*slash11 = %c \n*slash22 = %c\n",*slash11,*slash22 );
+  printf("slashchar = %s \n*slashChar = %c\n",slashchar,*slashChar );
+*/
+
+
+  if (slash2 != *slashChar){
     printf("Please reenter fractions in in the form of ###/### \n");
     //promptForRestart();
     return 1;
