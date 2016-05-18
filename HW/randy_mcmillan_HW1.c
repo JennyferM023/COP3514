@@ -52,7 +52,8 @@ void enterSecondFraction(){
 }
 void report()
 {
-    errorCheck();
+    bool1 = errorCheck();
+    printf("bool1 = %d\nbool2 = %d",bool1,bool2 );
     //printf("first fraction  is %d/%d\n" ,a,b );
     //printf("second fraction  is %d/%d\n",c,d );
 }
