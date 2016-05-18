@@ -12,7 +12,8 @@
 
 #include <stdio.h>/*preprocessor directive*/
 /*Declare some variables*/
-const char slashChar[1] = "/";
+char slashchar[1] = "/";
+char *slashChar = &slashchar[0];
 int a;
 int b;
 int c;
@@ -60,13 +61,19 @@ int report()
 }
 int errorCheck()
 {
-printf("slash11 = %c \nslash22 = %c\n",*slash11,*slash22 );
 
-  if ((slash1 != *slash11) || (slash2 != *slash11)){
+  printf("slash1 = %c \nslash2 = %c\n",slash1,slash2 );
+  printf("*slash11 = %c \n*slash22 = %c\n",*slash11,*slash22 );
+  printf("slashchar = %s \n*slashChar = %c\n",slashchar,*slashChar );
+
+  if (slash1 != *slash11){
     printf("Please reenter fractions in in the form of ###/### \n");
     promptForRestart();
   }
-
+  if (slash2 != *slash11){
+    printf("Please reenter fractions in in the form of ###/### \n");
+    promptForRestart();
+  }
 return 0;
 }
 int promptForRestart(){
