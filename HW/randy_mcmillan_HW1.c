@@ -25,9 +25,9 @@ char bool1;
 char bool2;
 /* Declare some functions*/
 int report();
-int errorCheck();
 int enterFirstFraction();
 int enterSecondFraction();
+int errorCheck();
 int promptForRestart();
 
   int main() {
@@ -60,7 +60,7 @@ int report()
 }
 int errorCheck()
 {
-printf("slash11 = %s \nslash22 = %s\n",slash11,slash22 );
+printf("slash11 = %c \nslash22 = %c\n",*slash11,*slash22 );
 
   if ((slash11 != slashChar) || (slash22 != slashChar)){
 
