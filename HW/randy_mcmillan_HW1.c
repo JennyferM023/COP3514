@@ -17,8 +17,8 @@ char slash1;
 char *slash11 = &slash1;
 char slash2;
 char *slash22 = &slash2;
-char bool1;
-char bool2;
+int bool1;
+int bool2;
 /*Declare some functions*/
 void myMain();
 void enterFirstFraction();
@@ -74,14 +74,18 @@ int report()/* begins an error checking loop */
       enterSecondFraction();
       report();
 
+    } else {
+
+    promptForRestart();
+
     }
+    return 1; /*general error*/
 }
 int errorCheckFraction1()
 {
   if (slash1 != *slashChar)
   {
     printf("Please reenter the first fraction in in the form of ###/### \n");
-    //promptForRestart();
     return 1;
   }
 return 0;
@@ -90,7 +94,6 @@ int errorCheckFraction2()
 {
   if (slash2 != *slashChar){
     printf("Please reenter the second fraction in in the form of ###/### \n");
-    //promptForRestart();
   return 1;
 }
 return 0;
@@ -98,7 +101,7 @@ return 0;
 void promptForRestart()
 {
     printf("restart? y or n?\n");
-    scanf( "%s", &bool1);
+    scanf( "%d", &bool1);
       switch (bool1)
       {
         case 'y':
