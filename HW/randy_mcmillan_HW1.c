@@ -22,7 +22,8 @@ char *slash11 = &slash1;
 char slash2;
 char *slash22 = &slash2;
 char bool1;
-char bool2;/*zero or not zero flagging */
+char bool2;
+/* Declare some functions*/
 int report();
 int errorCheck();
 int enterFirstFraction();
@@ -33,15 +34,10 @@ int promptForRestart();
     a=b=c=d=0;
     enterFirstFraction();
     enterSecondFraction();
-
     report();
-
   return 0;
   }
-
-
 int enterFirstFraction(){
-
       /* Prompt user to input variable*/
       printf("Enter a fraction (a/b): \n");
       /* Receieve the user input*/
@@ -49,7 +45,6 @@ int enterFirstFraction(){
   return 0;
 }
 int enterSecondFraction(){
-
       /* Prompt user to input variable*/
       printf("Enter a fraction (c/d): \n");
       /* Receieve the user input*/
