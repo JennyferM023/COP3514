@@ -37,31 +37,31 @@ int main()
 }
 void myMain()
 {
-    enterFirstFraction();
-    enterSecondFraction();
-    report();
+  enterFirstFraction();
+  enterSecondFraction();
+  report();
 }
 void enterFirstFraction()
 {
-      /* Prompt user to input variable*/
-      printf("Enter the first fraction (a/b): \n");
-      /* Receieve the user input*/
-      scanf( "%d%c%d", &a,&slash1,&b);
+  /* Prompt user to input variable*/
+  printf("Enter the first fraction (a/b): \n");
+  /* Receieve the user input*/
+  scanf( "%d%c%d", &a,&slash1,&b);
 }
 void enterSecondFraction()
 {
-      /* Prompt user to input variable*/
-      printf("Enter the second fraction (c/d): \n");
-      /* Receieve the user input*/
-      scanf( "%d%c%d", &c,&slash2,&d);
+  /* Prompt user to input variable*/
+  printf("Enter the second fraction (c/d): \n");
+  /* Receieve the user input*/
+  scanf( "%d%c%d", &c,&slash2,&d);
 }
 int report()/* begins an error checking loop */
 {
-    error1 = errorCheckFraction1();
-    error2 = errorCheckFraction2();
+  error1 = errorCheckFraction1();
+  error2 = errorCheckFraction2();
     if (error1 == 0 && error2 == 0) {
 
-      return 0;
+    return 0;
 
     } else if (error1 == 1) {
 
@@ -77,10 +77,10 @@ int report()/* begins an error checking loop */
 
     } else {
 
-    promptForRestart();
+      promptForRestart();
 
     }
-    return 1; /*general error*/
+  return 1; /*general error*/
 }
 int errorCheckFraction1()
 {
