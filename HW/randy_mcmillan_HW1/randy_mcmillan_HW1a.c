@@ -222,19 +222,32 @@ void subtractionOfFractions(
   int  b,
   int  c,
   int  d
-  ){}
+  ){
+
+  printf( "Subtraction of Fractions: %d/%d\n", (a * d - c * b), (b * d) );
+
+} /* subtractionOfFractions */
 void multiplicationOfFractions(
   int  a,
   int  b,
   int  c,
   int  d
-  ){}
+  ){
+
+
+  printf( "Multiplication of Fractions: %d/%d\n", (a * c), (b * d) );
+
+} /* multiplicationOfFractions */
 void divisionOfFractions(
   int  a,
   int  b,
   int  c,
   int  d
-  ){}
+  ){
+
+  printf( "Division of Fractions: %d/%d\n", (a * d), (b * c) );
+
+} /* divisionOfFractions */
 void decimalApproxOfFraction1(
   int  a,
   int  b,
