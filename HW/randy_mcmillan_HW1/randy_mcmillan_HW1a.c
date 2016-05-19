@@ -8,16 +8,12 @@
 /*Declare some variables and pointers*/
 char  slashchar[1]     = "/";
 char  *slashChar      = &slashchar[0];
-int   a;
-int   b;
-int   c;
-int   d;
+int   a, b, c, d;
 char  slash1;
 char  *slash11 = &slash1;
 char  slash2;
 char  *slash22 = &slash2;
-char  bool1;
-char  bool2;
+char  bool1, bool2;
 int   error1, error2;
 /*Declare some functions*/
 void  myMain();
@@ -101,6 +97,7 @@ void myMain()
   /* User inputs 2 different fractions */
   enterFirstFraction();
   enterSecondFraction();
+  /* more error checking needed but...*/
   errorReport();
   reportInput(a, b, c, d);
   additionOfFractions(a, b, c, d);
@@ -134,7 +131,6 @@ void evalFract1(
   int  b
   )
 {
-
   if (a > b) {
      /* if a is greater than b */
 
@@ -154,7 +150,6 @@ void evalFract2(
   int  d
   )
 {
-
   if (c > d) {
      /* if c is greater than d */
 
