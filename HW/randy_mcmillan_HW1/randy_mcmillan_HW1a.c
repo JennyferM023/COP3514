@@ -64,6 +64,7 @@ int main()
  */
 void myMain()
 {
+  /* user inputs 2 different fractions */
   enterFirstFraction();
   enterSecondFraction();
   report();
@@ -84,7 +85,7 @@ void enterSecondFraction()
   printf("Enter the second fraction (c/d): \n");
   /* Receieve the user input*/
   scanf("%d%c%d", &c, &slash2, &d);
-  evalFract1(c, d);
+  evalFract2(c, d);
 } /* enterSecondFraction */
 
 void evalFract1(
@@ -95,6 +96,12 @@ void evalFract1(
 
   printf("%d/%d\n", a, b);
 
+  if (a > b) {
+
+     printf("fract 1 is imporper\n");
+
+     }
+
 } /* evalFract1 */
 
 void evalFract2(
@@ -103,6 +110,12 @@ void evalFract2(
   )
 {
   printf("%d/%d\n", c, d);
+
+  if (c > d) {
+
+     printf("fract 2 is improper\n");
+
+     }
 
 } /* evalFract2 */
 
