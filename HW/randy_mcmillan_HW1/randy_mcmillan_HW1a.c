@@ -26,13 +26,48 @@ void enterSecondFraction();
 int errorReport();
 int errorCheckFraction1();
 int errorCheckFraction2();
-void additionOfFractions();
-void subtractionOfFractions();
-void multiplicationOfFractions();
-void divisionOfFractions();
-void decimalApproxOfFraction1();
-void enterGPAofClass();
-void gradeReport();
+void additionOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  );
+void subtractionOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  );
+void multiplicationOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  );
+void divisionOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  );
+void decimalApproxOfFraction1(
+  int a,
+  int b,
+  int c,
+  int d
+  );
+void enterGPAofClass(
+  int a,
+  int b,
+  int c,
+  int d
+  );
+void gradeReport(
+  int a,
+  int b,
+  int c,
+  int d
+  );
 void promptForRestart();
 void evalFract1(
   int a,
@@ -62,13 +97,13 @@ void myMain()
   enterFirstFraction();
   enterSecondFraction();
   errorReport();
-  additionOfFractions();
-  subtractionOfFractions();
-  multiplicationOfFractions();
-  divisionOfFractions();
-  decimalApproxOfFraction1();
-  enterGPAofClass();
-  gradeReport();
+  additionOfFractions(a, b, c, d);
+  subtractionOfFractions(a, b, c, d);
+  multiplicationOfFractions(a, b, c, d);
+  divisionOfFractions(a, b, c, d);
+  decimalApproxOfFraction1(a, b, c, d);
+  enterGPAofClass(a, b, c, d);
+  gradeReport(a, b, c, d);
   evalFract1(a, b);
   evalFract2(c, d);
 } /* myMain */
@@ -79,7 +114,7 @@ void enterFirstFraction()
   printf("Enter Fraction 1: ");
   /* Receieve the user input */
   scanf("%d%c%d", &a, &slash1, &b);
-  //evalFract1(a, b);
+  /* evalFract1(a, b); */
 } /* enterFirstFraction */
 
 void enterSecondFraction()
@@ -88,7 +123,7 @@ void enterSecondFraction()
   printf("Enter Fraction 2: ");
   /* Receieve the user input */
   scanf("%d%c%d", &c, &slash2, &d);
-  //evalFract2(c, d);
+  /* evalFract2(c, d); */
 } /* enterSecondFraction */
 
 void evalFract1(
@@ -97,7 +132,7 @@ void evalFract1(
   )
 {
 
-  //printf("%d/%d\n", a, b);
+  /* printf("%d/%d\n", a, b); */
 
   if (a > b) {
      /* if a is greater than b */
@@ -114,7 +149,7 @@ void evalFract2(
   int d
   )
 {
-  //printf("%d/%d\n", c, d);
+  /* printf("%d/%d\n", c, d); */
 
   if (c > d) {
      /* if c is greater than d */
@@ -142,14 +177,14 @@ int errorReport() /* begins an error checking loop */
   else
   if (error1 == 1)
           {
-//          printf("error1 = %d\n", error1);
+/*          printf("error1 = %d\n", error1); */
           enterFirstFraction();
           errorReport();
           }
   else
   if (error2 == 1)
           {
-//          printf("error2 = %d\n", error2);
+/*          printf("error2 = %d\n", error2); */
           enterSecondFraction();
           errorReport();
           }
@@ -181,13 +216,48 @@ int errorCheckFraction2()
   return 0;
 } /* errorCheckFraction2 */
 
-void additionOfFractions(){}
-void subtractionOfFractions(){}
-void multiplicationOfFractions(){}
-void divisionOfFractions(){}
-void decimalApproxOfFraction1(){}
-void enterGPAofClass(){}
-void gradeReport(){}
+void additionOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
+void subtractionOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
+void multiplicationOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
+void divisionOfFractions(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
+void decimalApproxOfFraction1(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
+void enterGPAofClass(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
+void gradeReport(
+  int a,
+  int b,
+  int c,
+  int d
+  ){}
 
 void promptForRestart()
 {
