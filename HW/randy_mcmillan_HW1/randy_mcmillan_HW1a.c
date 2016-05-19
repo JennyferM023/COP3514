@@ -154,7 +154,6 @@ void evalFract2(
   int  d
   )
 {
-  /* printf("%d/%d\n", c, d); */
 
   if (c > d) {
      /* if c is greater than d */
