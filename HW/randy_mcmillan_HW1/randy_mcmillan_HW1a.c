@@ -21,16 +21,18 @@ char bool2;
 int error1, error2;
 /*Declare some functions*/
 void myMain();
-
 void enterFirstFraction();
-
 void enterSecondFraction();
-
 int errorReport();
-
 int errorCheckFraction1();
-
 int errorCheckFraction2();
+void additionOfFractions();
+void subtractionOfFractions();
+void multiplicationOfFractions();
+void divisionOfFractions();
+void decimalApproxOfFraction1();
+void enterGPAofClass();
+void gradeReport();
 
 void promptForRestart();
 
@@ -64,6 +66,8 @@ void myMain()
   enterFirstFraction();
   enterSecondFraction();
   errorReport();
+  evalFract1(a, b);
+  evalFract2(c, d);
 } /* myMain */
 
 void enterFirstFraction()
@@ -90,12 +94,12 @@ void evalFract1(
   )
 {
 
-  printf("%d/%d\n", a, b);
+  //printf("%d/%d\n", a, b);
 
   if (a > b) {
      /* if a is greater than b */
 
-      printf( "fract 1 is imporper\n");
+      printf( "Fraction 1 is imporper\n");
       printf( "%d %d/%d\n", (a / b), (a - b), b );
 
      }
@@ -107,12 +111,12 @@ void evalFract2(
   int d
   )
 {
-  printf("%d/%d\n", c, d);
+  //printf("%d/%d\n", c, d);
 
   if (c > d) {
      /* if c is greater than d */
 
-      printf( "fract 2 is improper\n");
+      printf( "Fraction 2 is improper\n");
       printf( "%d %d/%d\n", (c / d), (c - d), d );
 
      }
