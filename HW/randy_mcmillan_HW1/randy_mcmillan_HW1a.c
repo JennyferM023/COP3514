@@ -6,7 +6,7 @@
  */
 #include <stdio.h> /*preprocessor directive*/
 /*Declare some variables and pointers*/
-char slashchar[1]     = "/";
+char  slashchar[1]     = "/";
 char  *slashChar      = &slashchar[0];
 int   a;
 int   b;
