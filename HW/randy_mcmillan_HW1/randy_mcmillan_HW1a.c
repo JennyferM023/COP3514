@@ -5,10 +5,10 @@
  *   COP 3514
  */
 
-#include <stdio.h>      /*preprocessor directive*/
+#include <stdio.h> /*preprocessor directive*/
 /*Declare some variables and pointers*/
 char slashchar[1]    = "/";
-char *slashChar              = &slashchar[0];
+char *slashChar      = &slashchar[0];
 int a;
 int b;
 int c;
@@ -65,7 +65,7 @@ void enterSecondFraction()
   scanf("%d%c%d", &c, &slash2, &d);
 } /* enterSecondFraction */
 
-int report()        /* begins an error checking loop */
+int report() /* begins an error checking loop */
 {
   error1  = errorCheckFraction1();
   error2  = errorCheckFraction2();
@@ -92,7 +92,7 @@ int report()        /* begins an error checking loop */
       promptForRestart();
       }
 
-  return 1;             /*general error*/
+  return 1; /*general error*/
 } /* report */
 
 int errorCheckFraction1()
@@ -129,6 +129,6 @@ void promptForRestart()
 
           default:
           break;
-         }       /* switch */
+         } /* switch */
 
 } /* promptForRestart */
