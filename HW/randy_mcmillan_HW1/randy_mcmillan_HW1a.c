@@ -4,7 +4,6 @@
  *   Homework 1
  *   COP 3514
  */
-
 #include <stdio.h> /*preprocessor directive*/
 /*Declare some variables and pointers*/
 char slashchar[1]    = "/";
