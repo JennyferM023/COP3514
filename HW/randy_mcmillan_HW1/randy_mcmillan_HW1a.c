@@ -212,7 +212,11 @@ void additionOfFractions(
   int  b,
   int  c,
   int  d
-  ){}
+  ){
+
+  printf( "Addition of Fractions: %d/%d\n", (a * d + c * b), (b * d) );
+
+} /* additionOfFractions */
 void subtractionOfFractions(
   int  a,
   int  b,
