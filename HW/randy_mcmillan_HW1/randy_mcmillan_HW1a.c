@@ -33,19 +33,15 @@ void divisionOfFractions();
 void decimalApproxOfFraction1();
 void enterGPAofClass();
 void gradeReport();
-
 void promptForRestart();
-
 void evalFract1(
   int a,
   int b
   );
-
 void evalFract2(
   int c,
   int d
   );
-
 
 /*
  *  Entry Point
@@ -66,6 +62,13 @@ void myMain()
   enterFirstFraction();
   enterSecondFraction();
   errorReport();
+  additionOfFractions();
+  subtractionOfFractions();
+  multiplicationOfFractions();
+  divisionOfFractions();
+  decimalApproxOfFraction1();
+  enterGPAofClass();
+  gradeReport();
   evalFract1(a, b);
   evalFract2(c, d);
 } /* myMain */
@@ -123,14 +126,6 @@ void evalFract2(
 
 } /* evalFract2 */
 
-
-
-
-
-
-
-
-
 /*
  *
  *  House Keeping
@@ -185,6 +180,14 @@ int errorCheckFraction2()
 
   return 0;
 } /* errorCheckFraction2 */
+
+void additionOfFractions(){}
+void subtractionOfFractions(){}
+void multiplicationOfFractions(){}
+void divisionOfFractions(){}
+void decimalApproxOfFraction1(){}
+void enterGPAofClass(){}
+void gradeReport(){}
 
 void promptForRestart()
 {
