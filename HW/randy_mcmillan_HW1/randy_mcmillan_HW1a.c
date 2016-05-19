@@ -45,11 +45,8 @@ void evalFract2(
 
 
 /*
- *
  *  Entry Point
- *
  */
-
 int main()
 {
   a = b = c = d = 0; /*a little primer*/
@@ -58,9 +55,7 @@ int main()
 } /* main */
 
 /*
- *
  *  myMain is where things really start
- *
  */
 void myMain()
 {
@@ -72,7 +67,7 @@ void myMain()
 
 void enterFirstFraction()
 {
-  /* Prompt user to input variable*/
+  /* Prompt user to input variable */
   printf("Enter Fraction 1: ");
   /* Receieve the user input */
   scanf("%d%c%d", &a, &slash1, &b);
@@ -119,10 +114,16 @@ void evalFract2(
       printf( "fract 2 is improper\n");
       printf( "%d %d/%d\n", (c / d), (c - d), d );
 
-
      }
 
 } /* evalFract2 */
+
+
+
+
+
+
+
 
 
 /*
@@ -130,8 +131,6 @@ void evalFract2(
  *  House Keeping
  *
  */
-
-
 int report() /* begins an error checking loop */
 {
   error1  = errorCheckFraction1();
