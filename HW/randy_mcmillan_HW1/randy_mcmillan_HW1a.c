@@ -81,7 +81,7 @@ void evalFract1(
   )
 {
 
-  printf("%d\n%d\n", a, b);
+  printf("%d/%d\n", a, b);
 
 } /* evalFract1 */
 void evalFract2(
@@ -89,7 +89,7 @@ void evalFract2(
   int d
   )
 {
-  printf("%d\n%d\n", c, d);
+  printf("%d/%d\n", c, d);
 
 } /* evalFract2 */
 int report() /* begins an error checking loop */
