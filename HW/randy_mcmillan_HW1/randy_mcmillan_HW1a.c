@@ -34,6 +34,14 @@ int errorCheckFraction1();
 int errorCheckFraction2();
 
 void promptForRestart();
+void evalFract1(
+  int a,
+  int b
+  );
+void evalFract2(
+  int c,
+  int d
+  );
 
 int main()
 {
@@ -55,6 +63,7 @@ void enterFirstFraction()
   printf("Enter the first fraction (a/b): \n");
   /* Receieve the user input*/
   scanf("%d%c%d", &a, &slash1, &b);
+  evalFract1(a, b);
 } /* enterFirstFraction */
 
 void enterSecondFraction()
@@ -63,8 +72,19 @@ void enterSecondFraction()
   printf("Enter the second fraction (c/d): \n");
   /* Receieve the user input*/
   scanf("%d%c%d", &c, &slash2, &d);
+  evalFract1(c, d);
 } /* enterSecondFraction */
 
+void evalFract1(
+  int a,
+  int b
+  )
+{}
+void evalFract2(
+  int c,
+  int d
+  )
+{}
 int report() /* begins an error checking loop */
 {
   error1  = errorCheckFraction1();
