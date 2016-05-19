@@ -34,10 +34,12 @@ int errorCheckFraction1();
 int errorCheckFraction2();
 
 void promptForRestart();
+
 void evalFract1(
   int a,
   int b
   );
+
 void evalFract2(
   int c,
   int d
