@@ -98,7 +98,8 @@ void evalFract1(
 
   if (a > b) {
 
-     printf("fract 1 is imporper\n");
+      printf( "fract 1 is imporper\n");
+      printf( "%d %d/%d\n", (a / b), (a - b), b );
 
      }
 
@@ -113,7 +114,9 @@ void evalFract2(
 
   if (c > d) {
 
-     printf("fract 2 is improper\n");
+      printf( "fract 2 is improper\n");
+      printf( "%d %d/%d\n", (c / d), (c - d), d );
+
 
      }
 
