@@ -79,12 +79,19 @@ void evalFract1(
   int a,
   int b
   )
-{}
+{
+
+  printf("%d\n%d\n", a, b);
+
+} /* evalFract1 */
 void evalFract2(
   int c,
   int d
   )
-{}
+{
+  printf("%d\n%d\n", c, d);
+
+} /* evalFract2 */
 int report() /* begins an error checking loop */
 {
   error1  = errorCheckFraction1();
