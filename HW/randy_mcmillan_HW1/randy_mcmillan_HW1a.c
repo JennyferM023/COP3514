@@ -43,6 +43,13 @@ void evalFract2(
   int d
   );
 
+
+/*
+ *
+ *  Entry Point
+ *
+ */
+
 int main()
 {
   a = b = c = d = 0;
@@ -50,6 +57,11 @@ int main()
   return 0;
 } /* main */
 
+/*
+ *
+ *  myMain is where things really start
+ *
+ */
 void myMain()
 {
   enterFirstFraction();
@@ -93,6 +105,14 @@ void evalFract2(
   printf("%d/%d\n", c, d);
 
 } /* evalFract2 */
+
+
+/*
+ *
+ *  House Keeping
+ *
+ */
+
 
 int report() /* begins an error checking loop */
 {
