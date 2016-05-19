@@ -27,7 +27,7 @@ void enterFirstFraction();
 
 void enterSecondFraction();
 
-int report();
+int errorReport();
 
 int errorCheckFraction1();
 
@@ -62,7 +62,7 @@ void myMain()
   /* User inputs 2 different fractions */
   enterFirstFraction();
   enterSecondFraction();
-  report();
+  errorReport();
 } /* myMain */
 
 void enterFirstFraction()
@@ -71,7 +71,7 @@ void enterFirstFraction()
   printf("Enter Fraction 1: ");
   /* Receieve the user input */
   scanf("%d%c%d", &a, &slash1, &b);
-  evalFract1(a, b);
+  //evalFract1(a, b);
 } /* enterFirstFraction */
 
 void enterSecondFraction()
@@ -80,7 +80,7 @@ void enterSecondFraction()
   printf("Enter Fraction 2: ");
   /* Receieve the user input */
   scanf("%d%c%d", &c, &slash2, &d);
-  evalFract2(c, d);
+  //evalFract2(c, d);
 } /* enterSecondFraction */
 
 void evalFract1(
@@ -131,7 +131,7 @@ void evalFract2(
  *  House Keeping
  *
  */
-int report() /* begins an error checking loop */
+int errorReport() /* begins an error checking loop */
 {
   error1  = errorCheckFraction1();
   error2  = errorCheckFraction2();
@@ -142,16 +142,16 @@ int report() /* begins an error checking loop */
   else
   if (error1 == 1)
           {
-          printf("error1 = %d\n", error1);
+//          printf("error1 = %d\n", error1);
           enterFirstFraction();
-          report();
+          errorReport();
           }
   else
   if (error2 == 1)
           {
-          printf("error2 = %d\n", error2);
+//          printf("error2 = %d\n", error2);
           enterSecondFraction();
-          report();
+          errorReport();
           }
   else
       {
@@ -159,7 +159,7 @@ int report() /* begins an error checking loop */
       }
 
   return 1; /*general error*/
-} /* report */
+} /* errorReport */
 
 int errorCheckFraction1()
 {
