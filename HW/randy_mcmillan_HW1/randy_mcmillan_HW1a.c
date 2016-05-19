@@ -6,76 +6,76 @@
  */
 #include <stdio.h> /*preprocessor directive*/
 /*Declare some variables and pointers*/
-char slashchar[1]    = "/";
-char *slashChar      = &slashchar[0];
-int a;
-int b;
-int c;
-int d;
-char slash1;
-char *slash11 = &slash1;
-char slash2;
-char *slash22 = &slash2;
-char bool1;
-char bool2;
-int error1, error2;
+char slashchar[1]     = "/";
+char  *slashChar      = &slashchar[0];
+int   a;
+int   b;
+int   c;
+int   d;
+char  slash1;
+char  *slash11 = &slash1;
+char  slash2;
+char  *slash22 = &slash2;
+char  bool1;
+char  bool2;
+int   error1, error2;
 /*Declare some functions*/
-void myMain();
-void enterFirstFraction();
-void enterSecondFraction();
-int errorReport();
-int errorCheckFraction1();
-int errorCheckFraction2();
-void additionOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+void  myMain();
+void  enterFirstFraction();
+void  enterSecondFraction();
+int   errorReport();
+int   errorCheckFraction1();
+int   errorCheckFraction2();
+void  additionOfFractions(
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
 void subtractionOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
 void multiplicationOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
 void divisionOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
 void decimalApproxOfFraction1(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
 void enterGPAofClass(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
 void gradeReport(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   );
-void promptForRestart();
-void evalFract1(
-  int a,
-  int b
+void  promptForRestart();
+void  evalFract1(
+  int  a,
+  int  b
   );
 void evalFract2(
-  int c,
-  int d
+  int  c,
+  int  d
   );
 
 /*
@@ -86,8 +86,7 @@ int main()
   a = b = c = d = 0; /*a little primer*/
   myMain();
   return 0;
-} /* main */
-
+}   /* main */
 /*
  *  myMain is where things really start
  */
@@ -106,8 +105,7 @@ void myMain()
   gradeReport(a, b, c, d);
   evalFract1(a, b);
   evalFract2(c, d);
-} /* myMain */
-
+}   /* myMain */
 void enterFirstFraction()
 {
   /* Prompt user to input variable */
@@ -115,8 +113,7 @@ void enterFirstFraction()
   /* Receieve the user input */
   scanf("%d%c%d", &a, &slash1, &b);
   /* evalFract1(a, b); */
-} /* enterFirstFraction */
-
+}   /* enterFirstFraction */
 void enterSecondFraction()
 {
   /* Prompt user to input variable */
@@ -124,11 +121,10 @@ void enterSecondFraction()
   /* Receieve the user input */
   scanf("%d%c%d", &c, &slash2, &d);
   /* evalFract2(c, d); */
-} /* enterSecondFraction */
-
+}   /* enterSecondFraction */
 void evalFract1(
-  int a,
-  int b
+  int  a,
+  int  b
   )
 {
 
@@ -137,16 +133,15 @@ void evalFract1(
   if (a > b) {
      /* if a is greater than b */
 
-      printf( "Fraction 1 is imporper\n");
-      printf( "%d %d/%d\n", (a / b), (a - b), b );
+      printf(  "Fraction 1 is imporper\n");
+      printf(  "%d %d/%d\n", (a / b), (a - b), b );
 
      }
 
-} /* evalFract1 */
-
+}   /* evalFract1 */
 void evalFract2(
-  int c,
-  int d
+  int  c,
+  int  d
   )
 {
   /* printf("%d/%d\n", c, d); */
@@ -154,13 +149,12 @@ void evalFract2(
   if (c > d) {
      /* if c is greater than d */
 
-      printf( "Fraction 2 is improper\n");
-      printf( "%d %d/%d\n", (c / d), (c - d), d );
+      printf(  "Fraction 2 is improper\n");
+      printf(  "%d %d/%d\n", (c / d), (c - d), d );
 
      }
 
-} /* evalFract2 */
-
+}   /* evalFract2 */
 /*
  *
  *  House Keeping
@@ -194,8 +188,7 @@ int errorReport() /* begins an error checking loop */
       }
 
   return 1; /*general error*/
-} /* errorReport */
-
+}   /* errorReport */
 int errorCheckFraction1()
 {
   if (slash1 != * slashChar) {
@@ -204,8 +197,7 @@ int errorCheckFraction1()
      }
 
   return 0;
-} /* errorCheckFraction1 */
-
+}   /* errorCheckFraction1 */
 int errorCheckFraction2()
 {
   if (slash2 != * slashChar) {
@@ -214,49 +206,48 @@ int errorCheckFraction2()
      }
 
   return 0;
-} /* errorCheckFraction2 */
-
+}   /* errorCheckFraction2 */
 void additionOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 void subtractionOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 void multiplicationOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 void divisionOfFractions(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 void decimalApproxOfFraction1(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 void enterGPAofClass(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 void gradeReport(
-  int a,
-  int b,
-  int c,
-  int d
+  int  a,
+  int  b,
+  int  c,
+  int  d
   ){}
 
 void promptForRestart()
@@ -265,14 +256,14 @@ void promptForRestart()
   scanf("%s", &bool1);
 
   switch (bool1) {
-          case 'y':
+         case 'y':
           main();
 
-          case 'n':
+         case 'n':
           break;
 
-          default:
+         default:
           break;
          } /* switch */
 
-} /* promptForRestart */
+}   /* promptForRest */
