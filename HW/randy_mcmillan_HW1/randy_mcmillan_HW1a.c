@@ -26,7 +26,13 @@ void  enterSecondFraction();
 int   errorReport();
 int   errorCheckFraction1();
 int   errorCheckFraction2();
-void  additionOfFractions(
+int   reportInput(
+  int  a,
+  int  b,
+  int  c,
+  int  d
+  );
+void additionOfFractions(
   int  a,
   int  b,
   int  c,
@@ -96,6 +102,7 @@ void myMain()
   enterFirstFraction();
   enterSecondFraction();
   errorReport();
+  reportInput(a, b, c, d);
   additionOfFractions(a, b, c, d);
   subtractionOfFractions(a, b, c, d);
   multiplicationOfFractions(a, b, c, d);
@@ -207,6 +214,18 @@ int errorCheckFraction2()
 
   return 0;
 }   /* errorCheckFraction2 */
+int reportInput(
+  int  a,
+  int  b,
+  int  c,
+  int  d
+  ) {
+
+   printf(  "Fraction Number 1: %d/%d\n",  a,  b );
+   printf(  "Fraction Number 2: %d/%d\n",  c,  d );
+
+  return 0;
+} /* reportInput */
 void additionOfFractions(
   int  a,
   int  b,
