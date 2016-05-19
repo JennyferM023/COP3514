@@ -52,7 +52,7 @@ void evalFract2(
 
 int main()
 {
-  a = b = c = d = 0;
+  a = b = c = d = 0; /*a little primer*/
   myMain();
   return 0;
 } /* main */
@@ -64,7 +64,7 @@ int main()
  */
 void myMain()
 {
-  /* user inputs 2 different fractions */
+  /* User inputs 2 different fractions */
   enterFirstFraction();
   enterSecondFraction();
   report();
@@ -73,17 +73,17 @@ void myMain()
 void enterFirstFraction()
 {
   /* Prompt user to input variable*/
-  printf("Enter the first fraction (a/b): \n");
-  /* Receieve the user input*/
+  printf("Enter Fraction 1: ");
+  /* Receieve the user input */
   scanf("%d%c%d", &a, &slash1, &b);
   evalFract1(a, b);
 } /* enterFirstFraction */
 
 void enterSecondFraction()
 {
-  /* Prompt user to input variable*/
-  printf("Enter the second fraction (c/d): \n");
-  /* Receieve the user input*/
+  /* Prompt user to input variable */
+  printf("Enter Fraction 2: ");
+  /* Receieve the user input */
   scanf("%d%c%d", &c, &slash2, &d);
   evalFract2(c, d);
 } /* enterSecondFraction */
@@ -97,6 +97,7 @@ void evalFract1(
   printf("%d/%d\n", a, b);
 
   if (a > b) {
+     /* if a is greater than b */
 
       printf( "fract 1 is imporper\n");
       printf( "%d %d/%d\n", (a / b), (a - b), b );
@@ -113,6 +114,7 @@ void evalFract2(
   printf("%d/%d\n", c, d);
 
   if (c > d) {
+     /* if c is greater than d */
 
       printf( "fract 2 is improper\n");
       printf( "%d %d/%d\n", (c / d), (c - d), d );
