@@ -214,6 +214,7 @@ int errorReport() /* begins an error checking loop */
           }
   else
       {
+      a = b = c = d = 0;   /*a little primer*/
       promptForRestart();
       }
 
