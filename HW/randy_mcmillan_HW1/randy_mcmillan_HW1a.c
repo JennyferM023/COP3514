@@ -5,7 +5,6 @@
  *   COP 3514
  */
 #include <stdio.h> /*preprocessor directive*/
-#include <math.h>
 /*Declare some variables and pointers*/
 char  slashchar[1]     = "/";
 char  *slashChar      = &slashchar[0];
@@ -25,59 +24,59 @@ int   errorReport();
 int   errorCheckFraction1();
 int   errorCheckFraction2();
 int   reportInput(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void additionOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void subtractionOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void multiplicationOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void divisionOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void decimalApproxOfFraction(
-  int  num,
-  int  denom
+  int  localA,
+  int  localB
   );
 void enterGPAofClass(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void gradeReport(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   );
 void  promptForRestart();
 void  evalFract1(
-  int  a,
-  int  b
+  int  localA,
+  int  localB
   );
 void evalFract2(
-  int  c,
-  int  d
+  int  localC,
+  int  localD
   );
 
 /*
@@ -125,15 +124,15 @@ void enterSecondFraction()
   scanf("%d%c%d", &c, &slash2, &d);
 }   /* enterSecondFraction */
 void evalFract1(
-  int  a,
-  int  b
+  int  localA,
+  int  localB
   )
 {
-  if (a > b) {
+  if (localA > localB) {
      /* if a is greater than b */
 
-     int  mixedMain = a / b;
-     int  mixedModulus = a % b;
+     int  mixedMain = localA / localB;
+     int  mixedModulus = localA % localB;
 
      if (mixedModulus == 0) {
 
@@ -144,7 +143,7 @@ void evalFract1(
      else
          {
           printf(  "Fraction 1 is an improper fraction.\n");
-          printf(  "Fraction 1 as a mixed number %d %d/%d\n", mixedMain, a % b, b );
+          printf(  "Fraction 1 as a mixed number %d %d/%d\n", mixedMain, localA % localB, localB );
          }
      }
   else
@@ -156,15 +155,15 @@ void evalFract1(
 
 }   /* evalFract1 */
 void evalFract2(
-  int  c,
-  int  d
+  int  localC,
+  int  localD
   )
 {
-  if (c > d) {
+  if (localC > localD) {
      /* if c is greater than d */
 
-     int  mixedMain = c / d;
-     int  mixedModulus = c % d;
+     int  mixedMain = localC / localD;
+     int  mixedModulus = localC % localD;
 
      if (mixedModulus == 0) {
 
@@ -175,7 +174,7 @@ void evalFract2(
      else
          {
           printf(  "Fraction 2 is an improper fraction.\n");
-          printf(  "Fraction 2 as a mixed number %d %d/%d\n", mixedMain, c % d, b );
+          printf(  "Fraction 2 as a mixed number %d %d/%d\n", mixedMain, localC % localD, localD );
          }
      }
   else
@@ -238,78 +237,78 @@ int errorCheckFraction2()
   return 0;
 }   /* errorCheckFraction2 */
 int reportInput(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ) {
 
-   printf(  "Fraction Number 1: %d/%d\n",  a,  b );
-   printf(  "Fraction Number 2: %d/%d\n",  c,  d );
+   printf(  "Fraction Number 1: %d/%d\n",  localA,  localB );
+   printf(  "Fraction Number 2: %d/%d\n",  localC,  localD );
 
   return 0;
 } /* reportInput */
 void additionOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ){
 
-  printf( "Addition of Fractions: %d/%d\n", (a * d + c * b), (b * d) );
+  printf( "Addition of Fractions: %d/%d\n", (localA * localD + localC * localB), (localB * localD) );
 
 } /* additionOfFractions */
 void subtractionOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ){
 
-  printf( "Subtraction of Fractions: %d/%d\n", (a * d - c * b), (b * d) );
+  printf( "Subtraction of Fractions: %d/%d\n", (localA * localD - localC * localB), (localB * localD) );
 
 } /* subtractionOfFractions */
 void multiplicationOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ){
 
 
-  printf( "Multiplication of Fractions: %d/%d\n", (a * c), (b * d) );
+  printf( "Multiplication of Fractions: %d/%d\n", (localA * localC), (localB * localD) );
 
 } /* multiplicationOfFractions */
 void divisionOfFractions(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ){
 
   printf( "Division of Fractions: %d/%d\n", (a * d), (b * c) );
 
 } /* divisionOfFractions */
 void decimalApproxOfFraction(
-  int  a,
-  int  b
+  int  localA,
+  int  localB
   ){
 
-  printf("The dec. App Of Fraction1 is %f\n", floor(a * b + 0.5) / 100);
+  printf( "The decimal approx of fraction 1 is %.2d\n", (a / b) );
 
 
 } /* decimalApproxOfFraction1 */
 void enterGPAofClass(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ){}
 void gradeReport(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+  int  localA,
+  int  localB,
+  int  localC,
+  int  localD
   ){}
 
 void promptForRestart()
