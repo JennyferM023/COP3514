@@ -10,6 +10,7 @@ char  slashchar[1]     = "/";
 char  *slashChar      = &slashchar[0];
 int   a, b, c, d;
 char  slash1;
+char  inputGPA;
 char  *slash11 = &slash1;
 char  slash2;
 char  *slash22 = &slash2;
@@ -58,13 +59,8 @@ void decimalApproxOfFraction(
   int    localB,
   float  localFloat
   );
-void enterGPAofClass(
-  int  localA,
-  int  localB,
-  int  localC,
-  int  localD
-  );
-void gradeReport(
+void  enterGPAofClass();
+void  gradeReport(
   int  localA,
   int  localB,
   int  localC,
@@ -107,7 +103,7 @@ void myMain()
   evalFract1(a, b);
   evalFract2(c, d);
   decimalApproxOfFraction(a, b, 0);
-  enterGPAofClass(a, b, c, d);
+  enterGPAofClass(0);
   gradeReport(a, b, c, d);
 }   /* myMain */
 void enterFirstFraction()
@@ -302,12 +298,39 @@ void decimalApproxOfFraction(
 
 
 } /* decimalApproxOfFraction1 */
-void enterGPAofClass(
-  int  localA,
-  int  localB,
-  int  localC,
-  int  localD
-  ){}
+void enterGPAofClass(){
+/* Enter in a GPA for the class (0-4 integer): 3 */
+/* 4 -> You got an A!
+ * 3 -> You got an B!
+ * 2 -> You got an C!
+ * 1 -> You got an D!
+ * 0 -> You got an F!
+ * Anything else -> That isn't a grade
+ */
+
+  printf("Enter in a GPA for the class (0-4 integer): ");
+  /* Receieve the user input */
+  scanf("%s", &inputGPA);
+  printf("inputGPA = %s\n", &inputGPA);
+
+  switch (inputGPA) {
+         case '4':
+           printf(  "\n4 -> You got an A!\n");
+
+         case '3':
+           printf(  "\n3 -> You got an B!\n");
+
+         case '2':
+           printf(  "\n2 -> You got an C!\n");
+
+         case '1':
+           printf(  "\n1 -> You got an D!\n");
+
+         default:
+           printf(  "That isn's a grade\n");
+         }   /* switch */
+
+} /* enterGPAofClass */
 void gradeReport(
   int  localA,
   int  localB,
