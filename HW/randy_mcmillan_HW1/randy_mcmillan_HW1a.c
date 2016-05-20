@@ -350,6 +350,7 @@ void promptForRestart()
   switch (bool1) {
          case 'y':
           main();
+          break;
 
          case 'n':
           break;
