@@ -294,7 +294,11 @@ void decimalApproxOfFraction(
   int  localB
   ){
 
-  printf( "The decimal approx of fraction 1 is %.2d\n", (a / b) );
+   printf(  "localA = %d\n",           localA );
+   printf(  "localB = %d\n",           localB );
+   printf(  "localA * localB = %d\n",  localA * localB );
+   printf(  "localA / localB = %f\n",  (float) ( (localA / localB) * 100 ) );
+
 
 
 } /* decimalApproxOfFraction1 */
