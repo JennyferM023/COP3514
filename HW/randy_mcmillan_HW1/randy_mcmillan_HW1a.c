@@ -54,8 +54,9 @@ void divisionOfFractions(
   int  localD
   );
 void decimalApproxOfFraction(
-  int  localA,
-  int  localB
+  int    localA,
+  int    localB,
+  float  localFloat
   );
 void enterGPAofClass(
   int  localA,
@@ -105,7 +106,7 @@ void myMain()
   divisionOfFractions(a, b, c, d);
   evalFract1(a, b);
   evalFract2(c, d);
-  decimalApproxOfFraction(a, b);
+  decimalApproxOfFraction(a, b, 0);
   enterGPAofClass(a, b, c, d);
   gradeReport(a, b, c, d);
 }   /* myMain */
@@ -290,14 +291,13 @@ void divisionOfFractions(
 
 } /* divisionOfFractions */
 void decimalApproxOfFraction(
-  int  localA,
-  int  localB
+  int    localA,
+  int    localB,
+  float  localFloat
   ){
 
-   printf(  "localA = %d\n",           localA );
-   printf(  "localB = %d\n",           localB );
-   printf(  "localA * localB = %d\n",  localA * localB );
-   printf(  "localA / localB = %f\n",  (float) ( (localA / localB) * 100 ) );
+  localFloat = ( (float) localA / (float) localB );
+  printf( "Decimal Approximation of Fraction 1: %.2f\n", localFloat );
 
 
 
