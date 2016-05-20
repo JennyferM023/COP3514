@@ -311,23 +311,22 @@ void enterGPAofClass(){
   printf("Enter in a GPA for the class (0-4 integer): ");
   /* Receieve the user input */
   scanf("%d", &inputGPA);
-  printf("%d\n", inputGPA);
 
   switch (inputGPA) {
          case 4:
-           printf( "\n4 -> You got an A!\n");
+           printf( "You got an A!\n");
           break;
 
          case 3:
-            printf( "\n3 -> You got an B!\n");
+            printf( "You got an B!\n");
           break;
 
          case 2:
-             printf( "\n2 -> You got an C!\n");
+             printf( "You got an C!\n");
           break;
 
          case 1:
-              printf( "\n1 -> You got an D!\n");
+              printf( "You got an D!\n");
           break;
 
          default:
