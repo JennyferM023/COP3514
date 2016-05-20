@@ -134,8 +134,18 @@ void evalFract1(
   if (a > b) {
      /* if a is greater than b */
 
-     printf( "Fraction 1 is a mixed number\n");
+     int  mixedMain = a / b;
+     int  mixedModulus = a % b;
 
+     if (mixedModulus == 0) {
+
+        printf( "Fraction 2 is a mixed number %d\n", mixedMain);
+
+        }
+     else
+         {
+         printf( "Fraction 2 is a mixed number %d %d/%d\n", mixedMain, a % b, b );
+         }
      }
   else
       {
@@ -153,16 +163,25 @@ void evalFract2(
   if (c > d) {
      /* if c is greater than d */
 
-     printf( "Fraction 2 is a mixed number\n");
+     int  mixedMain = c / d;
+     int  mixedModulus = c % d;
 
+     if (mixedModulus == 0) {
+
+        printf( "Fraction 2 is a mixed number %d\n", mixedMain);
+
+        }
+     else
+         {
+         printf( "Fraction 2 is a mixed number %d %d/%d\n", mixedMain, c % d, d );
+         }
      }
   else
       {
 
-      printf( "Fraction 2 is a proper fraction\n");
+      printf( "Fraction 1 is a proper fraction\n");
 
       }
-
 }   /* evalFract2 */
 /*
  *
