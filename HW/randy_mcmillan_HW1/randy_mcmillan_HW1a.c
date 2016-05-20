@@ -277,7 +277,6 @@ void multiplicationOfFractions(
   int  localD
   ){
 
-
   printf( "Multiplication of Fractions: %d/%d\n", (localA * localC), (localB * localD) );
 
 } /* multiplicationOfFractions */
