@@ -139,12 +139,14 @@ void evalFract1(
 
      if (mixedModulus == 0) {
 
-        printf( "Fraction 1 is a mixed number %d\n", mixedMain);
+         printf(  "Fraction 1 is an improper fraction.\n");
+         printf(  "Fraction 1 as a mixed number %d\n", mixedMain);
 
         }
      else
          {
-         printf( "Fraction 1 is a mixed number %d %d/%d\n", mixedMain, a % b, b );
+          printf(  "Fraction 1 is an improper fraction.\n");
+          printf(  "Fraction 1 as a mixed number %d %d/%d\n", mixedMain, a % b, b );
          }
      }
   else
@@ -168,12 +170,14 @@ void evalFract2(
 
      if (mixedModulus == 0) {
 
-        printf( "Fraction 2 is a mixed number %d\n", mixedMain);
+         printf(  "Fraction 2 is an improper fraction.\n");
+         printf(  "Fraction 2 as a mixed number %d\n", mixedMain);
 
         }
      else
          {
-         printf( "Fraction 2 is a mixed number %d %d/%d\n", mixedMain, c % d, d );
+          printf(  "Fraction 2 is an improper fraction.\n");
+          printf(  "Fraction 2 as a mixed number %d %d/%d\n", mixedMain, a % b, b );
          }
      }
   else
