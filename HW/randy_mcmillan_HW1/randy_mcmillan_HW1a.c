@@ -5,6 +5,7 @@
  *   COP 3514
  */
 #include <stdio.h> /*preprocessor directive*/
+#include <math.h>
 /*Declare some variables and pointers*/
 char  slashchar[1]     = "/";
 char  *slashChar      = &slashchar[0];
@@ -15,6 +16,7 @@ char  slash2;
 char  *slash22 = &slash2;
 char  bool1, bool2;
 int   error1, error2;
+int   num, denom;
 /*Declare some functions*/
 void  myMain();
 void  enterFirstFraction();
@@ -52,11 +54,9 @@ void divisionOfFractions(
   int  c,
   int  d
   );
-void decimalApproxOfFraction1(
-  int  a,
-  int  b,
-  int  c,
-  int  d
+void decimalApproxOfFraction(
+  int  num,
+  int  denom
   );
 void enterGPAofClass(
   int  a,
@@ -104,11 +104,11 @@ void myMain()
   subtractionOfFractions(a, b, c, d);
   multiplicationOfFractions(a, b, c, d);
   divisionOfFractions(a, b, c, d);
-  decimalApproxOfFraction1(a, b, c, d);
-  enterGPAofClass(a, b, c, d);
-  gradeReport(a, b, c, d);
   evalFract1(a, b);
   evalFract2(c, d);
+  decimalApproxOfFraction(a, b);
+  enterGPAofClass(a, b, c, d);
+  gradeReport(a, b, c, d);
 }   /* myMain */
 void enterFirstFraction()
 {
@@ -116,7 +116,6 @@ void enterFirstFraction()
   printf("Enter Fraction 1: ");
   /* Receieve the user input */
   scanf("%d%c%d", &a, &slash1, &b);
-  /* evalFract1(a, b); */
 }   /* enterFirstFraction */
 void enterSecondFraction()
 {
@@ -124,7 +123,6 @@ void enterSecondFraction()
   printf("Enter Fraction 2: ");
   /* Receieve the user input */
   scanf("%d%c%d", &c, &slash2, &d);
-  /* evalFract2(c, d); */
 }   /* enterSecondFraction */
 void evalFract1(
   int  a,
@@ -177,7 +175,7 @@ void evalFract2(
      else
          {
           printf(  "Fraction 2 is an improper fraction.\n");
-          printf(  "Fraction 2 as a mixed number %d %d/%d\n", mixedMain, a % b, b );
+          printf(  "Fraction 2 as a mixed number %d %d/%d\n", mixedMain, c % d, b );
          }
      }
   else
@@ -292,12 +290,15 @@ void divisionOfFractions(
   printf( "Division of Fractions: %d/%d\n", (a * d), (b * c) );
 
 } /* divisionOfFractions */
-void decimalApproxOfFraction1(
+void decimalApproxOfFraction(
   int  a,
-  int  b,
-  int  c,
-  int  d
-  ){}
+  int  b
+  ){
+
+  printf("The dec. App Of Fraction1 is %f\n", floor(a * b + 0.5) / 100);
+
+
+} /* decimalApproxOfFraction1 */
 void enterGPAofClass(
   int  a,
   int  b,
