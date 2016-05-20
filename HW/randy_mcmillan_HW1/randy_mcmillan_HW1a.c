@@ -10,7 +10,7 @@ char  slashchar[1]     = "/";
 char  *slashChar      = &slashchar[0];
 int   a, b, c, d;
 char  slash1;
-char  inputGPA;
+int   inputGPA;
 char  *slash11 = &slash1;
 char  slash2;
 char  *slash22 = &slash2;
@@ -310,24 +310,29 @@ void enterGPAofClass(){
 
   printf("Enter in a GPA for the class (0-4 integer): ");
   /* Receieve the user input */
-  scanf("%s", &inputGPA);
-  printf("inputGPA = %s\n", &inputGPA);
+  scanf("%d", &inputGPA);
+  printf("%d\n", inputGPA);
 
   switch (inputGPA) {
-         case '4':
-           printf(  "\n4 -> You got an A!\n");
+         case 4:
+           printf( "\n4 -> You got an A!\n");
+          break;
 
-         case '3':
-           printf(  "\n3 -> You got an B!\n");
+         case 3:
+            printf( "\n3 -> You got an B!\n");
+          break;
 
-         case '2':
-           printf(  "\n2 -> You got an C!\n");
+         case 2:
+             printf( "\n2 -> You got an C!\n");
+          break;
 
-         case '1':
-           printf(  "\n1 -> You got an D!\n");
+         case 1:
+              printf( "\n1 -> You got an D!\n");
+          break;
 
          default:
-           printf(  "That isn's a grade\n");
+              printf( "That isn's a grade\n");
+          break;
          }   /* switch */
 
 } /* enterGPAofClass */
