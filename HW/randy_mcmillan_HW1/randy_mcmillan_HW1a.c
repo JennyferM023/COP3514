@@ -158,7 +158,7 @@ void evalFract2(
   )
 {
   if (localC > localD) {
-     /* if localC is greater than d */
+     /* if localC is greater than localD */
 
      int  mixedMain = localC / localD;
      int  mixedModulus = localC % localD;
