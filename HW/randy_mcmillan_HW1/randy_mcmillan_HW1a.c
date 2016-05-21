@@ -134,13 +134,13 @@ void evalFract1(
      if (mixedModulus == 0) {
 
          printf(  "Fraction 1 is an improper fraction.\n");
-         printf(  "Fraction 1 as a mixed number %d\n", mixedMain);
+         printf(  "Fraction 1 as a Mixed Number %d\n", mixedMain);
 
         }
      else
          {
           printf(  "Fraction 1 is an improper fraction.\n");
-          printf(  "Fraction 1 as a mixed number %d %d/%d\n", mixedMain, localA % localB, localB );
+          printf(  "Fraction 1 as a Mixed Number %d %d/%d\n", mixedMain, localA % localB, localB );
          }
      }
   else
@@ -163,22 +163,26 @@ void evalFract2(
      int  mixedModulus = localC % localD;
 
      if (mixedModulus == 0) {
-
-         printf(  "Fraction 2 is an improper fraction.\n");
-         printf(  "Fraction 2 as a mixed number %d\n", mixedMain);
-
+        /* Your instructions indicate that
+         * we don't report on the second fraction
+         * I left the code in anyway...
+         * printf(  "Fraction 2 is an improper fraction.\n");
+         * printf(  "Fraction 2 as a Mixed Number %d\n", mixedMain);
+         */
         }
      else
          {
-          printf(  "Fraction 2 is an improper fraction.\n");
-          printf(  "Fraction 2 as a mixed number %d %d/%d\n", mixedMain, localC % localD, localD );
+         /*
+          * printf(  "Fraction 2 is an improper fraction.\n");
+          * printf(  "Fraction 2 as a Mixed Number %d %d/%d\n", mixedMain, localC % localD, localD );
+          */
          }
      }
   else
       {
-
-      printf( "Fraction 2 is a proper fraction\n");
-
+      /*
+       * printf( "Fraction 2 is a proper fraction\n");
+       */
       }
 }   /* evalFract2 */
 /*
