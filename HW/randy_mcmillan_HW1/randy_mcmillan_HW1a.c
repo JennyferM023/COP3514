@@ -95,6 +95,7 @@ void myMain()
   enterSecondFraction();
   /* more error checking needed but...*/
   errorReport();
+  /* The task is broken up into reusable functions */
   reportInput(a, b, c, d);
   additionOfFractions(a, b, c, d);
   subtractionOfFractions(a, b, c, d);
@@ -126,7 +127,7 @@ void evalFract1(
   )
 {
   if (localA > localB) {
-     /* if a is greater than b */
+     /* if localA is greater than localB */
 
      int  mixedMain = localA / localB;
      int  mixedModulus = localA % localB;
@@ -157,7 +158,7 @@ void evalFract2(
   )
 {
   if (localC > localD) {
-     /* if c is greater than d */
+     /* if localC is greater than d */
 
      int  mixedMain = localC / localD;
      int  mixedModulus = localC % localD;
@@ -190,7 +191,7 @@ void evalFract2(
  *  House Keeping
  *
  */
-int errorReport() /* begins an error checking loop */
+int errorReport() /* begins an error checking loop not fully implemented */
 {
   error1  = errorCheckFraction1();
   error2  = errorCheckFraction2();
@@ -299,8 +300,6 @@ void decimalApproxOfFraction(
   localFloat = ( (float) localA / (float) localB );
   printf( "Decimal Approximation of Fraction 1: %.2f\n", localFloat );
 
-
-
 } /* decimalApproxOfFraction1 */
 void enterGPAofClass(){
 /* Enter in a GPA for the class (0-4 integer): 3 */
@@ -316,6 +315,7 @@ void enterGPAofClass(){
   /* Receieve the user input */
   scanf("%d", &inputGPA);
 
+/* report grade here instead of gradeReport(); */
   switch (inputGPA) {
          case 4:
            printf( "You got an A!\n");
