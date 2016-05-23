@@ -132,7 +132,7 @@ void evalFract1(
 
      if (mixedModulus == 0) {
 
-         printf(  "Fraction 1 is an improper fraction.\n");
+         printf(  "Fraction 1 is an improper fraction\n");
          printf(  "Fraction 1 as a Mixed Number %d\n", mixedMain);
 
         }
