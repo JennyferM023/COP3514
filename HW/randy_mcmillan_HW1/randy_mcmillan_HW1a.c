@@ -93,8 +93,6 @@ void myMain()
   /* User inputs 2 different fractions */
   enterFirstFraction();
   enterSecondFraction();
-  /* more error checking needed but...*/
-  errorReport();
   /* The task is broken up into reusable functions */
   reportInput(a, b, c, d);
   additionOfFractions(a, b, c, d);
@@ -191,54 +189,6 @@ void evalFract2(
  *  House Keeping
  *
  */
-int errorReport() /* begins an error checking loop not fully implemented */
-{
-  error1  = errorCheckFraction1();
-  error2  = errorCheckFraction2();
-
-  if ( (error1 == 0) && (error2 == 0) ) {
-     return 0;
-     }
-  else
-  if (error1 == 1)
-          {
-/*          printf("error1 = %d\n", error1); */
-          enterFirstFraction();
-          errorReport();
-          }
-  else
-  if (error2 == 1)
-          {
-/*          printf("error2 = %d\n", error2); */
-          enterSecondFraction();
-          errorReport();
-          }
-  else
-      {
-      a = b = c = d = 0;   /*a little primer*/
-      promptForRestart();
-      }
-
-  return 1; /*general error*/
-}   /* errorReport */
-int errorCheckFraction1()
-{
-  if (slash1 != * slashChar) {
-     printf("Please reenter the first fraction in in the form of ###/### \n");
-     return 1;
-     }
-
-  return 0;
-}   /* errorCheckFraction1 */
-int errorCheckFraction2()
-{
-  if (slash2 != * slashChar) {
-     printf("Please reenter the second fraction in in the form of ###/### \n");
-     return 1;
-     }
-
-  return 0;
-}   /* errorCheckFraction2 */
 int reportInput(
   int  localA,
   int  localB,
@@ -345,22 +295,3 @@ void gradeReport(
   int  localC,
   int  localD
   ){}
-
-void promptForRestart()
-{
-  printf("restart? y or n?\n");
-  scanf("%s", &bool1);
-
-  switch (bool1) {
-         case 'y':
-          main();
-          break;
-
-         case 'n':
-          break;
-
-         default:
-          break;
-         } /* switch */
-
-}   /* promptForRest */
