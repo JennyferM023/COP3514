@@ -138,7 +138,7 @@ void evalFract1(
         }
      else
          {
-          printf(  "Fraction 1 is an improper fraction.\n");
+          printf(  "Fraction 1 is an improper fraction\n");
           printf(  "Fraction 1 as a Mixed Number %d %d/%d\n", mixedMain, localA % localB, localB );
          }
      }
