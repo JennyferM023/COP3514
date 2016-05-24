@@ -66,7 +66,6 @@ void  gradeReport(
   int  localC,
   int  localD
   );
-void  promptForRestart();
 void  evalFract1(
   int  localA,
   int  localB
