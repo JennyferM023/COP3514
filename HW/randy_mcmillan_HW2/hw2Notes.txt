@@ -23,3 +23,65 @@ unsigned are great for low level development
 
 
 bitwise operators
+
+
+integers on Quiz
+
+nibble base 8?
+
+unsigned int u
+
+IEEE Standard 754 IEC 60559
+
+
+.
+
+
+Floating types
+
+double d;
+scanf("%lf", &d);
+
+e,f,g?
+
+
+.
+
+
+char are ints
+
+
+but can be more than that
+
+
+ASCII....
+
+
+.
+
+
+char ch;
+
+ch = 'a';
+ch = 'A';
+ch = '0';
+ch = ' ';
+
+null char is zero?
+
+
+char ch;
+int i;
+i= 'a';
+ch=...
+
+
+
+!!!!
+if ('a' <= ch && ch <= 'z')
+ch = ch - 'a'+ 'A';
+
+
+.
+
+..
