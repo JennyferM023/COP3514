@@ -6,7 +6,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-# include <string.h>
+#include <string.h>
 /* preprocessor directive */
 /*Declare some variables, CONSTANTS , etc */
 #define MAX_SIZE 11 /* Generalizing for more dimensions */
