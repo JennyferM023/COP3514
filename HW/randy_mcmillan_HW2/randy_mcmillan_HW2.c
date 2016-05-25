@@ -56,15 +56,18 @@ int  jHat;
 
   for ( iHat = 0; iHat < globalSide; iHat ++)
       {
-      printf("iHat = %d\n", iHat );
+
+       printf(  "\n");
+       printf(  "iHat = %d\n", iHat );
+
 
       for (jHat = 0; jHat < globalSide; jHat ++)
           {
-          printf("jHat = %d\n", jHat );
-          /* code */
+
+          printf("jHat = %d ", jHat );
+
           }
 
-      /* code */
       }
 
 
