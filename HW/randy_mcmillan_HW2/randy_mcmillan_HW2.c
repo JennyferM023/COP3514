@@ -63,8 +63,9 @@ int  jHat;
 
       for (jHat = 0; jHat < globalSide; jHat ++)
           {
+           printf(  "jHat = %d\n",             jHat );
 
-          printf("jHat = %d ", jHat );
+           printf(  "globalArray[%d][%d]\n ",  iHat, jHat );
 
           }
 
