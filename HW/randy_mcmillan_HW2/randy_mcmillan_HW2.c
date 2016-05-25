@@ -4,13 +4,15 @@
  *   Homework 2 Magic Squares Excercise
  *   COP 3514
  */
-#include <stdio.h> /* preprocessor directive */
+#include <stdio.h>
+#include <stdlib.h>
+/* preprocessor directive */
 /*Declare some variables, CONSTANTS , etc */
 #define MAX_SIZE 11 /* Generalizing for more dimensions */
 int  globalSide;
 int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
 /* Declare some functions */
-void  myMain();
+int   myMain();
 void  inputSide();
 void  checkMAXSize(int localSIZE);
 void  populateArray();
@@ -19,32 +21,27 @@ void  populateArray();
  */
 int main()
 {
-  myMain();
-  return 0;
+  return myMain();
 }   /* main */
 /*
  *  myMain is where things really start
  */
-void myMain()
+int myMain()
 {
   inputSide();
+  return 0;
 
 }   /* myMain */
 void inputSide()
 {
   printf("Enter size of magic square: " );
   scanf("%d", &globalSide );
-  printf("%d\n", globalSide );
+//  printf("%d\n", globalSide );
   checkMAXSize(globalSide);
 } /* inputSide */
 void checkMAXSize(int localSIZE) {
 
-  if (localSIZE > MAX_SIZE || localSIZE < 3 || localSIZE % 2 == 0)
-     {
-
-     exit;
-
-     }
+  if (localSIZE > MAX_SIZE || localSIZE < 3 || localSIZE % 2 == 0) {}
   else
       {
 
@@ -54,15 +51,21 @@ void checkMAXSize(int localSIZE) {
 } /* checkMAXSize */
 void populateArray() {
 
-  for (int i = 1; i < (globalSide * globalSide + 1); i ++)
+int i;
+
+  for ( i = 0; i < globalSide; i ++)
       {
+      printf("i = %d\n", i );
+      int j;
 
-      printf("i = %d\n globalSide = %d\n", i, globalSide );
+      for (j = 0; j < globalSide; j ++)
+          {
+          printf("j = %d\n", j );
+          /* code */
+          }
 
-
-
-
-
+      /* code */
       }
+
 
 } /* populateArray */
