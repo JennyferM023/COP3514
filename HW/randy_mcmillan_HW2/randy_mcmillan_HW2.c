@@ -5,7 +5,10 @@
  *   COP 3514
  */
 #include <stdio.h> /*preprocessor directive*/
-/*Declare some variables and pointers*/
+/*Declare some variables, CONSTANTS , etc */
+#define MAX_SIZE 11 /* Generalizing for more dimensions */
+int  globalSide;
+int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
 /*Declare some functions*/
 void myMain();
 /*
