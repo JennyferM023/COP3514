@@ -36,7 +36,7 @@ void inputSide()
 {
   printf("Enter size of magic square: " );
   scanf("%d", &globalSide );
-//  printf("%d\n", globalSide );
+/* printf("%d\n", globalSide ); */
   checkMAXSize(globalSide);
 } /* inputSide */
 void checkMAXSize(int localSIZE) {
@@ -51,12 +51,12 @@ void checkMAXSize(int localSIZE) {
 } /* checkMAXSize */
 void populateArray() {
 
-int i;
+int  i;
+int  j;
 
   for ( i = 0; i < globalSide; i ++)
       {
       printf("i = %d\n", i );
-      int j;
 
       for (j = 0; j < globalSide; j ++)
           {
