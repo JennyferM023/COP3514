@@ -12,6 +12,7 @@ int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
 /* Declare some functions */
 void  myMain();
 void  inputSide();
+void  checkMAXSize(int localSIZE);
 /*
  *  Entry Point
  */
@@ -30,8 +31,17 @@ void myMain()
 }   /* myMain */
 void inputSide()
 {
-
   printf("Enter size of magic square: " );
   scanf("%d", &globalSide );
   printf("%d\n", globalSide );
+  checkMAXSize(globalSide);
 } /* inputSide */
+void checkMAXSize(int localSIZE) {
+
+  if (localSIZE > 11 || localSIZE < 3)
+     {
+     printf("Size MUST be less than %d\n", MAX_SIZE );
+     inputSide();
+     }
+  else{}
+} /* checkMAXSize */
