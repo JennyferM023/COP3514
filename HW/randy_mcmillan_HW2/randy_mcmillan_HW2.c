@@ -12,6 +12,8 @@
 #define MAX_SIZE 11 /* Generalizing for more dimensions */
 int  globalSide;
 int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
+int  initPositionX = MAX_SIZE / 2;/* just priming with max middle of columns */
+int  initPositionY = MAX_SIZE - 1;/* just priming with max last row */
 /* Declare some functions */
 int   myMain();
 void  inputSide();
@@ -31,7 +33,6 @@ int myMain()
 {
   inputSide();
   return 0;
-
 }   /* myMain */
 void inputSide()
 {
