@@ -32,6 +32,7 @@ int main()
 int myMain()
 {
   inputSide();
+  checkMAXSize(globalSide);
   return 0;
 }   /* myMain */
 void inputSide()
@@ -39,11 +40,10 @@ void inputSide()
   printf("Enter size of magic square: " );
   scanf("%d", &globalSide );
 /* printf("%d\n", globalSide ); */
-  checkMAXSize(globalSide);
 } /* inputSide */
 void checkMAXSize(int localSIZE) {
 
-  if (localSIZE > MAX_SIZE || localSIZE < 3 || localSIZE % 2 == 0) {}
+  if (localSIZE > MAX_SIZE || localSIZE < 3 || localSIZE % 2 == 0) { /*stop*/ }
   else
       {
 
