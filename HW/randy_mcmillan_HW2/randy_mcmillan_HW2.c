@@ -60,16 +60,16 @@ int  jHat;
 
   for ( iHat = 0; iHat < globalSide; iHat ++)
       {
-
-       printf(  "\n");
-       printf(  "iHat = %d\n", iHat );
-
+/*
+ *     printf(  "\n");
+ *     printf(  "iHat = %d\n", iHat );
+ */
 
       for (jHat = 0; jHat < globalSide; jHat ++)
           {
 
-           printf(  "jHat = %d\n",                  jHat );
-           printf(  "globalArray[%d][%d] = %d\n ",  iHat, jHat, globalArray[iHat][jHat] );
+/*           printf(  "jHat = %d\n",                  jHat ); */
+          printf( "globalArray[%d][%d] = %d\n ", iHat, jHat, globalArray[iHat][jHat] );
 
           }
 
