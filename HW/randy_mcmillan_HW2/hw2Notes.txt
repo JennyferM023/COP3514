@@ -1,0 +1,25 @@
+C89 doesn't have variable length array
+data structures are types
+char smallest addressable primitive
+string is an array of char types
+
+int signed and unsigned
+
+sign bit
+
+
+google integer range c
+
+
+ie signed char  -128 to 127
+
+2^16
+
+
+.
+
+
+unsigned are great for low level development
+
+
+bitwise operators
