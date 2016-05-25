@@ -32,14 +32,14 @@ void myMain()
    printf(  "%c\n",  ch);
    printf(  "LINE 33\n");
   putchar( ch);
-  printf( "LINE \n35\n");
+  printf( "\nLINE 35\n");
   putchar( i);
 
   if ('a' <= ch && ch <= 'z')
     ch = ch - 'm' + 'M';
 
-   printf(  "%s\n",  &ch);
-   printf(  "%c\n",  ch);
+   printf(  "\n%s\n",  &ch);
+   printf(  "%c\n",    ch);
    putchar(  ch);
    putchar(  i);
 
