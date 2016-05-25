@@ -6,6 +6,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+# include <string.h>
 /* preprocessor directive */
 /*Declare some variables, CONSTANTS , etc */
 #define MAX_SIZE 11 /* Generalizing for more dimensions */
@@ -54,6 +55,9 @@ void populateArray() {
 int  iHat;
 int  jHat;
 
+  memset( globalArray, 0, sizeof(globalArray) );
+  /* Common method of priming arrays */
+
   for ( iHat = 0; iHat < globalSide; iHat ++)
       {
 
@@ -63,9 +67,9 @@ int  jHat;
 
       for (jHat = 0; jHat < globalSide; jHat ++)
           {
-           printf(  "jHat = %d\n",             jHat );
 
-           printf(  "globalArray[%d][%d]\n ",  iHat, jHat );
+           printf(  "jHat = %d\n",                  jHat );
+           printf(  "globalArray[%d][%d] = %d\n ",  iHat, jHat, globalArray[iHat][jHat] );
 
           }
 
