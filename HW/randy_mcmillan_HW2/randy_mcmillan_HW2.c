@@ -55,22 +55,16 @@ void populateArray() {
 int  iHat;
 int  jHat;
 
-  memset( globalArray, 0, sizeof(globalArray) );
   /* Common method of priming arrays */
+  memset( globalArray, 0, sizeof(globalArray) );
 
   for ( iHat = 0; iHat < globalSide; iHat ++)
       {
-/* printf(  "\n"); printf(  "iHat = %d\n", iHat ); */
-
+      /* printf(  "\n"); printf(  "iHat = %d\n", iHat ); */
       for (jHat = 0; jHat < globalSide; jHat ++)
           {
-
-/* printf(  "jHat = %d\n", jHat ); */
+          /* printf(  "jHat = %d\n", jHat ); */
           printf( "globalArray[%d][%d] = %d\n", iHat, jHat, globalArray[iHat][jHat] );
-
           }
-
       }
-
-
 } /* populateArray */
