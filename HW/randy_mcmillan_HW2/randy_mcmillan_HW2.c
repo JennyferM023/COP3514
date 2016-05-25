@@ -39,13 +39,16 @@ void inputSide()
 } /* inputSide */
 void checkMAXSize(int localSIZE) {
 
-  if (localSIZE > 11 || localSIZE < 3)
+  if (localSIZE > MAX_SIZE || localSIZE < 3)
      {
+
      printf("Size MUST be less than %d\n", MAX_SIZE );
      inputSide();
+
      }
   else
       {
+
       populateArray();
 
       }
@@ -54,7 +57,7 @@ void populateArray() {
 
   for (int i = 1; i < (globalSide * globalSide + 1); i ++)
       {
-      /* code */
+
       printf("i = %d\n globalSide = %d\n", i, globalSide );
 
       }
