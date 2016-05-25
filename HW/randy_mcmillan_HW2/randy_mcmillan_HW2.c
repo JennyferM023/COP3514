@@ -51,16 +51,16 @@ void checkMAXSize(int localSIZE) {
 } /* checkMAXSize */
 void populateArray() {
 
-int  i;
-int  j;
+int  iHat;
+int  jHat;
 
-  for ( i = 0; i < globalSide; i ++)
+  for ( iHat = 0; iHat < globalSide; iHat ++)
       {
-      printf("i = %d\n", i );
+      printf("iHat = %d\n", iHat );
 
-      for (j = 0; j < globalSide; j ++)
+      for (jHat = 0; jHat < globalSide; jHat ++)
           {
-          printf("j = %d\n", j );
+          printf("jHat = %d\n", jHat );
           /* code */
           }
 
