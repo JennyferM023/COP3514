@@ -121,3 +121,22 @@ int a[10] = {0};
 a is {0,0,0,0,0,0,0,0,0....}
 
 sizeof(a) / sizeof(a[0])
+
+
+i < sizeof(a) / sizeof(a[0])
+
+
+int m[5][9]
+
+5 rows 9 columns
+
+
+array of arrays
+
+rows and columns are good for 2D arrays
+
+m[i][j]
+m[i,j] means m[j]
+
+
+multi dim....next
