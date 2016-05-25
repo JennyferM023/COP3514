@@ -10,7 +10,8 @@
 int  globalSide;
 int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
 /* Declare some functions */
-void myMain();
+void  myMain();
+void  inputSide();
 /*
  *  Entry Point
  */
@@ -23,4 +24,14 @@ int main()
  *  myMain is where things really start
  */
 void myMain()
-{}   /* myMain */
+{
+  inputSide();
+
+}   /* myMain */
+void inputSide()
+{
+
+  printf("Enter size of magic square: " );
+  scanf("%d", &globalSide );
+  printf("%d\n", globalSide );
+} /* inputSide */
