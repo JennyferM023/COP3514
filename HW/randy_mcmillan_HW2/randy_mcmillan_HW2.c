@@ -13,6 +13,7 @@ int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
 void  myMain();
 void  inputSide();
 void  checkMAXSize(int localSIZE);
+void  populateArray();
 /*
  *  Entry Point
  */
@@ -43,5 +44,19 @@ void checkMAXSize(int localSIZE) {
      printf("Size MUST be less than %d\n", MAX_SIZE );
      inputSide();
      }
-  else{}
+  else
+      {
+      populateArray();
+
+      }
 } /* checkMAXSize */
+void populateArray() {
+
+  for (int i = 1; i < (globalSide * globalSide + 1); i ++)
+      {
+      /* code */
+      printf("i = %d\n globalSide = %d\n", i, globalSide );
+
+      }
+
+} /* populateArray */
