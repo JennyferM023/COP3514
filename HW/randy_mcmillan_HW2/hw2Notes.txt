@@ -102,3 +102,22 @@ explicite conversion is done by casting
 
 
 sizeof(int)
+
+
+int a[10];
+
+#define N 10
+
+int a[N]
+
+OVER COUNTINH AND ARRAY COMMON ERROR
+
+
+int a[10] = {1,2,3,4,5,6,7,8,9,10};
+
+
+
+int a[10] = {0};
+a is {0,0,0,0,0,0,0,0,0....}
+
+sizeof(a) / sizeof(a[0])
