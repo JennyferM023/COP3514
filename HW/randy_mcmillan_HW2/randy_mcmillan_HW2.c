@@ -74,14 +74,24 @@ int  jHat;
 
   magicLoop();
 } /* populateArray */
-void magicLoop(/* arguments */) {
+void magicLoop() {
 
 int intValue;
 
-  /* start with 1 to fill first box; globalSide^2 from user */
+int  iHat = globalInitPosX;
+int  jHat = globalInitPosY;
+
+/* Start by placing the number 1 in the middle of row 0 */
+/* start with 1 to fill first box; globalSide^2 from user */
   for ( intValue = 1; intValue <= globalSide * globalSide; intValue ++)
       {
-      /* code */
+      //
+
+
+
       }
+
+
+
 
 } /* magicLoop */
