@@ -12,13 +12,14 @@
 #define MAX_SIZE 11 /* Generalizing for more dimensions */
 int  globalSide;
 int  globalArray[MAX_SIZE][MAX_SIZE]; /* prescribed MAX dimensions 11 x 11 */
-int  initPositionX = MAX_SIZE / 2;/* just priming with max middle of columns */
-int  initPositionY = MAX_SIZE - 1;/* just priming with max last row */
+int  globalInitPosX = MAX_SIZE / 2;/* just priming with max middle of columns */
+int  globalInitPosY = MAX_SIZE - 1;/* just priming with max last row */
 /* Declare some functions */
 int   myMain();
 void  inputSide();
 void  checkMAXSize(int localSIZE);
 void  populateArray();
+void  magicLoop();
 /*
  *  Entry Point
  */
@@ -46,8 +47,9 @@ void checkMAXSize(int localSIZE) {
   if (localSIZE > MAX_SIZE || localSIZE < 3 || localSIZE % 2 == 0) { /*stop*/ }
   else
       {
-
+      /* task continues contingent on MAX_SIZE */
       populateArray();
+      magicLoop();
 
       }
 } /* checkMAXSize */
@@ -57,6 +59,7 @@ int  iHat;
 int  jHat;
 
   /* Common method of priming arrays */
+  /* By setting to 0's we can treat them as "false" later */
   memset( globalArray, 0, sizeof(globalArray) );
 
   for ( iHat = 0; iHat < globalSide; iHat ++)
@@ -68,4 +71,12 @@ int  jHat;
           printf( "globalArray[%d][%d] = %d\n", iHat, jHat, globalArray[iHat][jHat] );
           }
       }
+
+  magicLoop();
 } /* populateArray */
+void magicLoop(/* arguments */) {
+  /* code */
+
+
+
+} /* magicLoop */
