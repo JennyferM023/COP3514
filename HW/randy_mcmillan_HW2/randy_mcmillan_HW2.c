@@ -58,6 +58,16 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
         printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
         }
 
+     if (posX = side && posY == -1) {
+        posX = 0;
+        posY = side - 1;
+        /* move to bottom left corner */
+        intValue ++;
+        array[posX][posY] = intValue;
+        printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
+
+        }
+
      }
   else
       {
