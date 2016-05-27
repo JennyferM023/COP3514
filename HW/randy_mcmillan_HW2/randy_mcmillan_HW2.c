@@ -34,7 +34,6 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
    printf(  "intValue = %d\n",                 intValue );
   array[posX][posY] = intValue;
    printf(  "array[%d][%d] = %d\n",            posX,      posY, array[posX][posY]);
-  //intValue ++;
   posX ++;
   posY --;
 
@@ -51,7 +50,21 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
         }
 
+     if (posX == side) {
+
+        posX = 0;/* move to first column */
+        intValue ++;
+        array[posX][posY] = intValue;
+        printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
+        }
+
      }
+  else
+      {
+
+      printf("non boundary condition posX = %d posY = %d\n", posX, posY );
+
+      }
 
 
 }   /* myMain */
