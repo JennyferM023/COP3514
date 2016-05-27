@@ -94,7 +94,7 @@ int main(
       }
 
   outputMagicSquare(magicArray);
-  printf( "%d\n", sumOfARow(magicArray) );
+  printf( "%d%d\n", 11, sumOfARow(magicArray) );
   return 0;
 } /* main */
 void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
@@ -116,9 +116,17 @@ void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
 } /* printMagicSquare */
 int sumOfARow(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]){
 
+int sum;
+
+  for (i = 0; i < 11; i ++)
+      {
+
+      sum = sum + magicArray[i][0];
+
+      }
 
 //
 //
 
-  return globalSum;
+  return globalSum = 11;
 } /* sumOfARow */
