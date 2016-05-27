@@ -1,3 +1,4 @@
+HW/randy_mcmillan_HW2/HW2xCodeVersion/*
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -44,7 +45,7 @@ Carthage/Build
 
 # fastlane
 #
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
 # https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
@@ -87,4 +88,16 @@ fastlane/screenshots
 *.dSYM/
 *.su
 
+HW/randy_mcmillan_HW2/HW2xCodeVersion/HW2MagicSquares/HW2MagicSquares/main.c
 
+HW/randy_mcmillan_HW2/Magic Square - GeeksforGeeks.pdf
+
+HW/randy_mcmillan_HW2/Magic Square's Program-SjN-o4RQhc0.mkv
+
+ReferenceMaterial/array - Magic Square in C - Code Review Stack Exchange.pdf
+
+ReferenceMaterial/C Program to Solve the Magic Squares Puzzle without using Recursion - Sanfoundry.pdf
+
+ReferenceMaterial/Top 10 Algorithms and Data Structures for Competitive Programming - GeeksforGeeks.pdf
+
+ReferenceMaterial/WRITE A PROGRAM FOR MAGIC SQUARES.pdf
