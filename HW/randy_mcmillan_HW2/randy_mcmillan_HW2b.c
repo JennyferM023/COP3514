@@ -39,7 +39,7 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
 //set square 1 center x,  0 y
   array[posX][posY] = intValue;
-   printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
+   printf( "array[%2d ][%2d ] = %d\n", posX, posY, array[posX][posY]);
 
 //start with 2
   for (intValue = 2; intValue < side * side + 1; intValue ++)
@@ -61,9 +61,9 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
           array[posX][posY] = intValue;
           }
 
-       printf(  "posX = %d, posY = %d\n",  posX,  posY);
-       printf(  "intValue = %d\n",         intValue );
-       printf(  "array[%d][%d] = %d\n",    posX,  posY, array[posX][posY]);
+      //printf(  "posX=%d, posY=%d\n",  posX,  posY);
+      //printf(  "intValue        = %2d \n",  intValue );
+      printf( "array[%2d ][%2d ] = %d\n", posX, posY, array[posX][posY]);
 
       /* populate square */
 
