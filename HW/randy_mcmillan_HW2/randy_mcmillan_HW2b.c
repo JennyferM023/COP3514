@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+
 /* preprocessor directive */
 /* Declare some variables, CONSTANTS , etc */
 void  myMain();
@@ -15,7 +17,7 @@ int   main()
   myMain();
   return 0;
 }   /* main */
-int i, j;
+int i, j, k;
 
 void myMain()
 {
@@ -57,7 +59,10 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
          }
       else
           {
-          posX --;
+          //posX ++;//left
+          //posX --;//above
+          posY ++;//under
+          //posY --;//oob
           array[posX][posY] = intValue;
           }
 
@@ -77,7 +82,10 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
       {
       for(i = 0; i < (side); i ++)
           {
+          //sleep(1);   // sleep for 1 seconds
           printf(" %2d ", array[i][j]);
+          //sleep(1); // sleep for 1 seconds
+
           }
 
       printf("\n");
