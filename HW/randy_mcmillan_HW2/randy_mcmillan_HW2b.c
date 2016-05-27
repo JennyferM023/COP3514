@@ -20,16 +20,64 @@
  * HINT: The only function that needs to return something is the sum magic square function (integer). The other two function don't need to return anything. C is a pass by value language, meaning that it typically can't change the values of arguments in functions. This doesn't apply to arrays because they are references (more in chapter 12). That means one argument in the functions should be a two dimensional array. You will be able to operate on this array.
  */
 #include <stdio.h>
-
-int main(
+#define MAX_SIDELENGTH 11
+int   magicArray[MAX_SIDELENGTH][MAX_SIDELENGTH];
+void  printMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
+int   main(
   int         argc,
   const char  *argv[]
   ) {
   /* Think monolithic... As in BASIC Programming 1991! */
 
+  int  sideLength;
+  int  yPos = 0;
+  int  xPos = sideLength / 2;
+  int  iHat, jHat, sideSquared;
+  printf("Enter size of magic square: ");
+  scanf("%d", &sideLength);
+  yPos = 0;
+  xPos = sideLength / 2;
+  sideSquared = sideLength * sideLength;
 
+  for (iHat = 1; iHat <= sideSquared; iHat ++)
+      {
 
+      magicArray[xPos][yPos] = iHat;
+      printf("%d\n", magicArray[xPos][yPos] );
 
+      if(iHat % sideLength == 0) { yPos ++; }
+      else
+          {
 
+          if (yPos == 0) {
+
+             yPos ++;
+
+             }
+          else
+              {
+
+              yPos --;
+
+              }
+
+          if( xPos == (sideLength - 1) ) { xPos = 0; }
+          else
+              {
+
+              xPos ++;
+
+              }
+
+          }
+
+      }
+
+  printMagicSquare(magicArray);
   return 0;
 } /* main */
+/*
+ *
+ *
+ */
+void printMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {}
