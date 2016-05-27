@@ -32,42 +32,44 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
   posY = initPosY;
    printf(  "posX = %d, posY = %d\n",          posX,      posY);
    printf(  "intValue = %d\n",                 intValue );
+
+//
   array[posX][posY] = intValue;
-   printf(  "array[%d][%d] = %d\n",            posX,      posY, array[posX][posY]);
+   printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
   posX ++;
   posY --;
 
-  for (intValue = 1; intValue < side * side; intValue ++)
+  for (intValue = 2; intValue < side * side; intValue ++)
       {
 
       /* populate square */
       if (posX >= side || posY <= -1 ) {
          printf("boundary condition posX = %d posY = %d\n", posX, posY );
 
-         if (posY == -1 && posX != side)
-            {
-            posY = side - 1;/*adjusts for array index */
-            intValue ++;
-            array[posX][posY] = intValue;
-            printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
-            }
-
-         if (posX == side && posY != -1)
-            {
-            posX = 0;/* move to first column */
-            intValue ++;
-            array[posX][posY] = intValue;
-            printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
-            }
-
          if (posX == side && posY == -1)
             {
             posX = 0;
             posY = side - 1;
             /* move to bottom left corner */
-            intValue ++;
             array[posX][posY] = intValue;
             printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
+            break;
+            }
+
+         if (posY == -1 && posX != side)
+            {
+            posY = side - 1;/*adjusts for array index */
+            array[posX][posY] = intValue;
+            printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
+            break;
+            }
+
+         if (posX == side && posY != -1)
+            {
+            posX = 0;/* move to first column */
+            array[posX][posY] = intValue;
+            printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
+            break;
             }
 
          }
@@ -78,9 +80,9 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
            printf(  "array[%d][%d] = %d\n",                  posX,  posY, array[posX][posY]);
           posX ++;
           posY --;
-
-
+          break;
           }
+
       }
 
 
