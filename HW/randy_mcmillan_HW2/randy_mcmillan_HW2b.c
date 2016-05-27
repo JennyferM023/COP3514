@@ -27,8 +27,10 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
   printf("Enter side length of magic square: " );
   scanf("%d", &side );
-  initPosX = (side / 2);/* array starts with 0 */
-  initPosY = 0;
+  //initPosX = (side / 2);/* array starts with 0 */
+  //initPosY = 0;
+  initPosX = 0;/* array starts with 0 */
+  initPosY = (side / 2);
    printf(  "initPosX = %d (+), initPosY = %d (+)\n",  initPosX,  initPosY);
   posX = initPosX;
   posY = initPosY;
