@@ -89,62 +89,41 @@ void populateArray() {
 } /* populateArray */
 
 int magicLoop() {
-    printf(  "LINE: 82 X = %d\n",  globalInitPosX);
-    printf(  "LINE: 83 Y = %d\n",  globalInitPosY);
+    printf(  "LINE: 92 X = %d ",  globalInitPosX);
+    printf(  "Y = %d\n\n\n",  globalInitPosY);
     
     int  intValue;
-    int  iHat = globalInitPosX;
-    int  jHat = globalInitPosY;
+    int  iHat = globalSide/2;//globalInitPosX;
+    int  jHat = 0;//globalInitPosY;
     
     /* Start by placing the number 1 in the middle of row 0 */
     /* start with 1 to fill first box; globalSide^2 from user */
     
-    for ( intValue = 0; intValue <= globalSide * globalSide; intValue ++)
+    for ( intValue = 1; intValue <= globalSide * globalSide; intValue ++)
     {
-        printf(  "LINE: 94 intValue =  %d\n",         intValue );
-        printf(  "LINE: 95 iHat = %d jHat = %d\n\n",  iHat, jHat );
+        //printf(  "LINE: 104 intValue =  %d\n",         intValue );
+        //printf(  "LINE: 105 iHat = %d jHat = %d\n\n",  iHat, jHat );
+        //printf("LINE: 106 globalArray[%d][%d] = %d\n",iHat,jHat,globalArray[iHat][jHat]);
         
-        // start with 1 and intValue less than or equal to globalSide^2
-        for (intValue = 1; intValue <= (globalSide * globalSide); )
-        {
-            /*
-             * if (iHat == -1 && jHat == globalSide)
-             * //if x is out of bounds and y is max value
-             * {
-             * jHat = globalSide - 2;//down 2
-             * //iHat = 0;
-             * printf("LINE: 104 iHat = %d jHat = %d\n", iHat, jHat );
-             * }
-             *
-             * else
-             * {
-             *
-             * //if not zero
-             * if (globalArray[iHat][jHat] != 0)
-             *   {
-             *   jHat --;
-             *   //iHat;
-             *   printf("LINE: 115 iHat = %d jHat = %d\n", iHat, jHat );
-             *   continue;
-             *   }
-             * else
-             *    {
-             *     printf(  "LINE: 119 intValue = %d\n",              intValue );
-             *     printf(  " globalArray[%d][%d] = %d\n\n\n",        iHat, jHat, intValue );
-             *    globalArray[iHat][jHat] = intValue ++;
-             *     printf(  "LINE: 121 intValue = %d\n",              intValue );
-             *    jHat ++;
-             *    //iHat ++;
-             *     printf(  "LINE: 123 iHat = %d jHat = %d\n",        iHat,  jHat );
-             *     printf(  "LINE: 124 globalArray[%d][%d] =  %d\n",  iHat,  jHat, globalArray[iHat][jHat] );
-             *    }
-             *
-             * }
-             */
+        if (globalArray[iHat][jHat] == 0){
+            
+            printf(  "LINE: 110 globaArray[%d][%d] = %d, intValue =  %d, x = %d, y = %d\n", iHat,jHat, globalArray[iHat][jHat], intValue,iHat+1,jHat +1 );
+            globalArray[iHat][jHat] = intValue;
+            printf(  "LINE: 112 globaArray[%d][%d] = %d, intValue =  %d, x = %d, y = %d\n\n\n", iHat,jHat, globalArray[iHat][jHat], intValue,iHat+1,jHat +1 );
+            jHat--;
+            
+            if (jHat < 0){
+            printf(  "LINE: 116 globaArray[%d][%d] = %d, intValue =  %d, x = %d, y = %d\n", iHat,jHat, globalArray[iHat][jHat], intValue,iHat+1,jHat +1 );
+                jHat = globalSide;
+                globalArray[iHat][jHat] = intValue++;
+            printf(  "LINE: 119 globaArray[%d][%d] = %d, intValue =  %d, x = %d, y = %d\n\n\n", iHat,jHat, globalArray[iHat][jHat], intValue,iHat+1,jHat +1 );
+                
+            }
+            
         }
+            intValue ++;
         
-        intValue ++;
-        printf("LINE: 131 intValue = %d\n", intValue );
+        //printf("LINE: 113 intValue = %d\n", intValue );
     }
     
     return 0;
