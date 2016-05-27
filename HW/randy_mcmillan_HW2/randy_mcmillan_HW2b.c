@@ -27,10 +27,10 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
   printf("Enter side length of magic square: " );
   scanf("%d", &side );
-  //initPosX = (side / 2);/* array starts with 0 */
-  //initPosY = 0;
-  initPosX = 0;/* array starts with 0 */
-  initPosY = (side / 2);
+  initPosX = (side / 2);/* array starts with 0 */
+  initPosY = 0;
+  //initPosX = 0;/* array starts with 0 */
+  //initPosY = (side / 2);
    printf(  "initPosX = %d (+), initPosY = %d (+)\n",  initPosX,  initPosY);
   posX = initPosX;
   posY = initPosY;
@@ -42,17 +42,24 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
    printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
 
 //start with 2
-  for (intValue = 2; intValue < side * side; intValue ++)
+  for (intValue = 2; intValue < side * side + 1; intValue ++)
       {
       posX ++;
       posY --;
 
       //boundary conditions
-      if ( posX > (side - 0) ) { posX = 0; }
+      if ( posX > side - 1 ) { posX = 0; }
 
       if ( posY < 0 ) { posY = side - 1; }
 
-      array[posX][posY] = intValue;
+      if (array[posX][posY] == 0) {
+         array[posX][posY] = intValue;
+         }
+      else
+          {
+          posY ++;
+          array[posX][posY] = intValue;
+          }
 
        printf(  "posX = %d, posY = %d\n",  posX,  posY);
        printf(  "intValue = %d\n",         intValue );
@@ -66,9 +73,9 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
 //  int i, j;
 
-  for(i = 0; i < (side); i ++)
+  for(j = 0; j < (side); j ++)
       {
-      for(j = 0; j < (side); j ++)
+      for(i = 0; i < (side); i ++)
           {
           printf("%d ", array[i][j]);
           }
