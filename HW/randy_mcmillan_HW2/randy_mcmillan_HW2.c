@@ -57,7 +57,7 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
         printf( "array[%d][%d] = %d\n", posX, posY, array[posX][posY]);
         }
 
-     if (posX = side && posY == -1)
+     if (posX == side && posY == -1)
         {
         posX = 0;
         posY = side - 1;
