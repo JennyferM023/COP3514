@@ -54,13 +54,15 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
       if ( posY < 0 ) { posY = side - 1; }
 
-      if (array[posX][posY] == 0) {
+      /* if NOT as in zero */
+      if (!array[posX][posY]) {
          array[posX][posY] = intValue;
          }
       else
           {
           //posX ++;//left
           //posX --;//above
+          posY ++;//under
           posY ++;//under
           //posY --;//oob
           array[posX][posY] = intValue;
