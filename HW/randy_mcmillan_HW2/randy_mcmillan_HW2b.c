@@ -94,7 +94,7 @@ int main(
       }
 
   outputMagicSquare(magicArray);
-  sumOfARow(magicArray);
+  printf( "%d\n", sumOfARow(magicArray) );
   return 0;
 } /* main */
 void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
