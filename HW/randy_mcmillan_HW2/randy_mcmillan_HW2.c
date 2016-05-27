@@ -41,7 +41,7 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
   if (posX >= side || posY <= -1 ) {
      printf("boundary condition posX = %d posY = %d\n", posX, posY );
 
-     if (posY == -1) {
+     if (posY == -1 && posX != side) {
 
         posY = side - 1;/*adjusts for array index */
         intValue ++;
@@ -50,7 +50,7 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
 
         }
 
-     if (posX == side) {
+     if (posX == side && posY != -1) {
 
         posX = 0;/* move to first column */
         intValue ++;
