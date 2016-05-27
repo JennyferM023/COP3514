@@ -23,6 +23,8 @@ void myMain()
 {
 
 int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
+    memset( array, 0, sizeof(array) );
+
   /* I want you to use functions for this project. I would like you to separately declare and define 3 separate functions. One for creating the magic square and putting it in the two dimensional array. */
   memset( array, 0, sizeof(array) );
   intValue = 1;
@@ -33,48 +35,36 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
   initPosY = 0;
   //initPosX = 0;/* array starts with 0 */
   //initPosY = (side / 2);
-   printf(  "initPosX = %d (+), initPosY = %d (+)\n",  initPosX,  initPosY);
+   printf(  "initPosX = %d, initPosY = %d \n",  initPosX,  initPosY);
   posX = initPosX;
   posY = initPosY;
    printf(  "posX = %d, posY = %d\n",                  posX,      posY);
-   printf(  "intValue = %d\n",                         intValue );
+   printf(  "intValue = %d\n\n\n",                         intValue );
 
-//set square 1 center x,  0 y
-  array[posX][posY] = intValue;
-   printf( "array[%2d ][%2d ] = %d\n", posX, posY, array[posX][posY]);
 
-//start with 2
-  for (intValue = 2; intValue < side * side + 1; intValue ++)
+
+//start with 1
+  for (intValue = 1; intValue < side * side + 1; intValue ++)
       {
-      posX ++;
-      posY --;
 
-      //boundary conditions
-      if ( posX > side - 1 ) { posX = 0; }
+          printf( "array[%2d ][%2d ] = %d\n", posX, posY, array[posX][posY]);
+          //printf( "!array[%2d ][%2d ] = %d\n", posX, posY, !array[posX][posY]);
 
-      if ( posY < 0 ) { posY = side - 1; }
-
-      /* if NOT as in zero */
+      /* if 0 */
       if (!array[posX][posY]) {
-         array[posX][posY] = intValue;
-         }
-      else
-          {
-          //posX ++;//left
-          //posX --;//above
-          posY ++;//under
-          posY ++;//under
-          //posY --;//oob
-          array[posX][posY] = intValue;
-          }
-
-      //printf(  "posX=%d, posY=%d\n",  posX,  posY);
-      //printf(  "intValue        = %2d \n",  intValue );
-      printf( "array[%2d ][%2d ] = %d\n", posX, posY, array[posX][posY]);
-
-      /* populate square */
-
-
+      
+          
+          array[posX][posY]= intValue;
+          printf( "array[%2d ][%2d ] = %d\n\n\n", posX, posY, array[posX][posY]);
+          posX++,posY--;
+      
+      }
+      else{
+      
+          printf("not 0");
+          printf( "else array[%2d ][%2d ] = %d\n", posX, posY, array[posX][posY]);
+      
+      }
 
       }
 

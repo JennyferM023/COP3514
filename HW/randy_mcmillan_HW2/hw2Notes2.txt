@@ -1,0 +1,162 @@
+int x = 10
+int a[x]
+
+We can use variable sized arrays!
+NOT dynamic arrays!
+
+
+m[i][j][k];
+
+#define N 10
+
+double indent[N][N]
+
+int row,col;
+
+for (row = 0; row < N; row++)
+for (row = 0; row < N; col++)
+  if (row == col)
+  ident[row][col] = 1.0;
+  else
+  ident[row][col] = 0.0;
+
+
+int m[5][9] = {{1,1,1,1,1,1,1},{1,1,1,1,1,1},{...}}
+
+const char hex_char[] = {'o','1','2'};
+//
+
+//
+
+"DRY" =
+
+return-type function-name (parameters)
+{
+declarations
+statements
+}
+
+//
+
+variable length function lookup
+
+one return type in C
+
+
+//
+
+
+double average(double a, double b){
+
+return (a+b)/2;
+
+}
+
+exit returns main and ends program
+
+
+//
+
+interface is how you access code
+
+implementation is what happens in the body
+
+prinf returns amount of characters scanf ditto
+
+
+numchars = printf("  ",var)
+
+//
+
+
+//
+
+Correctness
+Design
+Documentation
+efficientcy
+
+pass by value is C
+value IS COPIED IN or THE VALUE OF THE POINTER IN
+
+as opposed to pass by reference
+
+that is why arrays are pinters
+
+they can have values passed into them and they are modifide
+
+
+//
+
+
+int f(int a[]){
+
+..
+
+}
+
+//
+
+int sumArrat(int a[],int n){
+
+
+int i; sum =0;
+for (i=0; i<n; i++)
+  sum += a[i];
+  return sum;
+}
+...
+
+
+#define LEN 100
+int main(void)
+{
+
+int b[LEN], total;
+total = sum_Array(b,LEN);
+
+}
+
+
+
+total = sum_Array(b,50);
+
+
+
+
+}
+
+
+von neuman design?
+
+
+//
+
+
+return in a void function is a good way to end a functions
+use to break out of loop or break out of functions
+
+
+exit(0);
+
+exit(EXIT_SUCESS);
+exit(EXIT_FAILURE);
+
+
+recursion...
+
+int fact(int n) {
+
+if(n<= 1)
+  return 1;
+else
+  return n * fact(n-1);
+}
+
+//
+
+
+//
+
+
+master theorum solve for runtime ...
