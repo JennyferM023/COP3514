@@ -21,37 +21,52 @@
  */
 #include <stdio.h>
 #define MAX_SIDELENGTH 11
-int   magicArray[MAX_SIDELENGTH][MAX_SIDELENGTH];
-void  printMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
-int   main(
+/* Store the magic square in a two dimensional array. */
+int magicArray[MAX_SIDELENGTH][MAX_SIDELENGTH];
+/*  I would like you to separately declare and define 3 separate functions. */
+void  outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
+int   sumOfARow(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
+int   globalSum;
+/**/
+int  iHat, jHat, sideSquared;
+int  globalSideLength;
+int  yPos, xPos;
+
+int main(
   int         argc,
   const char  *argv[]
   ) {
   /* Think monolithic... As in BASIC Programming 1991! */
 
-  int  sideLength;
-  int  yPos = 0;
-  int  xPos = sideLength / 2;
-  int  iHat, jHat, sideSquared;
   printf("Enter size of magic square: ");
-  scanf("%d", &sideLength);
+  scanf("%d", &globalSideLength);
   yPos = 0;
-  xPos = sideLength / 2;
-  sideSquared = sideLength * sideLength;
+  xPos = globalSideLength / 2;
+  /* Start by placing the number 1 in the middle of row 0. */
+  sideSquared = globalSideLength * globalSideLength;
 
+/* Place each of the remaining numbers 2, 3, ... , n2 by moving up one row and over one column. */
   for (iHat = 1; iHat <= sideSquared; iHat ++)
       {
 
       magicArray[xPos][yPos] = iHat;
-      printf("%d\n", magicArray[xPos][yPos] );
 
-      if(iHat % sideLength == 0) { yPos ++; }
+      /* printf("%d\n", magicArray[xPos][yPos] ); */
+      /* Any attempt to go outside the bounds of the array
+       * should "wrap around" to the opposite side of the array.
+       */
+      if(iHat % globalSideLength == 0)
+         {
+
+         yPos ++;
+
+         }
       else
           {
 
           if (yPos == 0) {
 
-             yPos ++;
+             yPos = globalSideLength - 1;
 
              }
           else
@@ -61,7 +76,12 @@ int   main(
 
               }
 
-          if( xPos == (sideLength - 1) ) { xPos = 0; }
+          if( xPos == (globalSideLength - 1) )
+             {
+
+             xPos = 0;
+
+             }
           else
               {
 
@@ -73,11 +93,32 @@ int   main(
 
       }
 
-  printMagicSquare(magicArray);
+  outputMagicSquare(magicArray);
+  sumOfARow(magicArray);
   return 0;
 } /* main */
-/*
- *
- *
- */
-void printMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {}
+void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
+
+  for(jHat = 0; jHat < (globalSideLength); jHat ++)
+      {
+
+      for(iHat = 0; iHat < (globalSideLength); iHat ++)
+          {
+
+          printf(" %3d ", array[iHat][jHat]);
+
+          }
+
+      printf("\n");
+
+      }
+
+} /* printMagicSquare */
+int sumOfARow(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]){
+
+
+//
+//
+
+  return globalSum;
+} /* sumOfARow */
