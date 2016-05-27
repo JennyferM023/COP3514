@@ -57,7 +57,7 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
          }
       else
           {
-          posY ++;
+          posX --;
           array[posX][posY] = intValue;
           }
 
@@ -77,7 +77,7 @@ int side, initPosX, initPosY, posX, posY, intValue, array[11][11];
       {
       for(i = 0; i < (side); i ++)
           {
-          printf("%d ", array[i][j]);
+          printf(" %2d ", array[i][j]);
           }
 
       printf("\n");
