@@ -102,7 +102,6 @@ int main(
       }
 
   outputMagicSquare(magicArray);
-  // printf(  "te3st\n");
   printf( "Sum of Magic Numbers: %d\n", sumOfARow(magicArray) );
   return 0;
 } /* main */
@@ -132,13 +131,9 @@ int  iHat;
       {
       for ( jHat = 0; jHat < globalSideLength; jHat ++)
           {
-          //printf("%d\n", magicArray[iHat][0] );
           sum = sum + magicArray[iHat][0];
           }
       }
-
-//
-//
 
   return globalSum = sum;
 } /* sumOfARow */
