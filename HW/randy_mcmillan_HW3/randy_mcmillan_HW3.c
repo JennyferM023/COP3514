@@ -11,7 +11,7 @@
 */
 #include <stdio.h>
 
-int main()
+int main(int argc, const char * argv[])
 {
-  return0;
+  return 0;
 }
