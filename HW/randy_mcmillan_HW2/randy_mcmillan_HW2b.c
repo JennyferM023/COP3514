@@ -25,7 +25,7 @@
 int magicArray[MAX_SIDELENGTH][MAX_SIDELENGTH];
 /*  I would like you to separately declare and define 3 separate functions. */
 void  outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
-int   sumOfARow(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
+int   sumOfTheBox(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]);
 int   globalSum;
 /**/
 int  iHat, jHat, sideSquared;
@@ -102,7 +102,7 @@ int main(
       }
 
   outputMagicSquare(magicArray);
-  printf( "Sum of Magic Numbers: %d\n", sumOfARow(magicArray) );
+  printf( "Sum of Magic Numbers: %d\n", sumOfTheBox(magicArray) );
   return 0;
 } /* main */
 void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
@@ -122,7 +122,7 @@ void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
       }
 
 } /* printMagicSquare */
-int sumOfARow(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]){
+int sumOfTheBox(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]){
 
 int  sum = 0;
 int  iHat;
@@ -136,4 +136,4 @@ int  iHat;
       }
 
   return globalSum = sum;
-} /* sumOfARow */
+} /* sumOfTheBox */
