@@ -42,7 +42,7 @@ int main(
   scanf("%d", &globalSideLength);
   printf(" \n");
 
-  if(globalSideLength % 2 == 0) {
+  if(globalSideLength % 2 == 0 || globalSideLength > MAX_SIDELENGTH) {
 
      printf("Invalid Input: %d\n", globalSideLength );
      return 0;
