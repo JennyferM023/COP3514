@@ -38,8 +38,16 @@ int main(
   ) {
   /* Think monolithic... As in BASIC Programming 1991! */
 
-  printf("Enter size of magic square: ");
+  printf("\n\nEnter size of magic square: ");
   scanf("%d", &globalSideLength);
+  printf(" \n");
+
+  if(globalSideLength % 2 == 0) {
+
+     printf("Invalid Input: %d\n", globalSideLength );
+     return 0;
+     }
+
   yPos = 0;
   xPos = globalSideLength / 2;
   /* Start by placing the number 1 in the middle of row 0. */
