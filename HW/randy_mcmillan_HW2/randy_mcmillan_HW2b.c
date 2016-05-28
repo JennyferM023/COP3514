@@ -94,7 +94,8 @@ int main(
       }
 
   outputMagicSquare(magicArray);
-  printf( "%d%d\n", 11, sumOfARow(magicArray) );
+  // printf(  "te3st\n");
+  printf( "Sum of Magic Numbers: %d\n", sumOfARow(magicArray) );
   return 0;
 } /* main */
 void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
@@ -109,24 +110,27 @@ void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
 
           }
 
-      printf("\n");
+      printf(" \n\n");
 
       }
 
 } /* printMagicSquare */
 int sumOfARow(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]){
 
-int sum;
+int  sum = 0;
+int  iHat;
 
-  for (i = 0; i < 11; i ++)
+  for (iHat = 0; iHat < globalSideLength; iHat ++)
       {
-
-      sum = sum + magicArray[i][0];
-
+      for ( jHat = 0; jHat < globalSideLength; jHat ++)
+          {
+          //printf("%d\n", magicArray[iHat][0] );
+          sum = sum + magicArray[iHat][0];
+          }
       }
 
 //
 //
 
-  return globalSum = 11;
+  return globalSum = sum;
 } /* sumOfARow */
