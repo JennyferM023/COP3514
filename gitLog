@@ -1,0 +1,1382 @@
+commit 0b0ef75e60ade4b3c519363b967d20a3041be6e3
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sun May 29 19:17:17 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+    
+     Untracked files:
+    	../../gitLog
+
+commit db0b4f83c03f1212deccaa4b446156d812853434
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sun May 29 11:46:40 2016 -0400
+
+     Changes to be committed:
+    	modified:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2b.c
+
+commit 13574b4c8e4bc90721caefbd94e03cce0a9241e9
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sun May 29 11:30:27 2016 -0400
+
+     Changes to be committed:
+    	modified:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2b.c
+
+commit d243dd2f155143d0a00bd3ae8940d0eddd75f4fe
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sun May 29 11:24:47 2016 -0400
+
+     Changes to be committed:
+    	modified:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2b.c
+
+commit 3563113f2fbfc8722ad4352af1447701033e14f0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 28 00:39:10 2016 -0400
+
+     Changes to be committed:
+    	new file:   HW/randy_mcmillan_HW2/hw2.xcodeproj
+    	new file:   HW/randy_mcmillan_HW3/hw3.xcodeproj
+    	modified:   HW/randy_mcmillan_HW3/randy_mcmillan_HW3.c
+    	new file:   HW/uncrustify.cfg
+    	new file:   uncrustify.cfg
+
+commit bb5426968f94be1ad78befe6fb37d469df15b68c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 28 00:06:52 2016 -0400
+
+     Changes to be committed:
+    	deleted:    HW2xCodeVersion/HW2MagicSquares/HW2MagicSquares.xcodeproj/project.pbxproj
+    	renamed:    randy_mcmillan_HW2b/randy_mcmillan_HW2b.xcodeproj/project.pbxproj -> hw2/hw2.xcodeproj/project.pbxproj
+    	new file:   hw2b.c
+    	deleted:    main/main.xcodeproj/project.pbxproj
+    	deleted:    main/main/main.c
+    	deleted:    randy_mcmillan_HW2
+
+commit 205b722ab3db8c5d9f7a99af4493c39c19936f4b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 28 00:02:25 2016 -0400
+
+     Changes to be committed:
+    	new file:   hw6.c
+    	renamed:    randy_mcmillan_HW#.c -> randy_mcmillan_HW6.c
+
+commit 334b30dc079f3b86b5054f42f40373bac91f2438
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 28 00:01:23 2016 -0400
+
+     Changes to be committed:
+    	modified:   HW/randy_mcmillan_HW#.c
+    	modified:   HW/randy_mcmillan_HW3/randy_mcmillan_HW3.c
+    	new file:   HW/randy_mcmillan_HW4/hw4/hw4.xcodeproj/project.pbxproj
+    	modified:   HW/randy_mcmillan_HW4/randy_mcmillan_HW4.c
+    	modified:   HW/randy_mcmillan_HW5/randy_mcmillan_HW5.c
+    	modified:   HW/randy_mcmillan_HW6/randy_mcmillan_HW#.c
+
+commit c83ed0d8f0b032f40bc54f18a98fbc36b215c47b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 23:55:56 2016 -0400
+
+     Changes to be committed:
+    	new file:   HW/randy_mcmillan_HW3/hw3/hw3.xcodeproj/project.pbxproj
+    	modified:   HW/randy_mcmillan_HW3/randy_mcmillan_HW3.c
+
+commit 98c4beaf8dc865b8397d5b84c28e9535b609742a
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 23:52:51 2016 -0400
+
+    	new file:   HW/randy_mcmillan_HW3/hw3.c
+    renamed:    HW/randy_mcmillan_HW3/randy_mcmillan_HW#.c -> HW/randy_mcmillan_HW3/randy_mcmillan_HW3.c
+    	new file:   HW/randy_mcmillan_HW4/hw4.c
+    	renamed:    HW/randy_mcmillan_HW4/randy_mcmillan_HW#.c -> HW/randy_mcmillan_HW4/randy_mcmillan_HW4.c
+    	new file:   HW/randy_mcmillan_HW5/hw5.c
+    	renamed:    HW/randy_mcmillan_HW5/randy_mcmillan_HW#.c -> HW/randy_mcmillan_HW5/randy_mcmillan_HW5.c
+
+commit 17764bc941f571f23d4462549a25fb48c2fc4abf
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 23:50:32 2016 -0400
+
+     Changes to be committed:
+    	new file:   HW/randy_mcmillan_HW10/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW3/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW4/randy_mcmillan_HW#.c
+    	deleted:    HW/randy_mcmillan_HW4/randy_mcmillan_HW5
+    	new file:   HW/randy_mcmillan_HW5/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW6/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW7/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW8/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW9/randy_mcmillan_HW#.c
+
+commit d8db50979c5d2cf3c5fe0d0d9a3620ccd0ae117d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 23:48:03 2016 -0400
+
+     Changes to be committed:
+    	new file:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2
+    	modified:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2b.c
+    	new file:   HW/randy_mcmillan_HW4/randy_mcmillan_HW5
+    	new file:   ReferenceMaterial/C - How to format strings using printf() to get equal length in the output? - Stack Overflow.pdf
+    	new file:   ReferenceMaterial/C Help Magic Square - C : C++.pdf
+    	new file:   hw10
+    	new file:   hw2
+    	new file:   hw3
+    	new file:   hw4
+    	new file:   hw5
+    	new file:   hw6
+    	new file:   hw7
+    	new file:   hw8
+    	new file:   hw9
+
+commit 8e8b5322b9fde3aff91df3ea1e97e493ca2cc73c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 20:17:28 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 96d87448a02834b8ef651d99f78c1eb21af4c949
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 20:14:13 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 2c5524106d9c9d9b3d70d43e07cfeb893b1f08f0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 20:13:02 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit a7555275ca86260f2c532f86984ea77a1729da94
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 20:06:40 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 861d028f21353e675dba58da1fe29e38e446a7f6
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 19:55:30 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 966f7ed9b87cb8abbaac20206bbe91086ab3dc0c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 19:47:50 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit bae4ca83e494fcdaf04b8ea9cdeb3c5f99794b96
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 19:34:16 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit d201b4123dcbc6130b139f58b07bbae945b09071
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 18:32:18 2016 -0400
+
+    dang...first part working....
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 89e628c38008ee1ce96532338d8fbb2b23f953bd
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 17:33:33 2016 -0400
+
+     Changes to be committed:
+    	new file:   main/main.xcodeproj/project.pbxproj
+    	new file:   main/main/main.c
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 713397598f3607a518e47c60c4d6ba90d8910256
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 16:04:40 2016 -0400
+
+     Changes to be committed:
+    	new file:   hw2Notes2.txt
+    	modified:   randy_mcmillan_HW2b.c
+    	new file:   randy_mcmillan_HW2b/randy_mcmillan_HW2b.xcodeproj/project.pbxproj
+    
+     Untracked files:
+    	../../ReferenceMaterial/C - How to format strings using printf() to get equal length in the output? - Stack Overflow.pdf
+    	../../ReferenceMaterial/C Help Magic Square - C : C++.pdf
+
+commit 9a800e6a82b4b8bb1038b72c67150be9e8d80726
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 11:47:57 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 54123368b9e7ce8e56c09ecf8de07fbdd9900cbc
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 11:14:16 2016 -0400
+
+    ...
+
+commit 5c10c3dab3d60371444444b1e6474c5c552fb4ef
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 10:38:19 2016 -0400
+
+    getting closer
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 5e38f13483d7bcc3f4f9647228fe9f6cebace641
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 10:29:50 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit d55d9c41aad72b04abb352f25353c577698f8ba0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 10:05:54 2016 -0400
+
+    I just need to tweak the pattern
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 12685a052b1c1baa5550a45f66f7a1a6f995c9a0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 09:42:08 2016 -0400
+
+    at least 1 starts in the right place
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit b8b0a1c130e3055b4faaf4596f83021d3435c6e4
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 09:37:35 2016 -0400
+
+    basic idea - need to refine
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2b.c
+
+commit 9ea1dbaf3cad1c7fa6b5d8873a7043e055464e17
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 09:11:36 2016 -0400
+
+     Changes to be committed:
+    	renamed:    randy_mcmillan_HW2.c -> randy_mcmillan_HW2a.c
+    	new file:   randy_mcmillan_HW2b.c
+
+commit 8d47689b9e84767a785e545d1a80f5a7ec11a99f
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 07:43:57 2016 -0400
+
+     Changes to be committed:
+    	new file:   pattern1.pdf
+
+commit c7b4b6d46d694c8d46e711ad5d7cea89e80b3b0e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 07:38:22 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 769ab4a8f86b446ab78650d1943fefac29181262
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 07:19:44 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 043a057c69eeef3f8f90136676b96ba0c734eb08
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 07:06:01 2016 -0400
+
+    	modified:   randy_mcmillan_HW2.c
+
+commit 6117e3e5e226f5ca605bfe1dafb166e7456d2172
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:54:50 2016 -0400
+
+    begin for loop boundary conditions defined
+    	modified:   randy_mcmillan_HW2.c
+
+commit dbf7f2ff0689cb9e24c47bac6c202ac4f013abf5
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:48:13 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit bf07d9e22125e8f03068de75a9f3703db4b4bea2
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:46:53 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit a28ee403abc8c56cb09464cbf50b89702103c939
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:43:05 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 289ca142cdaec24a8d9271bd4571f79565e791a7
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:37:49 2016 -0400
+
+    boundary / non boundary conditons
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 85065593083e30d3fd4669ab098140a010029a39
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:28:02 2016 -0400
+
+     Changes to be committed:
+    	new file:   Math Forum: Allan Adler - What is a Magic Square?.pdf
+
+commit efe3a6636e0031cdfaa7876046cbe85c921ae0e0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:27:06 2016 -0400
+
+     Changes to be committed:
+    	new file:   Magic square - Wikipedia, the free encyclopedia.pdf
+
+commit c3aebd088065ffd8989a5e9af99b2f237754efbf
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:26:29 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 5511244482fb6276ed13dac7659127a822ac34e4
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 06:20:10 2016 -0400
+
+    	modified:   .gitignore
+    	deleted:    HW/randy_mcmillan_HW2/HW2xCodeVersion/HW2MagicSquares/HW2MagicSquares/main.c
+    	modified:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2.c
+
+commit 3ece68e2e3ceb29d7c507d7374bebe115769eeeb
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 27 00:06:56 2016 -0400
+
+    gotta rethink this thing....
+     Changes to be committed:
+    	modified:   HW2xCodeVersion/HW2MagicSquares/HW2MagicSquares/main.c
+
+commit 1f48e7a6a51c325bb5d3fcba09a132f35c6792a8
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 26 22:27:48 2016 -0400
+
+     Changes to be committed:
+    	deleted:    COP3514
+    	new file:   HW/randy_mcmillan_HW2/HW2xCodeVersion/HW2MagicSquares/HW2MagicSquares.xcodeproj/project.pbxproj
+    	new file:   HW/randy_mcmillan_HW2/HW2xCodeVersion/HW2MagicSquares/HW2MagicSquares/main.c
+    	modified:   HW/randy_mcmillan_HW2/randy_mcmillan_HW2.c
+    	deleted:    Program-Design-COP3514
+    	deleted:    ProgramDesign
+
+commit 0a78d1b4449112703a383529471cce535081d6bd
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 26 00:42:03 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 49ed5490b6bf86e8277a311ee4e23dccc3d2ee0c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 20:25:22 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 2d1ba1cf31ae7e9e7fece9d7bc287f72f6cc0e78
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 20:12:12 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit e46b4073528f4fb926956af6e65d4a6e2bef581f
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 19:41:02 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit f397cbe61d716bb7875eff3a8e59e1ca7da7dd72
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 19:29:24 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 1dd756f7039272934c18132e673390b13e7b6ad9
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 19:09:14 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 834cfe1e96529cbcb9fe04f1e7544eb166d82737
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 19:04:33 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit e3b605d70a8505acafe32abf9127bc79b3c34cef
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 19:01:44 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit b3b6a82a002720d5802fc3aaf67901836e9014db
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:59:24 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit aedaf0c52ce663411b4d74243c1ddcf6f882966b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:57:14 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 6975920f9c5f39b09761942fb59a0537c4e87c63
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:40:41 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit cf2827edd615f48b65513a621d94b6244b129e7a
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:34:50 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 98e54d0b5011d173d5a7a77502c8e0b9a602d094
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:31:19 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit a7b339856954b7838d3bdbd064f9887d77e035c0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:29:03 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit f9ac446917ff4a3a851877d8a0e8706bc0629f66
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 18:27:09 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit c87cda75f6a94d39074b3b96a6ed5bc24182a9e4
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 17:57:09 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit eb05aeab41be3f6ad5f59e0451dd69dc7dcd297e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 16:57:00 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 0a2e464ad6cc362cc9eb06a82b277181b9713797
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 16:53:44 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit ae5387b0ded01db9c18e40af7de324affe6fae62
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 16:40:16 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit abe79f0e7837370cdbf06c551679961fcc10f674
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 16:28:34 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit 348e0d6c28ea842aaa676bc6e3c3366f11160dda
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 16:20:03 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW2.c
+
+commit cc10c51a6711f79f37f73a6551351cdcaf137407
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 16:18:30 2016 -0400
+
+     Changes to be committed:
+    	new file:   Homework 2.pdf
+    	modified:   randy_mcmillan_HW2.c
+
+commit cd3eb9885ea3e58db448ab5f015f7ec03e16e8f8
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 13:44:21 2016 -0400
+
+     Changes to be committed:
+    	modified:   hw2Notes.txt
+
+commit 29db3f9a158bcd817824e9806b57878a411c0030
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 13:39:20 2016 -0400
+
+     Changes to be committed:
+    	modified:   hw2Notes.txt
+
+commit 368fe350bcfb83554239ff549bee7b5a2e89a066
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 13:26:32 2016 -0400
+
+     Changes to be committed:
+    	modified:   classExample.c
+    	modified:   hw2Notes.txt
+
+commit 057f2e499ca8be78e37bef13cc2e080d3a2f3ce0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 13:19:08 2016 -0400
+
+    	new file:   classExample.c
+    	modified:   hw2Notes.txt
+
+commit aa75a16835a09ddd29f45e7334c5300c06df39c6
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 25 12:48:49 2016 -0400
+
+     Changes to be committed:
+
+commit 94ba18a56d043fde022870b69e667f7b505f5dde
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 24 15:42:44 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 337e5191fa36dbd31233748c3f8b048e10dd57dd
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 23 17:09:15 2016 -0400
+
+    ..
+
+commit eb9aedf0b790c3d8d1f3b20e4a5f805858311451
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 23 17:03:16 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 20d57a9731e55e15b6ed4a45b0eb4d6ac6914c50
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 23 16:56:46 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit de46c5b0730382e2dcd6fc077332065d181c948f
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 23 01:54:48 2016 -0400
+
+    ..
+
+commit dde28fae84ae792d4d374b6fcd06580517f64f35
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sun May 22 14:46:09 2016 -0400
+
+     Changes to be committed:
+    	new file:   Quizzes/Quiz1/Quiz1.c
+
+commit b7f070a967ccb006cd6f79811405c8ad231cbb47
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 21 12:51:40 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 42370398c2f30cc2273da777efdf757ca19d24a2
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 21 12:40:22 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 289ac5a0ea1481520830c75589fe435ce789b8d5
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Sat May 21 12:32:05 2016 -0400
+
+     Changes to be committed:
+    	new file:   Screen Shot 2016-05-21 at 12.29.09 PM.png
+    	new file:   Screen Shot 2016-05-21 at 12.29.26 PM.png
+    	new file:   Screen Shot 2016-05-21 at 12.29.43 PM.png
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 3fbe921cf7427fbeab0ecd3b89724040a10e9272
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 13:22:22 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 3c3eb884935121ca9f05538cd0f54cabf17e3aac
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 12:56:48 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 1de6607ee619adc6f62c9637dc66ecfee599af03
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 12:51:41 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 9b1eccebb13ec0fc58360cc33bf21d49f4e2b00d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 12:45:19 2016 -0400
+
+     Changes to be committed:
+    	modified:   Homework 1.pdf
+    	modified:   randy_mcmillan_HW1a.c
+
+commit d07d6f6d9c3c7f13529b4bc8fcae4c125d20b3db
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 00:20:49 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 4d498633c82d20c6d8f72c58d5e927d34db4735a
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 00:11:55 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 15f42f4b738d91432e37f94b7b17a9ef16ebb548
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Fri May 20 00:07:35 2016 -0400
+
+    Almost Done working on last report
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 7fc9251ee969419bd4fca4859de2ac032655cd8b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 23:52:44 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 44adaecb6b52a23aae85e7d204b0fe96bfd65fe4
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 23:25:50 2016 -0400
+
+    changed to localA localB localC localD for clarity
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit f60d328fa7ff0fd4a7be05387c177d46cb92936b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 22:56:06 2016 -0400
+
+    dec approx report in correct sequence
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit ae5254212cc2ba88079ed2e03618b1a600ef3512
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 22:27:59 2016 -0400
+
+    mixed number reporting fixed
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 0f650cf4563ad2c707704a2fc8bebb49b13d70d6
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 22:15:28 2016 -0400
+
+     Changes to be committed:
+    	modified:   HW/randy_mcmillan_HW1/Homework 1.pdf
+
+commit 3934c3ab0cefb32f064e61124b6df410f4c61f9a
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 21:38:57 2016 -0400
+
+     Changes to be committed:
+    	new file:   C Program to Compute Quotient and Remainder - C Example.pdf
+    	modified:   randy_mcmillan_HW1a.c
+    
+     Changes not staged for commit:
+    	modified:   ../../Program-Design-COP3514 (modified content, untracked content)
+
+commit 452ffa086960cf3e47675da2addd799484744c1a
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 21:28:19 2016 -0400
+
+    fixed modulus with mixed number reporting
+     Changes to be committed:
+    
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 88ddcdff9499a841fba5aab46f039cc34d0230c8
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 16:24:34 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+    
+     Changes not staged for commit:
+    	modified:   ../../Program-Design-COP3514 (modified content)
+
+commit eec8cadb5a1920590523d94c071c380a50324b25
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 16:13:25 2016 -0400
+
+    eval fractions for proper ormixed good
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+    
+     Changes not staged for commit:
+    	modified:   ../../Program-Design-COP3514 (modified content)
+
+commit cb1eee4b598d6c0a01a470decc60e98f14651c5e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 16:11:57 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+    
+     Changes not staged for commit:
+    	modified:   ../../Program-Design-COP3514 (modified content)
+
+commit a652b225fbb4def0900afe82dda8434e7c560aad
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 15:52:43 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+    
+     Changes not staged for commit:
+    	modified:   ../../Program-Design-COP3514 (modified content)
+
+commit 83acc73310ee084a392970b7a006e463172f6220
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 15:28:53 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 84693525551711d5880aa3e0dc1935d0cad56c27
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 15:20:27 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 7c3d6dd62af0bc64d4f7fa811be5f783b0e0847c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 15:04:25 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 08779852d85bb2c9706af31ce49fea1909d69c5d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 14:58:04 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 5a22bdcdcc89237df6b3e5a5eb474bb87f060c50
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 14:27:48 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 6c71141acc631905f02a992507a6570508e4ab31
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 14:17:21 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 34b9bc0aed54edbd0cc7ac73b591ec7fcf4b9918
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 14:09:00 2016 -0400
+
+    created more functions per assigment requirements
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit d613c96a9e79ebb61a13632cd2962f45e8bc6d99
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:58:53 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 0cf970177268b85c39a13dd394fcbd1118b0f380
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:58:23 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit c8eca2b18a400a263e53c202b6dfbd4a4819d9e2
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:57:26 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 453ce7fa53c9ccf01ee051fbabb07af617abfa5b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:39:26 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 46f733291023b2ad76a092f08ce6276743029d59
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:24:18 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit c4fa8ff9edb0076b99b925f3d9d6fc12b53031b1
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:14:40 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 787565607564fbc7c048c4cbd6405826e9b093e6
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 13:06:07 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 2c969c572e5e081c241bffefbad1649a3bcfbe7e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 12:59:25 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit c4dc7bfae8c7e7bdd4193f6085dbe60f1a5f25c6
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 12:50:56 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 47c8ce015346f92baac0abc6dcf17cafeb7e9384
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 12:47:14 2016 -0400
+
+    still setting up evals
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 69088ed92f3ab89a666cef8af375f6bcfc8eff06
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 12:44:13 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit 54d39ad246744fb6085e497dcf9c1e877b0fdb89
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 12:40:48 2016 -0400
+
+    setting up more evaluation
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1a.c
+
+commit f429689f06454af7fe5417fa158a18e4eb547b6b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 09:39:52 2016 -0400
+
+     Changes to be committed:
+    	new file:   ReferenceMaterial/An Introduction to the C Programming Language and Software Design.pdf
+            new file:   ReferenceMaterial/C For Dummies Cheat Sheet - For Dummies.pdf
+    	new file:   ReferenceMaterial/C Reference Card (ANSI) 2.2.pdf
+    	new file:   ReferenceMaterial/Go To Statement Considered Harmful.pdf
+    	new file:   ReferenceMaterial/Unix_Linux Command Reference.pdf
+
+commit b9bc88b0f43c525ea3a2c93d912c5563a302f690
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 01:16:12 2016 -0400
+
+     Changes to be committed:
+    	modified:   HW/randy_mcmillan_HW1/randy_mcmillan_HW1a.c
+
+commit 2394484837918a0cfe68691e6bdd59691a22555f
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Thu May 19 01:08:53 2016 -0400
+
+     Changes to be committed:
+    	renamed:    RandyMcMillanChap2E1/RandyMcMillanChap2E1.xcodeproj/project.pbxproj -> HW/RandyMcMillanChap2E1/RandyMcMillanChap2E1.xcodeproj/project.pbxproj
+    	renamed:    RandyMcMillanChap2E1/RandyMcMillanChap2E1/main.c -> HW/RandyMcMillanChap2E1/RandyMcMillanChap2E1/main.c
+    	renamed:    RandyMcMillanChap2_1PP/RandyMcMillanChap2_1PP.xcodeproj/project.pbxproj -> HW/RandyMcMillanChap2_1PP/RandyMcMillanChap2_1PP.xcodeproj/project.pbxproj
+    	renamed:    RandyMcMillanChap2_1PP/RandyMcMillanChap2_1PP/main.c -> HW/RandyMcMillanChap2_1PP/RandyMcMillanChap2_1PP/main.c
+    	renamed:    RandyMcMillanChap2_2E/RandyMcMillanChap2_2E.xcodeproj/project.pbxproj -> HW/RandyMcMillanChap2_2E/RandyMcMillanChap2_2E.xcodeproj/project.pbxproj
+    	renamed:    RandyMcMillanChap2_2E/RandyMcMillanChap2_2E/main.c -> HW/RandyMcMillanChap2_2E/RandyMcMillanChap2_2E/main.c
+    	renamed:    RandyMcMillanChap2_2PP/RandyMcMillanChap2_2PP.xcodeproj/project.pbxproj -> HW/RandyMcMillanChap2_2PP/RandyMcMillanChap2_2PP.xcodeproj/project.pbxproj
+    	renamed:    RandyMcMillanChap2_2PP/RandyMcMillanChap2_2PP/main.c -> HW/RandyMcMillanChap2_2PP/RandyMcMillanChap2_2PP/main.c
+    	renamed:    RandyMcMillanChap2_2PP/RandyMcMillanChap2_2PP/randy_mcmillan_HW0.c -> HW/RandyMcMillanChap2_2PP/RandyMcMillanChap2_2PP/randy_mcmillan_HW0.c
+    	renamed:    pun/index.html -> HW/pun/index.html
+    	renamed:    pun/pun.xcodeproj/index.html -> HW/pun/pun.xcodeproj/index.html
+    	renamed:    pun/pun.xcodeproj/project.pbxproj -> HW/pun/pun.xcodeproj/project.pbxproj
+    	renamed:    pun/pun/index.html -> HW/pun/pun/index.html
+    	renamed:    pun/pun/main.c -> HW/pun/pun/main.c
+    	renamed:    randy_mcmillan_HW/randy_mcmillan_HW#.c -> HW/randy_mcmillan_HW#.c
+    	new file:   HW/randy_mcmillan_HW1/Homework 1.pdf
+    	new file:   HW/randy_mcmillan_HW1/randy_mcmillan_HW1a.c
+    	renamed:    HW/randy_mcmillan_HW1.c -> HW/randy_mcmillan_HW1/randy_mcmillan_HW1b.c
+    	deleted:    randy_mcmillan_HW/Homework 1.pdf
+    	deleted:    randy_mcmillan_HW/randy_mcmillan_HW1.c
+
+commit b5eb85776a54279fe74381b4a3f11746ee41b23c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:46:52 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 20c1ea643c4216776bf4547d82758f2f72af9fd6
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:43:43 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 67702f7c2d8a2808bb3cdff2b3b36b14024eadc1
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:41:48 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 791ba1d67ff5c4d6b347f8d89e68fceb6fc75593
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:40:03 2016 -0400
+
+    basic structure good
+    
+    clean up this app to create a general template
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 323419d8d488284bc6a0bc9e00977863c0e45640
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:36:33 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 0e9fb8b8e944d2c7ac5b9c76bb74f2bf5904fcb3
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:32:27 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 5ab19bbd9208206ed95e6d70d6bc13d48bc8b901
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:23:58 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 3a019eb07703d8054e5dde8e4b7d2a64c776b5ef
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 19:10:00 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 32c4c81e397a909211779bcc3a6749be7a40a995
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:55:00 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit a55e3a8bb8ae614bf8784a87f9f5c08258420cf3
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:50:20 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit eb628147ff7bfe046662f88b16c552f1ea3aedad
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:44:12 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit ab0bd5bfb6ffed7c4ec4cdc23e084787834d904d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:41:20 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit cb79f05b2b622dff5e78fd71512a6a9ce83a06fd
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:29:53 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 0d7bbcc930be8de0538088728b23c7f464a0cefe
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:19:08 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 3c197efeb34caa968322c00a17dc0d1eaadc3980
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:07:56 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 4a2922d2b9db1ab2c50cdc318cd7700059cbb05e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 18:00:53 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit a785b090b3dd09f145dd6831f5e5d13317438182
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 17:55:48 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 9178235d543db84d772bfc269a18ca7f0014b401
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 17:44:45 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit a8b4c5d1de9f9776a9ae68b73c8cb5afd6600135
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 16:54:40 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 8f7c14931e235e747880844c900f5f223c49871e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 16:27:06 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit a5178a76b0ded57472a5a218bcdb17a2696eabdf
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 15:43:37 2016 -0400
+
+     Changes to be committed:
+    	modified:   randy_mcmillan_HW1.c
+
+commit 1b46c6c011184cc15a97630a2825841e47f25063
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 15:26:13 2016 -0400
+
+     Changes to be committed:
+    	new file:   HW/randy_mcmillan_HW1.c
+    	modified:   randy_mcmillan_HW/randy_mcmillan_HW#.c
+
+commit 04af18e4785aa9f8e048b7ccfc02321e58bc8134
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 15:17:09 2016 -0400
+
+     Changes to be committed:
+    	new file:   randy_mcmillan_HW/Homework 1.pdf
+    	new file:   randy_mcmillan_HW/randy_mcmillan_HW#.c
+    	new file:   randy_mcmillan_HW/randy_mcmillan_HW1.c
+
+commit 324d3203868da4b95a338975d6e5b6e5fd37ace4
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 14:56:39 2016 -0400
+
+     Changes to be committed:
+    	new file:   TextBook/the_c_programming_language_2/the_c_programming_language_2.pdf
+
+commit c46c467199bfdd69c85f9505dbd642ed29ec409d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 14:43:12 2016 -0400
+
+     Changes to be committed:
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 10 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 11 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 12 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 13 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 14 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 15 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 16 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 17 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 18 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 19 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 2 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 20 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 21 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 22 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 23 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 24 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 25 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 26 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 3 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 4 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 5 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 6 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 7 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 8 of C Programming: A Modern Approach - Second Edition.pdf
+    	new file:   TextBook/AnswersToSelectedExcercises/Answers to Selected Exercises in Chapter 9 of C Programming: A Modern Approach - Second Edition.pdf
+
+commit a6a55176ba9e646eaa971549ec61f82405123c5b
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 13:24:21 2016 -0400
+
+     Changes to be committed:
+    	new file:   COP3514
+    	deleted:    HW/.gitignore
+    	deleted:    HW/README.md
+    	deleted:    HW/hw1_arithmetic.c
+    	deleted:    HW/hw1_circle.c
+    	deleted:    HW/hw1_separate_digits.c
+    	deleted:    HW/hw1_solutions.pdf
+    	deleted:    HW/hw1_var_swap.c
+    	deleted:    HW/hw1_var_swap2.c
+    	deleted:    HW/hw2_integer_power.c
+    	deleted:    HW/hw2_print_diamond.c
+    	deleted:    HW/hw2_salary_calc.c
+    	deleted:    HW/hw2_solutions.pdf
+    	deleted:    HW/hw2_triangle_sides.c
+    	deleted:    HW/hw2_two_largest.c
+    	deleted:    HW/hw3_convert_date.c
+    	deleted:    HW/hw3_convert_string
+    	deleted:    HW/hw3_convert_string.c
+    	deleted:    HW/hw3_ll_concat.c
+    	deleted:    HW/hw3_ll_reverse.c
+    	deleted:    HW/hw3_solutions.pdf
+    	deleted:    HW/hw3_string_case.c
+    	deleted:    HW/hw3_strings_with_b.c
+    	deleted:    HW/hw3_strings_with_ed.c
+    	deleted:    HW/intLen_test.c
+    	deleted:    HW/sum_seq_ints.c
+    	new file:   Program-Design-COP3514
+    	new file:   ProgramDesign
+    	modified:   RandyMcMillanChap2E1/RandyMcMillanChap2E1/main.c
+
+commit 4e104af4a6dc894eb048ff82c9197a2b7b57566d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 12:52:42 2016 -0400
+
+     Changes to be committed:
+    	new file:   HW/.gitignore
+    	deleted:    HW/COP3514
+    	new file:   HW/README.md
+    	new file:   HW/hw1_arithmetic.c
+    	new file:   HW/hw1_circle.c
+    	new file:   HW/hw1_separate_digits.c
+    	new file:   HW/hw1_solutions.pdf
+    	new file:   HW/hw1_var_swap.c
+    	new file:   HW/hw1_var_swap2.c
+    	new file:   HW/hw2_integer_power.c
+    	new file:   HW/hw2_print_diamond.c
+    	new file:   HW/hw2_salary_calc.c
+    	new file:   HW/hw2_solutions.pdf
+    	new file:   HW/hw2_triangle_sides.c
+    	new file:   HW/hw2_two_largest.c
+    	new file:   HW/hw3_convert_date.c
+    	new file:   HW/hw3_convert_string
+    	new file:   HW/hw3_convert_string.c
+    	new file:   HW/hw3_ll_concat.c
+    	new file:   HW/hw3_ll_reverse.c
+    	new file:   HW/hw3_solutions.pdf
+    	new file:   HW/hw3_string_case.c
+    	new file:   HW/hw3_strings_with_b.c
+    	new file:   HW/hw3_strings_with_ed.c
+    	new file:   HW/intLen_test.c
+    	new file:   HW/sum_seq_ints.c
+
+commit f15a6e709a2c402ce90ac3079dfa3a63146c0b9f
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 12:44:56 2016 -0400
+
+     Changes to be committed:
+    	new file:   COP3514
+
+commit 06cd9d05de75b7b113a849726f4bf1e2d4dc3be0
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 12:41:25 2016 -0400
+
+     Changes to be committed:
+    	new file:   TextBook/C_Programming_A_Modern_Approach_2nd_Ed-2CHAP14toEND.pdf
+
+commit bfe3516daee7f003c5cb299929e48f8bb4426e65
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Wed May 18 12:40:59 2016 -0400
+
+     Changes to be committed:
+    	new file:   TextBook/C_Programming_A_Modern_Approach_2nd_EdCHAP1to13.pdf
+    
+     Untracked files:
+    	TextBook/C_Programming_A_Modern_Approach_2nd_Ed-2CHAP14toEND.pdf
+
+commit 5f8850858b4471e41e30594fb22b43a2acc9b328
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 16:07:35 2016 -0400
+
+     Changes to be committed:
+    	modified:   ../../README.md
+    	new file:   randy_mcmillan_HW0.c
+
+commit c48fe9096d6d7d1d64bf87b431ddf04b1461ad17
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 15:52:40 2016 -0400
+
+     Changes to be committed:
+    	modified:   main.c
+
+commit 6133864cd278f103104ff2b7b76ab12f7e7423e5
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 15:49:13 2016 -0400
+
+     Changes to be committed:
+    	modified:   main.c
+
+commit c7eadb3fc714b2c1b72605430b2876c8cacea3cb
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 15:46:38 2016 -0400
+
+     Changes to be committed:
+    	modified:   main.c
+
+commit 8b934abb753f9edfd17cc5b95bf6fef61e3094aa
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 15:32:12 2016 -0400
+
+     Changes to be committed:
+    	modified:   main.c
+
+commit 9d37171251c837934a59dd785669d44f93b79a2d
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 15:14:20 2016 -0400
+
+     Changes to be committed:
+    	modified:   main.c
+
+commit 67bb3cb54ec7d998277fb1de291dc9abf90ba411
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 15:07:33 2016 -0400
+
+    outputs argv[]
+     Changes to be committed:
+    	modified:   main.c
+
+commit 27001a8890a836e803bc56680f385019dbcab75c
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 14:34:07 2016 -0400
+
+     Changes to be committed:
+    	new file:   ../RandyMcMillanChap2_2PP.xcodeproj/project.pbxproj
+    	new file:   main.c
+    
+     Untracked files:
+    	0
+
+commit fddb4bad68e8bd6c116ea8e30e7abf2b9b864741
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 13:53:33 2016 -0400
+
+     Changes to be committed:
+    	new file:   ../RandyMcMillanChap2_2E.xcodeproj/project.pbxproj
+    	new file:   main.c
+
+commit ffc3bb320151753590ef08c9939f1413b90a942e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 13:44:01 2016 -0400
+
+     Changes to be committed:
+    	new file:   ../RandyMcMillanChap2_1PP.xcodeproj/project.pbxproj
+    	new file:   main.c
+
+commit aa2f7d55301f90a23be2288595b20df9593a44d2
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Tue May 17 13:28:04 2016 -0400
+
+     Changes to be committed:
+    	new file:   RandyMcMillanChap2E1/RandyMcMillanChap2E1.xcodeproj/project.pbxproj
+    	new file:   RandyMcMillanChap2E1/RandyMcMillanChap2E1/main.c
+    	new file:   index.html
+    	new file:   pun/index.html
+    	new file:   pun/pun.xcodeproj/index.html
+    	new file:   pun/pun/index.html
+    	new file:   syllabus.pdf
+
+commit 00fd11eaf522ceeefb98cd380e5fa91cf516ceb3
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 16 18:23:07 2016 -0400
+
+     Changes to be committed:
+    	modified:   ../../.gitignore
+    	modified:   main.c
+
+commit a6ce1c253660330479b7db25dbaee7b9bf8d2aef
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 16 17:55:07 2016 -0400
+
+     Changes to be committed:
+    	new file:   README.md
+    	renamed:    pun/pun/pun.xcodeproj/project.pbxproj -> pun/pun.xcodeproj/project.pbxproj
+    	renamed:    pun/pun/pun/main.c -> pun/pun/main.c
+    	deleted:    pun/pun/pun/a.out
+
+commit 128430c21faf409059a9f1e9df8a360478dd6f0e
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 16 13:32:40 2016 -0400
+
+     Changes to be committed:
+    	new file:   .gitignore
+
+commit 62f2bd52c4dcb8ab551129884cb7a89339091986
+Author: Randy McMillan <randy.lee.mcmillan@gmail.com>
+Date:   Mon May 16 13:30:04 2016 -0400
+
+     Changes to be committed:
+    	new file:   ../pun.xcodeproj/project.pbxproj
+    	new file:   a.out
+    	new file:   main.c
