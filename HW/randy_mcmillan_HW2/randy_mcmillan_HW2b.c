@@ -35,24 +35,26 @@ int main(
   if(globalSideLength % 2 == 0 || globalSideLength > MAX_SIDELENGTH) {
 
      printf("Invalid Input: %d\n", globalSideLength );
-     return 0;/* stops program if the side length is even or max side > max */
+     return 0;/* stops program if the side length is even or side > max */
+
      }
 
   /* Start by placing the number 1 in the middle of row 0. */
   yPos = 0;
   xPos = globalSideLength / 2;
-  sideSquared = globalSideLength * globalSideLength;
+  sideSquared = globalSideLength * globalSideLength; /* interations */
 
 /* Place each of the remaining numbers 2, 3, ... , n2 by moving up one row and over one column. */
   for (iHat = 1; iHat <= sideSquared; iHat ++)
       {
 
-      magicArray[xPos][yPos] = iHat;
+      magicArray[xPos][yPos] = iHat;/* set first value 1 in req. location */
 
       /* Any attempt to go outside the bounds of the array
        * should "wrap around" to the opposite side of the array.
        */
       if(iHat % globalSideLength == 0)
+      /* after globalSideLength iterations increment yPos */
          {
 
          yPos ++;
@@ -62,26 +64,29 @@ int main(
           {
 
           if (yPos == 0) {
-
+             /* top boundary condition */
+             /* move to bottom */
              yPos = globalSideLength - 1;
 
              }
           else
               {
 
+              /* else keep moving "up" */
               yPos --;
 
               }
 
           if( xPos == (globalSideLength - 1) )
              {
-
+             /* "right" boundary condition */
+             /* shift back to first column */
              xPos = 0;
 
              }
           else
               {
-
+              /* else keep moving "right" */
               xPos ++;
 
               }
@@ -101,12 +106,13 @@ void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
 
       for(iHat = 0; iHat < (globalSideLength); iHat ++)
           {
-
+          /* starts at (0,0) */
+          /* prints across traversing thru iHats then increments jHats */
           printf(" %3d ", array[iHat][jHat]);
 
           }
 
-      printf(" \n\n");
+      printf(" \n\n");/* tried to get perfect square */
 
       }
 
