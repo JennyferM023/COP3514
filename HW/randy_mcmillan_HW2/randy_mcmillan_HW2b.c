@@ -36,7 +36,7 @@ int main(
   int         argc,
   const char  *argv[]
   ) {
-  /* Think monolithic... As in BASIC Programming 1991! */
+  /* Think monolithic... */
 
   printf("\n\nEnter size of magic square: ");
   scanf("%d", &globalSideLength);
@@ -45,7 +45,7 @@ int main(
   if(globalSideLength % 2 == 0 || globalSideLength > MAX_SIDELENGTH) {
 
      printf("Invalid Input: %d\n", globalSideLength );
-     return 0;
+     return 0;/* stops program if the side length is even or max side > max */
      }
 
   yPos = 0;
