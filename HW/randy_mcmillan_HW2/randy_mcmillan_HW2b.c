@@ -122,18 +122,39 @@ void outputMagicSquare(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]) {
       }
 
 } /* printMagicSquare */
+/*
+ * For the sum of all the numbers in the magic square array, I want you to use
+ * while loops. You can use either for loops or while loops for the print and
+ * create magic number functions.
+ * HINT: The only function that needs to return something is the sum magic
+ * square function (integer). The other two function don't need to return
+ * anything. C is a pass by value language, meaning
+ * that it typically can't change the values of arguments in functions. This
+ * doesn't apply to arrays because they are references (more in chapter 12).
+ * That means one argument in the functions
+ * should be a two dimensional array. You will be able to operate on this array.
+ */
 int sumOfTheBox(int array[MAX_SIDELENGTH][MAX_SIDELENGTH]){
 
 int  sum = 0;
 int  iHat;
+int  jHat;
 
-  for (iHat = 0; iHat < globalSideLength; iHat ++)
-      {
-      for ( jHat = 0; jHat < globalSideLength; jHat ++)
-          {
-          sum = sum + magicArray[iHat][0];
-          }
-      }
+  iHat = 0;
 
-  return globalSum = sum;
+/* while loop */
+  while (iHat < globalSideLength) {
+
+        jHat = 0;
+
+        while (jHat < globalSideLength) {
+              sum = sum + magicArray[iHat][jHat];
+              jHat ++;
+              }
+
+        iHat ++;
+
+        }
+
+  return globalSum = sum;/* returns an integer "sum" */
 } /* sumOfTheBox */
