@@ -22,10 +22,7 @@ int   iHat, jHat, sideSquared;
 int   globalSideLength;
 int   yPos, xPos;
 
-int main(
-  int         argc,
-  const char  *argv[]
-  ) {
+int main() {
   /* Think monolithic... */
 
   printf("\n\nEnter size of magic square: ");
