@@ -1,0 +1,72 @@
+auto storage duration
+
+block scope
+
+local var only visible in that block of code
+
+
+void f(void) {
+
+
+static int i; /* still block scope but available for duration of execution */
+
+global vars are auto static
+
+macro is not a global variable
+
+Quadratic equation
+
+Blocks:
+
+
+{ anything between is a block }
+
+
+
+precedence
+evaluation statements
+
+legal/ illegal questions - one line why not valid?
+
+write some code...
+
+explain a concept
+
+do a fraction...
+
+bonus questions
+
+printf
+operators
+loooping conditions
+
+operators
+
+function
+
+delcarions and calls
+
+casting implicite and explicite
+
+static
+
+local
+
+auto stor duration
+
+multipl dim arrays
+
+
+break continue goto
+
+
+
+bonus
+
+analiyisi of algorhythm
+
+bonus quesions
+
+
+
+//
