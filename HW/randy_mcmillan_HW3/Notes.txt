@@ -174,9 +174,42 @@ max_min(b,N,&big,&small);
 
 
 
+f(&x);
+
+
+void f(const int *p)
+{
+
+*p=0; /*wrong*/
+
+
+}
+
+functions are allowed to return pointers
+
+
+int *max(int *a; int *b){
+
+if (8a> *b)
+return a;
+else
+return b;
+
+int *find_middle(int a[],int n){
+
+return &a[n/2];
+
+
+//&a[i] is a pointer to element i of a;
 
 
 
+}
+
+
+
+
+}
 
 
 //
