@@ -38,23 +38,23 @@ bonus questions
 
 printf
 operators
-loooping conditions
+looping conditions
 
 operators
 
 function
 
-delcarions and calls
+declarations and calls
 
-casting implicite and explicite
+casting implicit and explicit
 
 static
 
 local
 
-auto stor duration
+auto store duration
 
-multipl dim arrays
+multiple dim arrays
 
 
 break continue goto
@@ -63,10 +63,66 @@ break continue goto
 
 bonus
 
-analiyisi of algorhythm
+analysis of algorithm
 
-bonus quesions
+bonus questions
 
+
+06062016 NOTES
+
+byte addressable
+
+one byte has a unique address
+
+C you have to declare the data type...
+
+
+int *p;
+
+p is capable of pointing to an int
+
+pointers can have values or be null
+
+astericks are used to declare a pointer
+
+
+int *p; points to nowhere in particular
+
+TEST 2 POINTERS
+
+
+int i, *p;
+
+p = &i;
+
+
+printf("%d\n", *p);
+
+j= *&i; same as j=i;
+
+
+//
+p = &i;
+
+i =1;
+
+*p = 2;
+
+
+//
+
+p = q;
+
+*p = 1;
+i equals 1
+
+
+*q = 2;
+i equals 2
+
+
+
+p = &i;
 
 
 //
