@@ -126,3 +126,57 @@ p = &i;
 
 
 //
+main...
+int i;
+int d;
+
+
+...
+
+decompose(3.14159,&i,&d);
+
+
+void decompose(double x, long *int_part, double *frac_Part)
+{
+
+
+*int_part = (long) x;
+*frac_part = x - *int_part;
+
+
+}
+
+
+although scanf's args must be pointers
+
+it is not always true that every arg needs the & operator;;
+
+
+int i, *p;
+
+p = &i;
+scanf("%d", p);
+
+//
+
+
+scanf("%d", &p); /* WRONG */
+
+decompose(3.14159, i,d);
+
+//
+
+max_min.c
+
+void max_min(int a[],int n, int *max, int *min);
+
+max_min(b,N,&big,&small);
+
+
+
+
+
+
+
+
+//
