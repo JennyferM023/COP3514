@@ -97,14 +97,21 @@ float  root1, root2;
     printf(  "root2 = %0.2f\n",  root2);
 
   if (rootArg < 0) {
+
      printf("complex number\n");
+
      }
 
-
-  if (root1 != NAN)
+  if (rootArg < 0)
     numberOfRoots ++;
 
-  if (root2 != NAN)
+  if (rootArg < 0)
+    numberOfRoots ++;
+
+  if (rootArg < 0)
+    numberOfRoots ++;
+
+  if (rootArg < 0)
     numberOfRoots ++;
 
 
