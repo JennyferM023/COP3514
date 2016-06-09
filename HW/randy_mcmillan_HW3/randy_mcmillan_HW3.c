@@ -69,7 +69,7 @@ int    numberOfRealRoots;
 float  root1, root2;
 
 
-   printf("a = %0.2f b = %0.2f c = %0.2f", localA, localB, localC);
+   printf("a = %0.2f b = %0.2f c = %0.2f\n", localA, localB, localC);
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
@@ -88,9 +88,9 @@ float  root1, root2;
    */
 
   //root1 = (-2 * c) / ( b + sqrt(b * b - 4 * a * c) );
-    printf(  "(1*b) = %f\n",  (double) (-1 * localB) );
-  root1 = ( (1 * localB) + sqrt( (localB * localB) - (4 * 2 * localC) ) ) / (2 * localA);
-    printf(  "root1 = %f",    root1);
+    printf(  "(-1*b) = %f\n",  (double) (-1 * localB) );
+  root1 = ( (-1 * localB) + sqrt( (localB * localB) - (4 * 2 * localC) ) ) / (2 * localA);
+    printf(  "root1 = %f\n",   &root1);
 
 
 
