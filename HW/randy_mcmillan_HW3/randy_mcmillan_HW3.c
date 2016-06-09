@@ -60,6 +60,23 @@ int numberOfRealRoots;
    * signifies how many REAL roots there are. You do not need to worry about
    * imaginary numbers.
    */
+
+  /* Notes
+   *
+   *    alt form
+   *    x = (-2c)/(b +/- sqrt(b^2 - 4ac))
+   *
+   *    popular form
+   *    x = (-b +- sqrt(b^2 - 4ac))/(2a)
+   *
+   */
+
+
+
+
+
+
+  //
   return numberOfRealRoots;
 } /* quadraticFormula */
 void quadraticVertex()  {
