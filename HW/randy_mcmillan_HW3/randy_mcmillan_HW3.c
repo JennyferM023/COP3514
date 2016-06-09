@@ -108,22 +108,12 @@ float  sqRootArg;
 
   if (sqRootArg < 0) {
      /* imaginary number case */
-     /* printf(  "sqRootArg = %0.2f\n", sqRootArg ); */
      root1 = numerator / ( b + sqrt(sqRootArg) );
      root2 = numerator / ( b - sqrt(sqRootArg) );
-     /* printf(  "Roots: %0.2f and %0.2f\n", root1, root2); */
 
-     printf("No real roots\n");
+     if ( isnan(root1) || isnan(root2) ) {
 
-     if ( isnan(root1) ) {
-
-        /* printf( "root1 = %f ", root1); */
-
-        }
-
-     if ( isnan(root2) ) {
-
-        /* printf( "root2 = %f\n", root2); */
+        printf("No real roots\n");
 
         }
 
@@ -188,16 +178,7 @@ void quadraticInfo(
   y = localC - (1 + localB * localB) / (4 * localA);
   printf("Directrix: y = %0.2f\n", y);
 
-
-
-
-
-
-
-
-
-
-  //concavity
+  /* concavity */
   if (localA > 0) {
 
      conCaveUp = 1;
@@ -221,17 +202,18 @@ void quadraticInfo(
 
      }
   else
-      {
+  if (conCaveDown)
+          {
 
-      printf("The graph is facing down\n");
+          printf("The graph is facing down\n");
 
 
-      }
+          }
 
 } /* quadraticInfo */
 /*
  * Sample Output:
- * Enter coefficents a, b, and c: 3 18 -48
+ * Enter coefficents a, b, conand c: 3 18 -48
  * f(x) = 3x^2 + 18x + -48
  * Roots: 2.00 and -8.00
  * Vertex: (-3.00, -75.00)
