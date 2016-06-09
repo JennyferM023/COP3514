@@ -107,40 +107,42 @@ float  sqRootArg;
   sqRootArg = localB * localB - 4 * localA * localC;
 
   if (sqRootArg < 0) {
-
-     //printf(  "sqRootArg = %0.2f\n", sqRootArg );
+     /* imaginary number case */
+      printf(  "sqRootArg = %0.2f\n", sqRootArg );
       printf(  "complex number\n");
      root1 = numerator / ( b + sqrt(sqRootArg) );
      root2 = numerator / ( b - sqrt(sqRootArg) );
-      printf(  "Roots: %0.2f and %0.2f\n", root1, root2);
+     //printf(  "Roots: %0.2f and %0.2f\n", root1, root2);
+
+     if ( !isnan(root1) ) {
+
+        printf( "root1 = %f", root1);
+
+        }
+
+     if ( !isnan(root2) ) {
+
+        printf( "root2 = %f\n", root2);
+
+        }
 
      }
   else
   if (sqRootArg == 0)
           {
 
-          //   printf(  "sqRootArg = %0.2f\n",       sqRootArg );
+          /* root1 equals root2 in this case */
           root1 = numerator / ( b + sqrt(sqRootArg) );
           root2 = numerator / ( b - sqrt(sqRootArg) );
           printf( "Roots: %0.2f and %0.2f\n", root1, root2);
 
-/*
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- */
           }
   else
       {
 
-      //printf(  "sqRootArg = %0.2f\n",       sqRootArg );
       root1 = numerator / ( b + sqrt(sqRootArg) );
       root2 = numerator / ( b - sqrt(sqRootArg) );
       printf( "Roots: %0.2f and %0.2f\n", root1, root2);
-
-/*
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- */
 
       }
 
