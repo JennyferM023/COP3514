@@ -54,9 +54,6 @@ float *A, *B, *C;
   b = * B;
   c = * C;
 
-  /*printf( "a = %f b = %f c = %f\n", a,    b,    c );*/
-  /*sprintf( "*A = %f *B = %f *C = %f\n", * A,  * B,  * C );*/
-  /* printf( "A = %f B = %f C = %f\n",     A,    B,    C ); */
   printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
   /*printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);*/
   // printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
@@ -102,22 +99,21 @@ float  sqRootArg;
 
   if (sqRootArg < 0) {
 
-      printf(  "rootArg = %0.2f\n", sqRootArg );
+      printf(  "sqRootArg = %0.2f\n", sqRootArg );
       printf(  "complex number\n");
-
      root1 = numerator / ( b + sqrt(sqRootArg) );
      root2 = numerator / ( b - sqrt(sqRootArg) );
-      printf( "Roots: %0.2f and %0.2f\n", root1, root2);
+      printf(  "Roots: %0.2f and %0.2f\n", root1, root2);
 
      }
   else
   if (sqRootArg == 0)
           {
-           printf( "rootArg = %0.2f\n", sqRootArg );
 
+           printf(  "sqRootArg = %0.2f\n",       sqRootArg );
           root1 = numerator / ( b + sqrt(sqRootArg) );
           root2 = numerator / ( b - sqrt(sqRootArg) );
-           printf( "Roots: %0.2f and %0.2f\n", root1, root2);
+           printf(  "Roots: %0.2f and %0.2f\n",  root1, root2);
 
 /*
  *    if (rootArg < 0)
@@ -126,11 +122,11 @@ float  sqRootArg;
           }
   else
       {
-       printf( "rootArg = %0.2f\n", sqRootArg );
 
+       printf(  "sqRootArg = %0.2f\n",       sqRootArg );
       root1 = numerator / ( b + sqrt(sqRootArg) );
       root2 = numerator / ( b - sqrt(sqRootArg) );
-       printf( "Roots: %0.2f and %0.2f\n", root1, root2);
+       printf(  "Roots: %0.2f and %0.2f\n",  root1, root2);
 
 /*
  *    if (rootArg < 0)
