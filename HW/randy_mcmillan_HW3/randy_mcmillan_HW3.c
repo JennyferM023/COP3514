@@ -22,9 +22,10 @@
  */
 #include <stdio.h>
 
-int   a, b, c;
-int   x, y;
-void  quadraticFormula(), quadraticVertex(), quadraticInfo();
+float  a, b, c;
+int    x, y;
+int    quadraticFormula();
+void   quadraticVertex(), quadraticInfo();
 
 
 int main(
@@ -32,16 +33,31 @@ int main(
   const char  *argv[]
   )
 {
+float *A, *B, *C;
+  A =  &a;
+  B = &b;
+  C = &c;
+
+  printf("Enter coefficents a, b, and c: " );
+  scanf("%f %f %f", A, B, C );
+
+  a = * A;
+  b = * B;
+  c = * C;
+
+  printf("%f %f %f\n", a, b, c );
 
   return 0;
 } /* main */
-void quadraticFormula()  {
+int quadraticFormula()  {
+int realRoots;
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
    * signifies how many REAL roots there are. You do not need to worry about
    * imaginary numbers.
    */
+  return realRoots;
 } /* quadraticFormula */
 void quadraticVertex()  {
   /*
