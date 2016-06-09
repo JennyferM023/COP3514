@@ -56,7 +56,7 @@ float *A, *B, *C;
    printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  a,    b,    c);
    printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);
 
-  quadraticFormula(a, b, c);
+   printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
 
   return 0;
 } /* main */
@@ -65,7 +65,8 @@ int quadraticFormula(
   float  localB,
   float  localC
   )  {
-float root1, root2;
+int    numberOfRoots;
+float  root1, root2;
 
 
    printf("a = %0.2f b = %0.2f c = %0.2f\n", localA, localB, localC);
@@ -95,7 +96,19 @@ float root1, root2;
     printf(  "root1 = %0.2f\n",  root1);
     printf(  "root2 = %0.2f\n",  root2);
 
-  return root1 + root2;
+  if (rootArg < 0) {
+     printf("complex number\n");
+     }
+
+
+  if (root1 != NAN)
+    numberOfRoots ++;
+
+  if (root2 != NAN)
+    numberOfRoots ++;
+
+
+  return numberOfRoots;
 } /* quadraticFormula */
 void quadraticVertex()  {
   /*
