@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4816A9F81CF94DF300F98030 /* hw3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw3; sourceTree = BUILT_PRODUCTS_DIR; };
 		4816AA021CF94E0000F98030 /* randy_mcmillan_HW3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = randy_mcmillan_HW3.c; path = ../../randy_mcmillan_HW3.c; sourceTree = "<group>"; };
+		4868D53C1D090A5D00CEA174 /* Homework3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Homework3.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		4816A9EF1CF94DF300F98030 = {
 			isa = PBXGroup;
 			children = (
+				4868D53C1D090A5D00CEA174 /* Homework3.pdf */,
 				4816A9FA1CF94DF300F98030 /* hw3 */,
 				4816A9F91CF94DF300F98030 /* Products */,
 			);
@@ -241,6 +243,7 @@
 				4816AA011CF94DF300F98030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
