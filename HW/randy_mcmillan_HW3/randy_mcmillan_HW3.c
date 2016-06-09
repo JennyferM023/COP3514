@@ -10,15 +10,20 @@
  *
  * All of your printing and scanning should be done in main. You are scanning in
  * integers, but you should be holding values in floats because precision is
- * important. When printing the roots, there are three cases. You will have two
+ * important.
+ *
+ * When printing the roots, there are three cases. You will have two
  * roots and will print two roots. You will have one root and will print that
  * one. Or you will have no real roots (probably resulting in some weird data in
- * your variables) and will just print "No real roots". You will be using
- * pointers to pass around to functions to hold values that are calculated.
+ * your variables) and will just print "No real roots".
+ *
+ * You will be using pointers to pass around to functions to hold values that
+ * are calculated.
  * Print all floats to 2 decimal places. Scan all of your coefficients on one
  * line separated by spaces.
  *
  */
+
 #include <stdio.h>
 #include <math.h>
 
@@ -92,7 +97,6 @@ float  root1, root2;
   if (rootArg < 0) {
 
       printf("complex number\n");
-
 
      root1 = numerator / ( b + sqrt(rootArg) );
      root2 = numerator / ( b - sqrt(rootArg) );
