@@ -73,7 +73,7 @@ int quadraticFormula(
 int    numberOfRoots;
 float  root1, root2;
 float  numerator;
-float  rootArg;
+float  sqRootArg;
 
   /*printf(  "roots1 = %d roots2 = %d \n",                      root1,   root2 );*/
    printf(  "localA = %0.2f localB = %0.2f localC = %0.2f\n",  localA,  localB,  localC);
@@ -98,59 +98,41 @@ float  rootArg;
    */
 
   numerator = (-2 * localC);
-  rootArg = localB * localB - 4 * localA * localC;
+  sqRootArg = localB * localB - 4 * localA * localC;
 
-  if (rootArg < 0) {
+  if (sqRootArg < 0) {
 
-      printf(  "rootArg = %0.2f\n", rootArg );
+      printf(  "rootArg = %0.2f\n", sqRootArg );
       printf(  "complex number\n");
 
-     root1 = numerator / ( b + sqrt(rootArg) );
-     root2 = numerator / ( b - sqrt(rootArg) );
+     root1 = numerator / ( b + sqrt(sqRootArg) );
+     root2 = numerator / ( b - sqrt(sqRootArg) );
       printf( "Roots: %0.2f and %0.2f\n", root1, root2);
 
      }
   else
-  if (rootArg == 0)
+  if (sqRootArg == 0)
           {
-           printf( "rootArg = %0.2f\n", rootArg );
+           printf( "rootArg = %0.2f\n", sqRootArg );
 
-          root1 = numerator / ( b + sqrt(rootArg) );
-          root2 = numerator / ( b - sqrt(rootArg) );
+          root1 = numerator / ( b + sqrt(sqRootArg) );
+          root2 = numerator / ( b - sqrt(sqRootArg) );
            printf( "Roots: %0.2f and %0.2f\n", root1, root2);
 
 /*
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- *
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- *
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- *
  *    if (rootArg < 0)
  *      numberOfRoots ++;
  */
           }
   else
       {
-       printf( "rootArg = %0.2f\n", rootArg );
+       printf( "rootArg = %0.2f\n", sqRootArg );
 
-      root1 = numerator / ( b + sqrt(rootArg) );
-      root2 = numerator / ( b - sqrt(rootArg) );
+      root1 = numerator / ( b + sqrt(sqRootArg) );
+      root2 = numerator / ( b - sqrt(sqRootArg) );
        printf( "Roots: %0.2f and %0.2f\n", root1, root2);
 
 /*
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- *
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- *
- *    if (rootArg < 0)
- *      numberOfRoots ++;
- *
  *    if (rootArg < 0)
  *      numberOfRoots ++;
  */
