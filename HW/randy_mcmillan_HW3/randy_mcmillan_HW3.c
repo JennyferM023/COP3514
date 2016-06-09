@@ -68,11 +68,14 @@ int quadraticFormula(
   float  localB,
   float  localC
   )  {
+
 int    numberOfRoots;
 float  root1, root2;
 
+   printf(  "roots1 = %d roots2 = %d \n",                      root1,   root2 );
+   printf(  "localA = %0.2f localB = %0.2f localC = %0.2f\n",  localA,  localB,  localC);
+   printf(  "a = %0.2f b = %0.2f c = %0.2f\n",                 a,       b,       c);
 
-  printf("a = %0.2f b = %0.2f c = %0.2f\n", localA, localB, localC);
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
@@ -107,18 +110,24 @@ float  root1, root2;
   else
       {
 
-      if (rootArg < 0)
-        numberOfRoots ++;
+      root1 = numerator / ( b + sqrt(rootArg) );
+      root2 = numerator / ( b - sqrt(rootArg) );
+       printf(  "root1 = %0.2f\n",  root1);
+       printf(  "root2 = %0.2f\n",  root2);
 
-      if (rootArg < 0)
-        numberOfRoots ++;
-
-      if (rootArg < 0)
-        numberOfRoots ++;
-
-      if (rootArg < 0)
-        numberOfRoots ++;
-
+/*
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ *
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ *
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ *
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ */
       }
 
   return numberOfRoots;
