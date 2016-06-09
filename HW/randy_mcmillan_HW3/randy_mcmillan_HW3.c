@@ -34,7 +34,8 @@ int main(
   )
 {
 float *A, *B, *C;
-  A =  &a;
+
+  A = &a;
   B = &b;
   C = &c;
 
@@ -45,19 +46,22 @@ float *A, *B, *C;
   b = * B;
   c = * C;
 
-  printf("%f %f %f\n", a, b, c );
+  //printf(  "a = %f b = %f c = %f\n",              a,    b,    c );
+  //sprintf(  "*A = %f *B = %f *C = %f\n",           * A,  * B,  * C );
+  /* printf(  "A = %f B = %f C = %f\n",     A,    B,    C ); */
+  printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
 
   return 0;
 } /* main */
 int quadraticFormula()  {
-int realRoots;
+int numberOfRealRoots;
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
    * signifies how many REAL roots there are. You do not need to worry about
    * imaginary numbers.
    */
-  return realRoots;
+  return numberOfRealRoots;
 } /* quadraticFormula */
 void quadraticVertex()  {
   /*
@@ -76,20 +80,24 @@ void quadraticInfo() {
 } /* quadraticInfo */
 /*
  * Sample Output:
- * Enter coefficents a, b, and c: 3 18 -48 f(x) = 3x^2 + 18x + -48
+ * Enter coefficents a, b, and c: 3 18 -48
+ * f(x) = 3x^2 + 18x + -48
  * Roots: 2.00 and -8.00
  * Vertex: (-3.00, -75.00)
  * Directrix: y = -75.08
  * The graph is facing up
- * Enter coefficents a, b, and c: 2 24 72 f(x) = 2x^2 + 24x + 72
+ * Enter coefficents a, b, and c: 2 24 72
+ * f(x) = 2x^2 + 24x + 72
  * Root: -6.00
  * Vertex: (-6.00, 0.00)
  * Directrix: y = -0.12
  * The graph is facing up
- * Enter coefficents a, b, and c: 1 4 5 f(x) = 1x^2 + 4x + 5
+ * Enter coefficents a, b, and c: 1 4 5
+ * f(x) = 1x^2 + 4x + 5
  * No real roots
  * Vertex: (-2.00, 1.00)
  * Directrix: y = 0.75
- * Enter coefficents a, b, and c: -1 4 5 f(x) = -1x^2 + 4x + 5
+ * Enter coefficents a, b, and c: -1 4 5
+ * f(x) = -1x^2 + 4x + 5
  * Roots: -1.00
  */
