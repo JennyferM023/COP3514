@@ -31,7 +31,6 @@ int    quadraticFormula(
   );
 void quadraticVertex(), quadraticInfo();
 
-
 int main(
   int         argc,
   const char  *argv[]
@@ -50,12 +49,11 @@ float *A, *B, *C;
   b = * B;
   c = * C;
 
-  //printf(  "a = %f b = %f c = %f\n",              a,    b,    c );
-  //sprintf(  "*A = %f *B = %f *C = %f\n",           * A,  * B,  * C );
-  /* printf(  "A = %f B = %f C = %f\n",     A,    B,    C ); */
+  //printf( "a = %f b = %f c = %f\n", a,    b,    c );
+  //sprintf( "*A = %f *B = %f *C = %f\n", * A,  * B,  * C );
+  /* printf( "A = %f B = %f C = %f\n",     A,    B,    C ); */
    printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  a,    b,    c);
    printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);
-
    printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
 
   return 0;
@@ -69,7 +67,7 @@ int    numberOfRoots;
 float  root1, root2;
 
 
-   printf("a = %0.2f b = %0.2f c = %0.2f\n", localA, localB, localC);
+  printf("a = %0.2f b = %0.2f c = %0.2f\n", localA, localB, localC);
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
@@ -91,29 +89,33 @@ float  root1, root2;
   float  numerator = (-2 * localC);
   float  rootArg = localB * localB - 4 * localA * localC;
 
-  root1 = numerator / ( b + sqrt(rootArg) );
-  root2 = numerator / ( b - sqrt(rootArg) );
-    printf(  "root1 = %0.2f\n",  root1);
-    printf(  "root2 = %0.2f\n",  root2);
-
   if (rootArg < 0) {
 
-     printf("complex number\n");
+      printf("complex number\n");
+
+
+     root1 = numerator / ( b + sqrt(rootArg) );
+     root2 = numerator / ( b - sqrt(rootArg) );
+       printf(  "root1 = %0.2f\n",  root1);
+       printf(  "root2 = %0.2f\n",  root2);
 
      }
+  else
+      {
 
-  if (rootArg < 0)
-    numberOfRoots ++;
+      if (rootArg < 0)
+        numberOfRoots ++;
 
-  if (rootArg < 0)
-    numberOfRoots ++;
+      if (rootArg < 0)
+        numberOfRoots ++;
 
-  if (rootArg < 0)
-    numberOfRoots ++;
+      if (rootArg < 0)
+        numberOfRoots ++;
 
-  if (rootArg < 0)
-    numberOfRoots ++;
+      if (rootArg < 0)
+        numberOfRoots ++;
 
+      }
 
   return numberOfRoots;
 } /* quadraticFormula */
