@@ -27,14 +27,23 @@
 #include <stdio.h>
 #include <math.h>
 
-float  a, b, c;
-int    x, y;
-int    quadraticFormula(
+float a, b, c, *A, *B, *C, x, y;
+
+int quadraticFormula(
   float  localA,
   float  localB,
   float  localC
   );
-void quadraticVertex(), quadraticInfo();
+void quadraticVertex(
+  float  localA,
+  float  localB,
+  float  localC
+  );
+void quadraticInfo(
+  float  localA,
+  float  localB,
+  float  localC
+  );
 
 int main(
   int         argc,
@@ -137,14 +146,22 @@ float  sqRootArg;
 
   return numberOfRoots;
 } /* quadraticFormula */
-void quadraticVertex()  {
+void quadraticVertex(
+  float  localA,
+  float  localB,
+  float  localC
+  )  {
   /*
    * The second function is used to find the vertex of the expression. There is
    * no return value for this function. Remember, there is an x and a y
    * component to vertex.
    */
 } /* quadraticVertex */
-void quadraticInfo() {
+void quadraticInfo(
+  float  localA,
+  float  localB,
+  float  localC
+  ) {
   /*
    * The third function function is to find the directrix and the direction the
    * graph of the function is facing. There is no return value for this
