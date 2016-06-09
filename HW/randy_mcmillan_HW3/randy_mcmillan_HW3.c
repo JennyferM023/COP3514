@@ -27,7 +27,9 @@
 #include <stdio.h>
 #include <math.h>
 
-float a, b, c, *A, *B, *C, x, y;
+int    conCaveUp, conCaveDown;
+float  a, b, c, *A, *B, *C, x, y, p;
+
 
 int quadraticFormula(
   float  localA,
@@ -69,6 +71,7 @@ float *A, *B, *C;
   int numberOfRoots = quadraticFormula(a, b, c);
   //printf("numberOfRoots = %d\n", numberOfRoots);
   quadraticVertex(a, b, c);
+  quadraticInfo(a, b, c);
   return 0;
 } /* main */
 int quadraticFormula(
@@ -110,6 +113,8 @@ float  sqRootArg;
      root2 = numerator / ( b - sqrt(sqRootArg) );
      /* printf(  "Roots: %0.2f and %0.2f\n", root1, root2); */
 
+     printf("No real roots\n");
+
      if ( isnan(root1) ) {
 
         /* printf( "root1 = %f ", root1); */
@@ -130,7 +135,7 @@ float  sqRootArg;
           /* root1 equals root2 in this case */
           root1 = numerator / ( b + sqrt(sqRootArg) );
           root2 = numerator / ( b - sqrt(sqRootArg) );
-          printf( "Roots: %0.2f and %0.2f\n", root1, root2);
+          printf( "Root: %0.2f \n", root1);
           numberOfRoots ++;
 
           }
@@ -179,6 +184,50 @@ void quadraticInfo(
    * function. The direction of the graph will be represented by a char that
    * will either be 'U' for up or 'D' for down.
    */
+//find directorix
+  y = localC - (1 + localB * localB) / (4 * localA);
+  printf("Directrix: y = %0.2f\n", y);
+
+
+
+
+
+
+
+
+
+
+  //concavity
+  if (localA > 0) {
+
+     conCaveUp = 1;
+     conCaveDown = 0;
+
+     }
+  else
+  if (localA < 0)
+          {
+
+          conCaveDown = 1;
+          conCaveUp = 0;
+
+          }
+
+  else { /* linear case */ }
+
+  if(conCaveUp) {
+
+     printf("The graph is facing up\n");
+
+     }
+  else
+      {
+
+      printf("The graph is facing down\n");
+
+
+      }
+
 } /* quadraticInfo */
 /*
  * Sample Output:
