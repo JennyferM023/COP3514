@@ -63,12 +63,12 @@ float *A, *B, *C;
   b = * B;
   c = * C;
 
-   printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
+  printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
   /*printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);*/
   // printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
   int numberOfRoots = quadraticFormula(a, b, c);
-   printf("numberOfRoots = %d\n", numberOfRoots);
-
+  //printf("numberOfRoots = %d\n", numberOfRoots);
+  quadraticVertex(a, b, c);
   return 0;
 } /* main */
 int quadraticFormula(
@@ -81,10 +81,6 @@ int    numberOfRoots = 0;
 float  root1, root2;
 float  numerator;
 float  sqRootArg;
-
-  /*printf(  "roots1 = %d roots2 = %d \n",                      root1,   root2 );*/
-  //printf(  "localA = %0.2f localB = %0.2f localC = %0.2f\n",  localA,  localB,  localC);
-  //printf(  "a = %0.2f b = %0.2f c = %0.2f\n",                 a,       b,       c);
 
   /*
    * The first function will preform the quadratic equation to find the roots of
@@ -109,21 +105,21 @@ float  sqRootArg;
 
   if (sqRootArg < 0) {
      /* imaginary number case */
-      printf(  "sqRootArg = %0.2f\n", sqRootArg );
-      printf(  "complex number\n");
+     //printf(  "sqRootArg = %0.2f\n", sqRootArg );
+     //printf(  "complex number\n");
      root1 = numerator / ( b + sqrt(sqRootArg) );
      root2 = numerator / ( b - sqrt(sqRootArg) );
      //printf(  "Roots: %0.2f and %0.2f\n", root1, root2);
 
      if ( isnan(root1) ) {
 
-        printf( "root1 = %f ", root1);
+        //printf( "root1 = %f ", root1);
 
         }
 
      if ( isnan(root2) ) {
 
-        printf( "root2 = %f\n", root2);
+        //printf( "root2 = %f\n", root2);
 
         }
 
@@ -162,6 +158,12 @@ void quadraticVertex(
    * no return value for this function. Remember, there is an x and a y
    * component to vertex.
    */
+
+/* -2c / b */
+  x = ( -1 * localB / (2 * localA) );
+  y = localA * x * x + localB * x + localC;
+  printf("Vertex: (%0.2f, %0.2f)\n", x, y );
+
 } /* quadraticVertex */
 void quadraticInfo(
   float  localA,
