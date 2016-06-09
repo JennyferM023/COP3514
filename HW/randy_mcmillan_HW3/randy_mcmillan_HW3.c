@@ -54,11 +54,11 @@ float *A, *B, *C;
   b = * B;
   c = * C;
 
-  //printf( "a = %f b = %f c = %f\n", a,    b,    c );
-  //sprintf( "*A = %f *B = %f *C = %f\n", * A,  * B,  * C );
+  /*printf( "a = %f b = %f c = %f\n", a,    b,    c );*/
+  /*sprintf( "*A = %f *B = %f *C = %f\n", * A,  * B,  * C );*/
   /* printf( "A = %f B = %f C = %f\n",     A,    B,    C ); */
-   printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  a,    b,    c);
-   printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);
+   printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  a, b, c);
+  /*printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);*/
    printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
 
   return 0;
@@ -71,8 +71,10 @@ int quadraticFormula(
 
 int    numberOfRoots;
 float  root1, root2;
+float  numerator;
+float  rootArg;
 
-   printf(  "roots1 = %d roots2 = %d \n",                      root1,   root2 );
+  /*printf(  "roots1 = %d roots2 = %d \n",                      root1,   root2 );*/
    printf(  "localA = %0.2f localB = %0.2f localC = %0.2f\n",  localA,  localB,  localC);
    printf(  "a = %0.2f b = %0.2f c = %0.2f\n",                 a,       b,       c);
 
@@ -94,8 +96,8 @@ float  root1, root2;
    *
    */
 
-  float  numerator = (-2 * localC);
-  float  rootArg = localB * localB - 4 * localA * localC;
+  numerator = (-2 * localC);
+  rootArg = localB * localB - 4 * localA * localC;
 
   if (rootArg < 0) {
 
