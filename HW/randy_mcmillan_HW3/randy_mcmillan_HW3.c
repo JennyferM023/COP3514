@@ -105,21 +105,20 @@ float  sqRootArg;
 
   if (sqRootArg < 0) {
      /* imaginary number case */
-     //printf(  "sqRootArg = %0.2f\n", sqRootArg );
-     //printf(  "complex number\n");
+     /* printf(  "sqRootArg = %0.2f\n", sqRootArg ); */
      root1 = numerator / ( b + sqrt(sqRootArg) );
      root2 = numerator / ( b - sqrt(sqRootArg) );
-     //printf(  "Roots: %0.2f and %0.2f\n", root1, root2);
+     /* printf(  "Roots: %0.2f and %0.2f\n", root1, root2); */
 
      if ( isnan(root1) ) {
 
-        //printf( "root1 = %f ", root1);
+        /* printf( "root1 = %f ", root1); */
 
         }
 
      if ( isnan(root2) ) {
 
-        //printf( "root2 = %f\n", root2);
+        /* printf( "root2 = %f\n", root2); */
 
         }
 
@@ -153,11 +152,13 @@ void quadraticVertex(
   float  localB,
   float  localC
   )  {
+
   /*
    * The second function is used to find the vertex of the expression. There is
    * no return value for this function. Remember, there is an x and a y
    * component to vertex.
    */
+
   if (localA != 0) {
 
      x = ( -1 * localB / (2 * localA) );
