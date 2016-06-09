@@ -63,10 +63,11 @@ float *A, *B, *C;
   b = * B;
   c = * C;
 
-  printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
+   printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
   /*printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);*/
   // printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
-  quadraticFormula(a, b, c);
+  int numberOfRoots = quadraticFormula(a, b, c);
+   printf("numberOfRoots = %d\n", numberOfRoots);
 
   return 0;
 } /* main */
@@ -76,7 +77,7 @@ int quadraticFormula(
   float  localC
   )  {
 
-int    numberOfRoots;
+int    numberOfRoots = 0;
 float  root1, root2;
 float  numerator;
 float  sqRootArg;
@@ -114,13 +115,13 @@ float  sqRootArg;
      root2 = numerator / ( b - sqrt(sqRootArg) );
      //printf(  "Roots: %0.2f and %0.2f\n", root1, root2);
 
-     if ( !isnan(root1) ) {
+     if ( isnan(root1) ) {
 
-        printf( "root1 = %f", root1);
+        printf( "root1 = %f ", root1);
 
         }
 
-     if ( !isnan(root2) ) {
+     if ( isnan(root2) ) {
 
         printf( "root2 = %f\n", root2);
 
@@ -135,6 +136,7 @@ float  sqRootArg;
           root1 = numerator / ( b + sqrt(sqRootArg) );
           root2 = numerator / ( b - sqrt(sqRootArg) );
           printf( "Roots: %0.2f and %0.2f\n", root1, root2);
+          numberOfRoots ++;
 
           }
   else
@@ -143,6 +145,8 @@ float  sqRootArg;
       root1 = numerator / ( b + sqrt(sqRootArg) );
       root2 = numerator / ( b - sqrt(sqRootArg) );
       printf( "Roots: %0.2f and %0.2f\n", root1, root2);
+      numberOfRoots ++;
+      numberOfRoots ++;
 
       }
 
