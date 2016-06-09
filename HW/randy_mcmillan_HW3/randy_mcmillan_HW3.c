@@ -158,12 +158,14 @@ void quadraticVertex(
    * no return value for this function. Remember, there is an x and a y
    * component to vertex.
    */
+  if (localA != 0) {
 
-/* -2c / b */
-  x = ( -1 * localB / (2 * localA) );
-  y = localA * x * x + localB * x + localC;
-  printf("Vertex: (%0.2f, %0.2f)\n", x, y );
+     x = ( -1 * localB / (2 * localA) );
+     y = localA * x * x + localB * x + localC;
+     printf("Vertex: (%0.2f, %0.2f)\n", x, y );
 
+     }
+  else{ /*linear case */ }
 } /* quadraticVertex */
 void quadraticInfo(
   float  localA,
