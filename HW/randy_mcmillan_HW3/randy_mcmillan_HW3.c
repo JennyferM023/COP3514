@@ -65,8 +65,7 @@ int quadraticFormula(
   float  localB,
   float  localC
   )  {
-int    numberOfRealRoots;
-float  root1, root2;
+float root1, root2;
 
 
    printf("a = %0.2f b = %0.2f c = %0.2f\n", localA, localB, localC);
@@ -81,22 +80,22 @@ float  root1, root2;
    *
    *    alt form
    *    x = (-2c)/(b +/- sqrt(b^2 - 4ac))
+   *    alt form avoids if a = 0 division by 0
    *
    *    popular form
-   *    x = (-b +- sqrt(b^2 - 4ac))/(2a)
+   *    x = (-b +/- sqrt(b^2 - 4ac))/(2a)
    *
    */
 
-  //root1 = (-2 * c) / ( b + sqrt(b * b - 4 * a * c) );
-    printf(  "(-1*b) = %f\n",  (double) (-1 * localB) );
-  root1 = ( (-1 * localB) + sqrt( (localB * localB) - (4 * 2 * localC) ) ) / (2 * localA);
-    printf(  "root1 = %f\n",   &root1);
+  float  numerator = (-2 * localC);
+  float  rootArg = localB * localB - 4 * localA * localC;
 
+  root1 = numerator / ( b + sqrt(rootArg) );
+  root2 = numerator / ( b - sqrt(rootArg) );
+    printf(  "root1 = %0.2f\n",  root1);
+    printf(  "root2 = %0.2f\n",  root2);
 
-
-
-  //
-  return numberOfRealRoots;
+  return root1 + root2;
 } /* quadraticFormula */
 void quadraticVertex()  {
   /*
