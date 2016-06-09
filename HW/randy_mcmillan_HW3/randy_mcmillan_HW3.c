@@ -18,7 +18,6 @@
  * Print all floats to 2 decimal places. Scan all of your coefficients on one
  * line separated by spaces.
  *
- *
  */
 #include <stdio.h>
 
