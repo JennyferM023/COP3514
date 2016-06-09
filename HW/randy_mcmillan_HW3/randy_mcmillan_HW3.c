@@ -99,7 +99,8 @@ float  root1, root2;
 
   if (rootArg < 0) {
 
-      printf("complex number\n");
+      printf(  "rootsArg = %0.2f\n", rootArg );
+      printf(  "complex number\n");
 
      root1 = numerator / ( b + sqrt(rootArg) );
      root2 = numerator / ( b - sqrt(rootArg) );
@@ -107,6 +108,29 @@ float  root1, root2;
        printf(  "root2 = %0.2f\n",  root2);
 
      }
+  else
+  if (rootArg == 0)
+          {
+
+          root1 = numerator / ( b + sqrt(rootArg) );
+          root2 = numerator / ( b - sqrt(rootArg) );
+           printf(  "root1 = %0.2f\n",  root1);
+           printf(  "root2 = %0.2f\n",  root2);
+
+/*
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ *
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ *
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ *
+ *    if (rootArg < 0)
+ *      numberOfRoots ++;
+ */
+          }
   else
       {
 
@@ -128,6 +152,7 @@ float  root1, root2;
  *    if (rootArg < 0)
  *      numberOfRoots ++;
  */
+
       }
 
   return numberOfRoots;
