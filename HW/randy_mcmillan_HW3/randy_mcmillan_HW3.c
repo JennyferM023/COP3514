@@ -24,8 +24,12 @@
 
 float  a, b, c;
 int    x, y;
-int    quadraticFormula();
-void   quadraticVertex(), quadraticInfo();
+int    quadraticFormula(
+  float  localA,
+  float  localB,
+  float  localC
+  );
+void quadraticVertex(), quadraticInfo();
 
 
 int main(
@@ -49,19 +53,23 @@ float *A, *B, *C;
   //printf(  "a = %f b = %f c = %f\n",              a,    b,    c );
   //sprintf(  "*A = %f *B = %f *C = %f\n",           * A,  * B,  * C );
   /* printf(  "A = %f B = %f C = %f\n",     A,    B,    C ); */
-  printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
+   printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  a,    b,    c);
+   printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);
 
   quadraticFormula(a, b, c);
 
   return 0;
 } /* main */
 int quadraticFormula(
-  a,
-  b,
-  c
+  float  localA,
+  float  localB,
+  float  localC
   )  {
 int    numberOfRealRoots;
 float  root1, root2;
+
+
+   printf("a = %0.2f b = %0.2f c = %0.2f", localA, localB, localC);
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
@@ -80,8 +88,9 @@ float  root1, root2;
    */
 
   //root1 = (-2 * c) / ( b + sqrt(b * b - 4 * a * c) );
-  root1 = ( -1 * b + sqrt(b * b - 4 * 2 * c) ) / (2 * a);
-  printf("root1 = %f", root1);
+    printf(  "(1*b) = %f\n",  (double) (-1 * localB) );
+  root1 = ( (1 * localB) + sqrt( (localB * localB) - (4 * 2 * localC) ) ) / (2 * localA);
+    printf(  "root1 = %f",    root1);
 
 
 
