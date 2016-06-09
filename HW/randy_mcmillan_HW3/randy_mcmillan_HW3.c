@@ -20,6 +20,7 @@
  *
  */
 #include <stdio.h>
+#include <math.h>
 
 float  a, b, c;
 int    x, y;
@@ -50,10 +51,17 @@ float *A, *B, *C;
   /* printf(  "A = %f B = %f C = %f\n",     A,    B,    C ); */
   printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
 
+  quadraticFormula(a, b, c);
+
   return 0;
 } /* main */
-int quadraticFormula()  {
-int numberOfRealRoots;
+int quadraticFormula(
+  a,
+  b,
+  c
+  )  {
+int    numberOfRealRoots;
+float  root1, root2;
   /*
    * The first function will preform the quadratic equation to find the roots of
    * the expression. The return value of the function will be an int that
@@ -71,7 +79,9 @@ int numberOfRealRoots;
    *
    */
 
-
+  //root1 = (-2 * c) / ( b + sqrt(b * b - 4 * a * c) );
+  root1 = ( -1 * b + sqrt(b * b - 4 * 2 * c) ) / (2 * a);
+  printf("root1 = %f", root1);
 
 
 
