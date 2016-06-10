@@ -9,8 +9,13 @@
 #include <stdio.h>
 
 
-int  pointerAssignment();
-int  main(
+int pointerAssignment(
+  int  i,
+  int  j,
+  int  *p,
+  int  *q
+  );
+int main(
   int         argc,
   const char  *argv[]
   ) {
@@ -18,23 +23,43 @@ int  main(
    printf("begin main\n");
   int i;
   i = 1;
-  int *p = &i;
-
-    printf(  "p = %p\n",   p );
+  int  *p = &i;
+  int  j;
+  int  *q;
+    printf(  "i = %d\n",   i );
+    printf(  "j = %d\n",   j );
+    printf(  "&i = %p\n",  &i );
+    printf(  "&j = %p\n",  &j );
+    printf(  " p = %p\n",  p );
+    printf(  " q = %p\n",  q );
     printf(  "*p = %d\n",  * p );
+//    printf(  "*q = %p\n",  * q );
+    printf(  "\n\n\n\n");
 
-  int j = * &i; /* same as j = i;  */
+  j = * &i; /* same as j = i;  */
   p = &i;
   i = 1;
-
-
-     printf(  "%d\n",  i); /* prints 1 */
-     printf(  "%d\n",  * p);/* prints 1 */
+     printf(  "i = %d\n",   i );
+     printf(  "j = %d\n",   j );
+     printf(  "&i = %p\n",  &i );
+     printf(  "&j = %p\n",  &j );
+     printf(  " p = %p\n",  p );
+     printf(  " q = %p\n",  q );
+     printf(  "*p = %d\n",  * p );
+  //printf(  "*q = %d\n",  * q );
+     printf(  "\n\n\n\n");
   * p = 2;
+     printf(  "i = %d\n",   i );
+     printf(  "j = %d\n",   j );
+     printf(  "&i = %p\n",  &i );
+     printf(  "&j = %p\n",  &j );
+     printf(  " p = %p\n",  p );
+     printf(  " q = %p\n",  q );
+     printf(  "*p = %d\n",  * p );
+//     printf(  "*q = %d\n",  * q );
+     printf(  "\n\n\n\n");
 
-     printf(  "%d\n",  i); /* prints 2 */
-     printf(  "%d\n",  * p); /* prints 2 */
-
+     printf(  "\n\n\n\n");
 
   /* WRONGS
    *
@@ -47,7 +72,7 @@ int  main(
    */
 
 
-  pointerAssignment();
+  pointerAssignment(i, j, p, q);
 
 
   printf("end main\n");
@@ -61,59 +86,73 @@ int pointerAssignment(){
   int i, j, *p, *q;
 
 
-    printf(  "p = %d\n",   i );
-    printf(  "p = %d\n",   j );
-    printf(  "*p = %p\n",  p );
-    printf(  "*p = %p\n",  q );
-  //printf(  "*p = %d\n",  * p );
-  //printf(  "*p = %d\n",  * q );
-
-
+    printf(  "i = %d\n",   i );
+    printf(  "j = %d\n",   j );
+    printf(  "&i = %p\n",  &i );
+    printf(  "&j = %p\n",  &j );
+    printf(  " p = %p\n",  p );
+    printf(  " q = %p\n",  q );
+    printf(  "*p = %d\n",  * p );
+    printf(  "*q = %d\n",  * q );
+    printf(  "\n\n\n\n");
 
 
 
   p = &i;
 
-     printf(  "p = %d\n",   i );
-     printf(  "p = %d\n",   j );
-     printf(  "*p = %p\n",  p );
-     printf(  "*p = %p\n",  q );
+     printf(  "i = %d\n",   i );
+     printf(  "j = %d\n",   j );
+     printf(  "&i = %p\n",  &i );
+     printf(  "&j = %p\n",  &j );
+     printf(  " p = %p\n",  p );
+     printf(  " q = %p\n",  q );
      printf(  "*p = %d\n",  * p );
-  //printf(  "*p = %d\n",  * q );
+     printf(  "*q = %d\n",  * q );
+     printf(  "\n\n\n\n");
   q = p;
+     printf(  "i = %d\n",   i );
+     printf(  "j = %d\n",   j );
+     printf(  "&i = %p\n",  &i );
+     printf(  "&j = %p\n",  &j );
+     printf(  " p = %p\n",  p );
+     printf(  " q = %p\n",  q );
+     printf(  "*p = %d\n",  * p );
+     printf(  "*q = %d\n",  * q );
 
-      printf(  "p = %d\n",   i );
-      printf(  "p = %d\n",   j );
-      printf(  "*p = %p\n",  p );
-      printf(  "*p = %p\n",  q );
-      printf(  "*p = %d\n",  * p );
-      printf(  "*p = %d\n",  * q );
-
+     printf(  "\n\n\n\n");
   * p = 1;
   * q = 2;
   q = p;
   * q = * p;
 
-       printf(  "p = %d\n",   i );
-       printf(  "p = %d\n",   j );
-       printf(  "*p = %p\n",  p );
-       printf(  "*p = %p\n",  q );
-       printf(  "*p = %d\n",  * p );
-       printf(  "*p = %d\n",  * q );
+      printf(  "i = %d\n",   i );
+      printf(  "j = %d\n",   j );
+      printf(  "&i = %p\n",  &i );
+      printf(  "&j = %p\n",  &j );
+      printf(  " p = %p\n",  p );
+      printf(  " q = %p\n",  q );
+      printf(  "*p = %d\n",  * p );
+      printf(  "*q = %d\n",  * q );
+
+
+      printf(  "\n\n\n\n");
   p = &i;
   q = &j;
   i = 1;
   * q = * p;
 
-        printf(  "p = %d\n",   i );
-        printf(  "p = %d\n",   j );
-        printf(  "*p = %p\n",  p );
-        printf(  "*p = %p\n",  q );
-        printf(  "*p = %d\n",  * p );
-        printf(  "*p = %d\n",  * q );
+       printf(  "i = %d\n",   i );
+       printf(  "j = %d\n",   j );
+       printf(  "&i = %p\n",  &i );
+       printf(  "&j = %p\n",  &j );
+       printf(  " p = %p\n",  p );
+       printf(  " q = %p\n",  q );
+       printf(  "*p = %d\n",  * p );
+       printf(  "*q = %d\n",  * q );
 
-        printf(  "end pointerAssignment\n");
+       printf(  "end pointerAssignment\n");
 
+       printf(  "\n\n\n\n");
   return 0;
 
 } /* pointerAssignment */
