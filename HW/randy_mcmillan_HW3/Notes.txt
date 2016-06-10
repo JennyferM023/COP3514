@@ -1,176 +1,183 @@
-auto storage duration
+/*
+ *
+ * auto storage duration
+ *
+ * block scope
+ *
+ * local var only visible in that block of code
+ *
+ *
+ * void f(void) {
+ *
+ *
+ * static int i; /* still block scope but available for duration of execution */
+/*
+ * global vars are auto static
+ *
+ * macro is not a global variable
+ *
+ * Quadratic equation
+ *
+ * Blocks:
+ *
+ *
+ * { anything between is a block }
+ *
+ *
+ *
+ * precedence
+ * evaluation statements
+ *
+ * legal/ illegal questions - one line why not valid?
+ *
+ * write some code...
+ *
+ * explain a concept
+ *
+ * do a fraction...
+ *
+ * bonus questions
+ *
+ * printf
+ * operators
+ * looping conditions
+ *
+ * operators
+ *
+ * function
+ *
+ * declarations and calls
+ *
+ * casting implicit and explicit
+ *
+ * static
+ *
+ * local
+ *
+ * auto store duration
+ *
+ * multiple dim arrays
+ *
+ *
+ * break continue goto
+ *
+ *
+ *
+ * bonus
+ *
+ * analysis of algorithm
+ *
+ * bonus questions
+ *
+ *
+ * 06062016 NOTES
+ *
+ * byte addressable
+ *
+ * one byte has a unique address
+ *
+ * C you have to declare the data type...
+ *
+ *
+ * int *p;
+ *
+ * p is capable of pointing to an int
+ *
+ * pointers can have values or be null
+ *
+ * astericks are used to declare a pointer
+ *
+ *
+ * int *p; points to nowhere in particular
+ *
+ * TEST 2 POINTERS
+ *
+ *
+ * int i, *p;
+ *
+ * p = &i;
+ *
+ *
+ * printf("%d\n", *p);
+ *
+ * j= *&i; same as j=i;
+ *
+ *
+ * //
+ * p = &i;
+ *
+ * i =1;
+ *
+ * p = 2;
+ *
+ *
+ * //
+ *
+ * p = q;
+ *
+ * p = 1;
+ * i equals 1
+ *
+ *
+ * q = 2;
+ * i equals 2
+ *
+ *
+ *
+ * p = &i;
+ *
+ *
+ * //
+ * main...
+ * int i;
+ * int d;
+ *
+ *
+ * ...
+ *
+ * decompose(3.14159,&i,&d);
+ *
+ *
+ * void decompose(double x, long *int_part, double *frac_Part)
+ * {
+ *
+ *
+ * int_part = (long) x;
+ * frac_part = x - *int_part;
+ *
+ *
+ * }
+ *
+ *
+ * although scanf's args must be pointers
+ *
+ * it is not always true that every arg needs the & operator;;
+ *
+ *
+ * int i, *p;
+ *
+ * p = &i;
+ * scanf("%d", p);
+ *
+ * //
+ *
+ *
+ * scanf("%d", &p); /* WRONG */
 
-block scope
-
-local var only visible in that block of code
-
-
-void f(void) {
-
-
-static int i; /* still block scope but available for duration of execution */
-
-global vars are auto static
-
-macro is not a global variable
-
-Quadratic equation
-
-Blocks:
-
-
-{ anything between is a block }
-
-
-
-precedence
-evaluation statements
-
-legal/ illegal questions - one line why not valid?
-
-write some code...
-
-explain a concept
-
-do a fraction...
-
-bonus questions
-
-printf
-operators
-looping conditions
-
-operators
-
-function
-
-declarations and calls
-
-casting implicit and explicit
-
-static
-
-local
-
-auto store duration
-
-multiple dim arrays
-
-
-break continue goto
-
-
-
-bonus
-
-analysis of algorithm
-
-bonus questions
-
-
-06062016 NOTES
-
-byte addressable
-
-one byte has a unique address
-
-C you have to declare the data type...
-
-
-int *p;
-
-p is capable of pointing to an int
-
-pointers can have values or be null
-
-astericks are used to declare a pointer
-
-
-int *p; points to nowhere in particular
-
-TEST 2 POINTERS
-
-
-int i, *p;
-
-p = &i;
-
-
-printf("%d\n", *p);
-
-j= *&i; same as j=i;
-
+decompose(3.14159, i, d);
 
 //
-p = &i;
 
-i =1;
+max_min . c
 
-*p = 2;
+void max_min(
+  int  a[],
+  int  n,
+  int  *max,
+  int  *min
+  );
 
-
-//
-
-p = q;
-
-*p = 1;
-i equals 1
-
-
-*q = 2;
-i equals 2
-
-
-
-p = &i;
-
-
-//
-main...
-int i;
-int d;
-
-
-...
-
-decompose(3.14159,&i,&d);
-
-
-void decompose(double x, long *int_part, double *frac_Part)
-{
-
-
-*int_part = (long) x;
-*frac_part = x - *int_part;
-
-
-}
-
-
-although scanf's args must be pointers
-
-it is not always true that every arg needs the & operator;;
-
-
-int i, *p;
-
-p = &i;
-scanf("%d", p);
-
-//
-
-
-scanf("%d", &p); /* WRONG */
-
-decompose(3.14159, i,d);
-
-//
-
-max_min.c
-
-void max_min(int a[],int n, int *max, int *min);
-
-max_min(b,N,&big,&small);
+max_min(b, N, &big, &small);
 
 
 
@@ -180,39 +187,183 @@ f(&x);
 void f(const int *p)
 {
 
-*p=0; /*wrong*/
+  * p = 0; /*wrong*/
 
 
-}
-
+} /* f */
 functions are allowed to return pointers
 
 
-int *max(int *a; int *b){
+       int *max(int *a;
+  int *b){
 
-if (8a> *b)
-return a;
-else
-return b;
+         if (8a > * b)
+           return a;
+         else
+           return b;
 
-int *find_middle(int a[],int n){
+         int*find_middle(
+           int  a[],
+           int  n
+           ){
 
-return &a[n/2];
+           return &a[n / 2];
 
 
 //&a[i] is a pointer to element i of a;
 
 
 
+         } /* find_middle */
+       }
+
+//CHAPTER 12 NOTES
+
+
+// C allows arithmetic add or subtract on pointers in an arrays
+
+       int a[10], *p;
+
+p = % a[0];
+
+p + j points to a[i + j]
+
+&a[0] == p;
+a[1] == *(p+i);
+
+
+p = &a[2];
+
+q = p + 3;
+
+p += 6;
+
+
+
+p = &a[8];
+
+q = p - 3;
+
+p -= 6;
+
+
+
+//
+p = &a[5];
+q= &a[1];
+i = p -q // is 4
+
+i = q -p; //is -4
+
+
+//
+
+
+Performing arithmetic on a pointer that doesn't point to an array elements;
+
+Subtracting pointers unless both point to elements of the same array;
+
+p = &a[5];
+q = &a[1];
+
+
+
+//
+#define N 10
+
+
+int a[N], sum,*p;
+
+sum =0;
+for (p = &a[0]; p < &a[N]; p++)
+sum += *p;
+
+subscripting is generally easier on the eyes...
+
+Dr Jay Logotti teached a class on compilers
+
+
+
+a[i++] = j;
+
+8p++ =j;
+
+*(p++) = j;
+
+incremeters have a HIGH PRIORITY
+
+
+
+EXAMPLES IN BOOK!!!!!!! STUDY!!!!
+*p++ or *(p++) *p before incre; inc p later
+
+(*p)++
+
+*++p or *(++p)
+
+++*p or ++(*p)
+
+
+MOST common *p++
+
+
+for (p = &a[0]); p < &a[N]; p++)
+sum += *p;
+
+
+p = &a[0]...
+
+//
+
+
+PUSH and POP
+
+void push(int i){
+
+  stack_overflow();
+  else
+    *top_ptr++ = i;
+
+}
+
+int pop(void){
+  if (is_empty())
+    stack_underflow();
+    else
+      return *--top_ptr;
 }
 
 
 
+//
+
+
+Pointer arithmetic
+
+
+int a[10];
+
+*a = 7;
+*(a+1) = 12;
+
+generally a+1 is the same s &a[i];
+
+
+
+//
+
+for (p=a; p<a+N;p++){
+
+...
 
 }
 
 
+while (*a != 0)
+a++; //wrong
 
+p =q;
+while()
 
 
 //

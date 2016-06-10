@@ -1,1 +1,10 @@
-Question 5 will be similar for pointers
+Question 5 will be similar for pointers.
+
+
+//
+
+
+
+
+
+//
