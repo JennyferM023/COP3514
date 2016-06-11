@@ -18,30 +18,30 @@ float
     globalB,
     globalC;
 
-int quadraticFormula(
-  float *localPntrA,
-  float *localPntrB,
-  float *localPntrC
+int quadraticFormula (
+  float  *localPntrA,
+  float  *localPntrB,
+  float  *localPntrC
   );
 
-void quadraticVertex(
-  float *localPntrA,
-  float *localPntrB,
-  float *localPntrC
+void quadraticVertex (
+  float  *localPntrA,
+  float  *localPntrB,
+  float  *localPntrC
   );
 
-void quadraticInfo(
-  float *localPntrA,
-  float *localPntrB,
-  float *localPntrC
+void quadraticInfo (
+  float  *localPntrA,
+  float  *localPntrB,
+  float  *localPntrC
   );
 
 int main(
-  int        argc,
-  const char *argv[]
+  int         argc,
+  const char  *argv[]
   )
 {
-float*localPntrA, *localPntrB, *localPntrC;
+float *localPntrA, *localPntrB, *localPntrC;
 
   /* local pointers to globals, */
   localPntrA = &globalA;
@@ -58,9 +58,9 @@ float*localPntrA, *localPntrB, *localPntrC;
   return 0;
 } /* main */
 int quadraticFormula(
-  float *pntrA,
-  float *pntrB,
-  float *pntrC
+  float  *pntrA,
+  float  *pntrB,
+  float  *pntrC
   )  {
 
 int    numberOfRoots = 0;
@@ -125,9 +125,9 @@ float  sqRootArg;
   return numberOfRoots;
 } /* quadraticFormula */
 void quadraticVertex(
-  float *pntrA,
-  float *pntrB,
-  float *pntrC
+  float  *pntrA,
+  float  *pntrB,
+  float  *pntrC
   )  {
 
 float localA, localB, localC, localX, localY;
@@ -153,9 +153,9 @@ float localA, localB, localC, localX, localY;
   else{ /*linear case */ }
 } /* quadraticVertex */
 void quadraticInfo(
-  float *pntrA,
-  float *pntrB,
-  float *pntrC
+  float  *pntrA,
+  float  *pntrB,
+  float  *pntrC
   ) {
   /*
    * The third function function is to find the directrix and the direction the
