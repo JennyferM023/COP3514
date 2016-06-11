@@ -239,6 +239,7 @@
 				489E24A51D0B387F0026E7EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,24 +27,32 @@
 #include <stdio.h>
 #include <math.h>
 
-int    conCaveUp, conCaveDown;
-float  a, b, c, *A, *B, *C, x, y, p;
-
+int fakeBoolConCaveUp;
+float
+    globalA,
+    globalB,
+    globalC,
+    *globalPntrA,
+    *globalPntrB,
+    *globalPntrC,
+    globalX,
+    globalY,
+    globalP;
 
 int quadraticFormula(
-  float  localA,
-  float  localB,
-  float  localC
+  float  *localPntrA,
+  float  *localPntrB,
+  float  *localPntrC
   );
 void quadraticVertex(
-  float  localA,
-  float  localB,
-  float  localC
+  float  *localPntrA,
+  float  *localPntrB,
+  float  *localPntrC
   );
 void quadraticInfo(
-  float  localA,
-  float  localB,
-  float  localC
+  float  *localPntrA,
+  float  *localPntrB,
+  float  *localPntrC
   );
 
 int main(
@@ -52,38 +60,47 @@ int main(
   const char  *argv[]
   )
 {
-float *A, *B, *C;
+float *localPntrA, *localPntrB, *localPntrC;
 
-  A = &a;
-  B = &b;
-  C = &c;
+  /* pointers to globals */
+  localPntrA = &globalA;
+  localPntrB = &globalB;
+  localPntrC = &globalC;
 
   printf("Enter coefficents a, b, and c: " );
-  scanf("%f %f %f", A, B, C );
+  /* with pointers assigns values to the global variable */
+  scanf("%f %f %f", localPntrA, localPntrB, localPntrC );
 
-  a = * A;
-  b = * B;
-  c = * C;
+  /* assign global values */
+  //globalA = * localPntrA;
+  //globalB = * localPntrB;
+  //globalC = * localPntrC;
 
-  printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", a, b, c);
+   printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", * localPntrA, * localPntrB, * localPntrC);
   /*printf(  "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n",  * A,  * B,  * C);*/
   // printf(  "number of roots = %d\n",              quadraticFormula(a, b, c) );
-  int numberOfRoots = quadraticFormula(a, b, c);
-  //printf("numberOfRoots = %d\n", numberOfRoots);
-  quadraticVertex(a, b, c);
-  quadraticInfo(a, b, c);
+  int numberOfRoots = quadraticFormula(localPntrA, localPntrB, localPntrC);
+   printf("numberOfRoots = %d\n", numberOfRoots);
+  quadraticVertex(localPntrA, localPntrB, localPntrC);
+  quadraticInfo(localPntrA, localPntrB, localPntrC);
   return 0;
 } /* main */
 int quadraticFormula(
-  float  localA,
-  float  localB,
-  float  localC
+  float  *localA,
+  float  *localB,
+  float  *localC
   )  {
 
 int    numberOfRoots = 0;
-float  root1, root2;
-float  numerator;
-float  sqRootArg;
+float  root1, root2, a, b, c;
+
+  /* just juggling pointers to demonstrate proficiency */
+
+  a = * localA;
+  b = * localB;
+  c = * localC;
+  float  numerator;
+  float  sqRootArg;
 
   /*
    * The first function will preform the quadratic equation to find the roots of
@@ -103,8 +120,8 @@ float  sqRootArg;
    *
    */
 
-  numerator = (-2 * localC);
-  sqRootArg = localB * localB - 4 * localA * localC;
+  numerator = (-2 * c);
+  sqRootArg = b * b - 4 * a * c;
 
   if (sqRootArg < 0) {
      /* imaginary number case */
@@ -143,11 +160,16 @@ float  sqRootArg;
   return numberOfRoots;
 } /* quadraticFormula */
 void quadraticVertex(
-  float  localA,
-  float  localB,
-  float  localC
+  float  *localA,
+  float  *localB,
+  float  *localC
   )  {
 
+
+int a, b, c;
+  a = * localA;
+  b = * localB;
+  c = * localC;
   /*
    * The second function is used to find the vertex of the expression. There is
    * no return value for this function. Remember, there is an x and a y
@@ -156,17 +178,17 @@ void quadraticVertex(
 
   if (localA != 0) {
 
-     x = ( -1 * localB / (2 * localA) );
-     y = localA * x * x + localB * x + localC;
-     printf("Vertex: (%0.2f, %0.2f)\n", x, y );
+     // x = ( -1 * b / (2 * a) );
+     // y = a * x * x + b * x + c;
+     // printf("Vertex: (%0.2f, %0.2f)\n", x, y );
 
      }
   else{ /*linear case */ }
 } /* quadraticVertex */
 void quadraticInfo(
-  float  localA,
-  float  localB,
-  float  localC
+  float  *localA,
+  float  *localB,
+  float  *localC
   ) {
   /*
    * The third function function is to find the directrix and the direction the
@@ -174,35 +196,38 @@ void quadraticInfo(
    * function. The direction of the graph will be represented by a char that
    * will either be 'U' for up or 'D' for down.
    */
+//  int a, b, c;
+//  a = * localA;
+//  b = * localB;
+//  c = * localC;
+
 //find directorix
-  y = localC - (1 + localB * localB) / (4 * localA);
-  printf("Directrix: y = %0.2f\n", y);
+//y = a - (1 + b * b) / (4 * a);
+//printf("Directrix: y = %0.2f\n", y);
 
   /* concavity */
   if (localA > 0) {
 
-     conCaveUp = 1;
-     conCaveDown = 0;
+     fakeBoolConCaveUp = 1;
 
      }
   else
   if (localA < 0)
           {
 
-          conCaveDown = 1;
-          conCaveUp = 0;
+          fakeBoolConCaveUp = 0;
 
           }
 
   else { /* linear case */ }
 
-  if(conCaveUp) {
+  if(fakeBoolConCaveUp) {
 
      printf("The graph is facing up\n");
 
      }
   else
-  if (conCaveDown)
+  if (fakeBoolConCaveUp)
           {
 
           printf("The graph is facing down\n");
