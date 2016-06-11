@@ -215,26 +215,3 @@ void quadraticInfo(
           }
 
 } /* quadraticInfo */
-/*
- * Sample Output:
- * Enter coefficents a, b, conand c: 3 18 -48
- * f(x) = 3x^2 + 18x + -48
- * Roots: 2.00 and -8.00
- * Vertex: (-3.00, -75.00)
- * Directrix: y = -75.08
- * The graph is facing up
- * Enter coefficents a, b, and c: 2 24 72
- * f(x) = 2x^2 + 24x + 72
- * Root: -6.00
- * Vertex: (-6.00, 0.00)
- * Directrix: y = -0.12
- * The graph is facing up
- * Enter coefficents a, b, and c: 1 4 5
- * f(x) = 1x^2 + 4x + 5
- * No real roots
- * Vertex: (-2.00, 1.00)
- * Directrix: y = 0.75
- * Enter coefficents a, b, and c: -1 4 5
- * f(x) = -1x^2 + 4x + 5
- * Roots: -1.00
- */
