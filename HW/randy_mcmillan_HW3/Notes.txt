@@ -367,3 +367,102 @@ while()
 
 
 //
+
+
+
+int a[10]; //space for 10 integers
+
+int *a;
+
+*a = 0; if you dont know where a is pointing
+
+//
+
+
+
+////////////////////
+////////////////////
+
+#define N 10
+...
+int a[N], i,sum = 0, *p = a;
+...
+for (i = 0; i < N; i++)
+  sum += p[i];
+
+
+the compiler treats p[i] as *(p+1);
+
+///////////////////
+///////////////////
+
+
+Pointers and multi dim arrays
+
+int a[NUM_ROWS][NUM_COLUMNS];
+
+int row,col;
+
+for(row = 0; row < NUM_ROWS, row++)
+  for(col = 0; col < NUM_COLUMNS, col++)
+
+
+
+
+  p=&a[i][0];
+
+  p = a[i];
+  the ith array of the "subarrays"
+
+  &a[i][0]
+
+  is the samoe as &(*(a[i] + 0))
+  &*a[i];
+
+  same as a[i] since the & and * operators cancel.
+
+  3 x 3 x 3 array is stored like
+
+  [0][0][0]
+  [0][0][1]
+  [0][0][2]
+  [0][1][0]
+  [0][1][1]
+  [0][1][2]
+  [0][2][0]
+  [0][2][1]
+  [0][2][2]
+....
+
+
+find_largest
+
+largest = find_largest(a[i],NUM_COLS);
+
+
+
+int a[NUM_ROWS][NuM_COLS], (*p)[NUM_COLS], i;
+...
+for (p = &a[0]; p < &a[NUM_ROWs]; p++)
+  (*p)[i]=0;
+
+
+
+
+
+a is not a pointer to a[0][0]
+
+instead it is a pointer to a[0]
+
+
+for (p =a; p< a+ NUM_ROWS; p++)
+(*p)[i] = 0;
+
+int **a; //???
+
+largest = find_largest(a[0], NUM_ROW...)
+
+
+
+
+///
