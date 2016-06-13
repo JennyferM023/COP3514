@@ -43,11 +43,19 @@ int main(
 {
 float *localPntrA, *localPntrB, *localPntrC;
 
-  /* local pointers to globals, */
+  /*
+   * local pointers to globals,
+   * this grabs the mem addresses
+   * once and pointers are passed
+   * from here on out
+   */
+
   localPntrA = &globalA;
   localPntrB = &globalB;
   localPntrC = &globalC;
 
+
+  /*https://usflearn.instructure.com/courses/1112240/discussion_topics/3873503*/
   printf("Enter coefficents a, b, and c: " );
   scanf("%f %f %f", localPntrA, localPntrB, localPntrC );
   printf( "f(x) = %0.0fx^2 + %0.0fx + %0.0f\n", *localPntrA, *localPntrB, *localPntrC);
