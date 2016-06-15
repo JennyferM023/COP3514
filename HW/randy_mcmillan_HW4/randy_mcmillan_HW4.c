@@ -72,7 +72,9 @@ int main(
       {
       for(j = 0; j < 2; j ++)
           {
+
           printf("originalArray[%d][%d] = %d\n", i, j, originalArray[i][j]);
+
           }
       }
 
@@ -83,11 +85,14 @@ void clockwiseRotateTriangle (
   int  newPoints[3][2]
   ){
   /*
-   * The clockwiseRotateTriangle will rotate the triangle 90 degrees clockwise.
-   * You shouldn't need the math library to complete this. The function will
-   * return nothing. It will have arguments of an input array that holds the
-   * points (the original triangle you had the user input) and an array to place
-   * the new rotated triangle in.
+   * The clockwiseRotateTriangle will rotate the triangle 90
+   * degrees clockwise.
+   * You shouldn't need the math library to complete this.
+   * The function will
+   * return nothing. It will have arguments of an input array
+   * that holds the
+   * points (the original triangle you had the user input)
+   * and an array to place the new rotated triangle in.
    */
 } /* clockwiseRotateTriangle */
 char reflectTriangle (
@@ -95,14 +100,19 @@ char reflectTriangle (
   int  newPoints[3][2]
   ){
   /*
-   * The reflectTriangle will reflect the triangle over the x or y axis.
+   * The reflectTriangle will reflect the triangle over the x
+   * or y axis.
    * You will
-   * have the user input a axis via scanf in the form of a character (Do the
-   * scanning in main). The function will return an integer, 0 or -1. 0 if the
-   * axis was valid (x or y or X or Y) and -1 if it was invalid. It will have
+   * have the user input a axis via scanf in the form of a
+   * character (Do the
+   * scanning in main). The function will return an integer,
+   * 0 or -1. 0 if the
+   * axis was valid (x or y or X or Y) and -1 if it was
+   * invalid. It will have
    * arguments of an input array that holds the points
    * (the original triangle you
-   * had the user input), an array to place the new reflect triangle in, and a
+   * had the user input), an array to place the new reflect
+   * triangle in, and a
    * character to denote the axis to reflect over.
    */
   return '0';
@@ -112,26 +122,30 @@ void translateTriangle (
   int  y
   ){
   /*
-   * The translateTriangle will translate the triangle an x and/or y direction.
-   * You will have the user input a two values via scanf in the form of a
-   * integers
-   * (Do the scanning in main) to pass to the function for the translation. The
-   * function will return nothing. It will have arguments of an input array that
-   * holds the points (the original triangle you had the user input), an array
-   * to
-   * place the new translated triangle in,an integer to translate in the x
+   * The translateTriangle will translate the triangle an x
+   * and/or y direction.
+   * You will have the user input a two values via scanf in
+   * the form of a integers
+   * (Do the scanning in main) to pass to the function for
+   * the translation. The
+   * function will return nothing. It will have arguments of
+   * an input array that
+   * holds the points (the original triangle you had the user
+   * input), an array
+   * to place the new translated triangle in,an integer to
+   * translate in the x
    * direction, and an integer to translate in y direction.
    */
 } /* translateTriangle */
 void printTriangle (
   int points[3][2]) {
   /*
-   * Finally, you will have a printTriangle function for printing the
-   * triangle on
-   * the screen. This print triangle function will take in an input array that
-   * holds the points of a triangle to print. You will then loop through the
-   * array
-   * to print the triangle. HOWEVER, I want you to iterate through the triangle
+   * Finally, you will have a printTriangle function for
+   * printing the triangle on the screen.
+   * This print triangle function will take in an input array that holds the points of a triangle to print.
+   * You will then loop through the array to print the
+   * triangle.
+   * HOWEVER, I want you to iterate through the triangle
    * using pointer arithmetic (examples in chapter 12).
    */
 } /* printTriangle */
