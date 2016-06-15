@@ -74,16 +74,19 @@ int main(
           scanf("%d", &originalArray[i][j]);
 
           }
+
       }
 
   for(i = 0; i < 3; i ++)
       {
+
       for(j = 0; j < 2; j ++)
           {
 
           printf("originalArray[%d][%d] = %d\n", i, j, originalArray[i][j]);
 
           }
+
       }
 
   return 0;
