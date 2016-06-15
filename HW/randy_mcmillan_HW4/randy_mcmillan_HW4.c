@@ -122,6 +122,7 @@ int newPoints[3][2];
    * triangle in, and a
    * character to denote the axis to reflect over.
    */
+
   return '0';
 } /* reflectTriangle */
 void translateTriangle (
