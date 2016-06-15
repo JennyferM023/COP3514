@@ -16,12 +16,12 @@
  * reflectTriangle translateTriangle, and printTriangle.
  */
 void clockwiseRotateTriangle (
-  int  points,
-  int  newPoints
+  int  points[3][2],
+  int  newPoints[3][2]
   );
 int reflectTriangle (
-  int  points,
-  int  newPoints
+  int  points[3][2],
+  int  newPoints[3][2]
   );
 void translateTriangle (
   int  x,
