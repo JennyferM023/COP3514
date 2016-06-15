@@ -53,13 +53,15 @@ int main(
 
   int  i, j;
   int  originalArray[3][2];
-  printf("Enter point #1 as x and y: ");
+//printf("Enter point #1 as x and y: ");
 
   for(i = 0; i < 3; i ++)
       {
+      printf( "Enter point #%d as x and y: ", i + 1 );
+
       for(j = 0; j < 2; j ++)
           {
-          printf( "Enter point #%d as x and y: ", i + 1 );
+          //printf( "Enter point #%d as x and y: ", i + 1 );
           scanf("%d", &originalArray[i][j]);
           }
       }
