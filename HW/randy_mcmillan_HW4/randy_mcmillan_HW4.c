@@ -51,8 +51,9 @@ int main(
    * You should be encapsulating functionality in your functions.
    */
 
-  int  i, j;
-  int  originalArray[3][2];
+  int originalArray[3][2];
+
+  int i, j;
 
   for(i = 0; i < 3; i ++)
       {
