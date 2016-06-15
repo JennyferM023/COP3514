@@ -1,0 +1,130 @@
+Notes2
+
+strings
+
+H E L L O \0
+
+an array of chars
+
+zero with a slash means "null set"
+
+"String literal"
+
+string literals may contain escape characters
+
+"\" can be used to continue a string literal with a new line
+
+string literal uses n + 1 bytes of memory
+
+number of chars plus the null character
+
+printf("abc");
+
+Using MACROs for strings is useful
+
+"puts"
+
+printf
+
+
+char *p;
+p = "abc";
+
+
+char ch;
+ch = "abc"[1];
+refers to "b"
+
+char digit_to_hex_char(int digit){
+
+return ...
+
+}
+
+
+char *p = "abc";
+
+*p = 'd';
+
+printf("\n");
+printf('\n');
+
+single quotes represent a character
+double quotes represents a ??
+
+
+##################
+##################
+#define STR_LEN 80
+...
+char str[STR_LEN+1];
+adds 1 to the desired length of the string
+adding 1 allows for the null char
+
+COMMON PRACTICE
+################
+################
+
+spaces are a char
+char date1[8] = "June 14";
+
+
+
+//
+
+
+char date3[7] = "June 14";
+unterminated string
+
+
+
+char date[] = "June 14";
+
+char *date = "June 14";
+
+char *p; //doesnt allocate space
+
+char str[STR_LEN+1]
+
+
+char str[] = "Are we having fun yet?";
+..?
+
+
+
+printf("%.6s", string);
+
+puts(str);
+"put s"
+
+scanf("%s", str);
+
+reads the string and skips the white space
+
+gets
+"get s"
+
+
+
+char sentence[SENT+LEN+1];
+
+"  To C, or not to C: that is the quetion."
+
+gets is specifically built for strings!
+
+gets(sentence);
+
+scans and gets have no way to detect when the array is full
+
+
+======================
+======================
+BAG OF WORDS for extra credit!!!!
+======================
+======================
+
+
+
+
+
+//

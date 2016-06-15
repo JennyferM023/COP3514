@@ -6,6 +6,18 @@
  * Copyright © 2016 RandyMcMillan.net. All rights reserved.
  */
 
+/*
+ *
+ *
+ * List deliverables
+ * Resources
+ * Power Point
+ * List of individual contributions
+ *
+ *
+ *
+ */
+
 #include <stdio.h>
 #include <math.h>
 #include <complex.h>
@@ -38,8 +50,8 @@ double  y = cimag(z);
 double  radius = cabs(z);
 double  argument = carg(z);
 
-   printf( "cartesian(x, y): (%4.1f, %4.1f)\n",  x,       y);
-   printf( "polar(r, theta): (%4.1f, %4.1f)\n",  radius,  argument);
+   printf(  "cartesian(x, y): (%4.1f, %4.1f)\n",  x,       y);
+   printf(  "polar(r, theta): (%4.1f, %4.1f)\n",  radius,  argument);
 
 
 } /* cargDemo */
