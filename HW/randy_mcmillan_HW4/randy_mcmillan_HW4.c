@@ -55,7 +55,7 @@ int main(
    * functions.
    */
 
-  int originalArray[3][2];
+  int originalArray[3][2] = { 0 };
 
   int i, j;
 
@@ -90,7 +90,7 @@ int main(
 } /* main */
 void clockwiseRotateTriangle (
   int points[3][2]){
-int newPoints[3][2];
+int newPoints[3][2] = { 0 };
 
 int i, j;
 
@@ -133,7 +133,7 @@ int i, j;
 } /* clockwiseRotateTriangle */
 char reflectTriangle (
   int points[3][2]){
-int newPoints[3][2];
+int newPoints[3][2] = { 0 };
 
 int i, j;
 
