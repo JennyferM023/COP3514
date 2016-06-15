@@ -59,7 +59,7 @@ int main(
       {
       for(j = 0; j < 2; j ++)
           {
-          printf( "Enter point #%d as x and y: ", (i + 1) );
+          printf( "Enter point #%d as x and y: ", i + 1 );
           scanf("%d", &originalArray[i][j]);
           }
       }
