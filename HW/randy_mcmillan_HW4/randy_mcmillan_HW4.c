@@ -39,11 +39,25 @@ int main(
   const char  *argv[]
   )
 {
+
+  /*
+   * To exemplify using arrays as both input and output values of functions,
+   * I want you to write a program that deals with triangle transformations.
+   * You will ask the user to input 3 sets of x and y pair coordinate points
+   * and operate on those original points (remember, a triangle can be
+   * represented with 3 points on a plane). You will be storing these points in
+   * a multidimensional array with 3 rows and 2 columns ([3][2]). You will ask
+   * the user to enter in each point pair one at a time. Refer to the sample
+   * input/output for how.
+   */
   /*
    * This program is a good example of using arrays as points and reiterates
    * using arrays as paramaters for functions. Only do your scanning in main.
    * You should be encapsulating functionality in your functions.
    */
+
+  int originalArray[3][2];
+
 
   return 0;
 } /* main */
@@ -97,7 +111,8 @@ void printTriangle (
    * Finally, you will have a printTriangle function for printing the
    * triangle on
    * the screen. This print triangle function will take in an input array that
-   * holds the points of a triangle to print. You will then loop through the array
+   * holds the points of a triangle to print. You will then loop through the
+   * array
    * to print the triangle. HOWEVER, I want you to iterate through the triangle
    * using pointer arithmetic (examples in chapter 12).
    */
