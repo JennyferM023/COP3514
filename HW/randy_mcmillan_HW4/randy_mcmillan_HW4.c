@@ -11,7 +11,8 @@
  */
 #include <stdio.h>
 /*
- * You will be writing 4 functions this time. clockwiseRotateTriangle,
+ * You will be writing 4 functions this time.
+ * clockwiseRotateTriangle,
  * reflectTriangle translateTriangle, and printTriangle.
  */
 void clockwiseRotateTriangle (
