@@ -75,11 +75,6 @@ int main(
           }
       }
 
-  /* Enter point #2 as x and y: -3 4
-   * Enter point #3 as x and y: -1 0
-   */
-
-
   return 0;
 } /* main */
 void clockwiseRotateTriangle (
