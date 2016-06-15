@@ -91,6 +91,33 @@ void clockwiseRotateTriangle (
   int points[3][2]){
 int newPoints[3][2];
 
+
+  for(i = 0; i < 3; i ++)
+      {
+
+      for(j = 0; j < 2; j ++)
+          {
+
+          printf("points[%d][%d] = %d\n", i, j, points[i][j]);
+
+          }
+
+      }
+
+
+
+  for(i = 0; i < 3; i ++)
+      {
+
+      for(j = 0; j < 2; j ++)
+          {
+
+          printf("newPoints[%d][%d] = %d\n", i, j, newPoints[i][j]);
+
+          }
+
+      }
+
   /*
    * The clockwiseRotateTriangle will rotate the triangle 90
    * degrees clockwise.
@@ -105,6 +132,32 @@ int newPoints[3][2];
 char reflectTriangle (
   int points[3][2]){
 int newPoints[3][2];
+
+
+  for(i = 0; i < 3; i ++)
+      {
+
+      for(j = 0; j < 2; j ++)
+          {
+
+          printf("points[%d][%d] = %d\n", i, j, points[i][j]);
+
+          }
+
+      }
+
+
+  for(i = 0; i < 3; i ++)
+      {
+
+      for(j = 0; j < 2; j ++)
+          {
+
+          printf("newPoints[%d][%d] = %d\n", i, j, newPoints[i][j]);
+
+          }
+
+      }
 
   /*
    * The reflectTriangle will reflect the triangle over the x
@@ -147,6 +200,19 @@ void translateTriangle (
 } /* translateTriangle */
 void printTriangle (
   int points[3][2]) {
+
+  for(i = 0; i < 3; i ++)
+      {
+
+      for(j = 0; j < 2; j ++)
+          {
+
+          printf("points[%d][%d] = %d\n", i, j, points[i][j]);
+
+          }
+
+      }
+
   /*
    * Finally, you will have a printTriangle function for
    * printing the triangle on the screen.
