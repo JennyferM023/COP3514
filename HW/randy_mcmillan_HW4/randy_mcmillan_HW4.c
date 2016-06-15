@@ -51,15 +51,15 @@ int main(
    * You should be encapsulating functionality in your functions.
    */
 
-  int originalArray[3][2];
+  int  i, j;
+  int  originalArray[3][2];
   printf("Enter point #1 as x and y: ");
-  int i, j;
 
   for(i = 0; i < 3; i ++)
       {
       for(j = 0; j < 2; j ++)
           {
-          scanf("%d %d", originalArray[i][j]);
+          scanf("%d", &originalArray[i][j]);
           }
       }
 
@@ -67,7 +67,7 @@ int main(
       {
       for(j = 0; j < 2; j ++)
           {
-          printf("%d %d", originalArray[i][j]);
+          printf("%d\n", originalArray[i][j]);
           }
       }
 
