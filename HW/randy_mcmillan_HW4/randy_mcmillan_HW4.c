@@ -52,6 +52,28 @@ int main(
    */
 
   int originalArray[3][2];
+  printf("Enter point #1 as x and y: ");
+  int i, j;
+
+  for(i = 0; i < 3; i ++)
+      {
+      for(j = 0; j < 2; j ++)
+          {
+          scanf("%d %d", originalArray[i][j]);
+          }
+      }
+
+  for(i = 0; i < 3; i ++)
+      {
+      for(j = 0; j < 2; j ++)
+          {
+          printf("%d %d", originalArray[i][j]);
+          }
+      }
+
+  /* Enter point #2 as x and y: -3 4
+   * Enter point #3 as x and y: -1 0
+   */
 
 
   return 0;
