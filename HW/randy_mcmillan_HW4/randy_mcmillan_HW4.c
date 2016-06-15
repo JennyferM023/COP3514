@@ -19,7 +19,7 @@ void clockwiseRotateTriangle (
   int  points[3][2],
   int  newPoints[3][2]
   );
-int reflectTriangle (
+char reflectTriangle (
   int  points[3][2],
   int  newPoints[3][2]
   );
@@ -28,7 +28,7 @@ void translateTriangle (
   int  y
   );
 void printTriangle (
-  int points[]);
+  int points[3][2]);
 int main(
   int         argc,
   const char  *argv[]
@@ -59,6 +59,7 @@ int main(
       {
       for(j = 0; j < 2; j ++)
           {
+          printf( "Enter point #%d as x and y: ", (i + 1) );
           scanf("%d", &originalArray[i][j]);
           }
       }
@@ -67,7 +68,7 @@ int main(
       {
       for(j = 0; j < 2; j ++)
           {
-          printf("%d\n", originalArray[i][j]);
+          printf("originalArray[%d][%d] = %d\n", i, j, originalArray[i][j]);
           }
       }
 
@@ -90,7 +91,7 @@ void clockwiseRotateTriangle (
    * the new rotated triangle in.
    */
 } /* clockwiseRotateTriangle */
-int reflectTriangle (
+char reflectTriangle (
   int  points[3][2],
   int  newPoints[3][2]
   ){
@@ -105,6 +106,7 @@ int reflectTriangle (
    * had the user input), an array to place the new reflect triangle in, and a
    * character to denote the axis to reflect over.
    */
+  return '0';
 } /* reflectTriangle */
 void translateTriangle (
   int  x,
