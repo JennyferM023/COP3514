@@ -16,13 +16,9 @@
  * reflectTriangle translateTriangle, and printTriangle.
  */
 void clockwiseRotateTriangle (
-  int  points[3][2],
-  int  newPoints[3][2]
-  );
+  int points[3][2]);
 char reflectTriangle (
-  int  points[3][2],
-  int  newPoints[3][2]
-  );
+  int points[3][2]);
 void translateTriangle (
   int  x,
   int  y
@@ -92,9 +88,9 @@ int main(
   return 0;
 } /* main */
 void clockwiseRotateTriangle (
-  int  points[3][2],
-  int  newPoints[3][2]
-  ){
+  int points[3][2]){
+int newPoints[3][2];
+
   /*
    * The clockwiseRotateTriangle will rotate the triangle 90
    * degrees clockwise.
@@ -107,9 +103,9 @@ void clockwiseRotateTriangle (
    */
 } /* clockwiseRotateTriangle */
 char reflectTriangle (
-  int  points[3][2],
-  int  newPoints[3][2]
-  ){
+  int points[3][2]){
+int newPoints[3][2];
+
   /*
    * The reflectTriangle will reflect the triangle over the x
    * or y axis.
