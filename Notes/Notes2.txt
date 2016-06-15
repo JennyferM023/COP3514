@@ -147,6 +147,63 @@ int ch, i=0;
 "flush()"
 
 
+int (count_spaces(const)
+
+....pointer arrithmetic
+
+
+
+string.h
+
+
+if (str1 == str2) //wrong
+
+char *strcpy(char *s1, const char *s2);
+
+returns s1 //a pointer to the destination string
+
+
+strcpy(str2,"abcd");
+strcpy(str1,str2);
+
+no way to check string length
+
+strncpy(str1,str2,sizeof(str1));
+
+
+strncpy(str1,str2,sizeof(str1 - 1));
+str1[sizeof(str1)-1] = '\0';
+
+size_t strlen(const char *s);
+
+
+int len;
+len = strlen("abc");
+len = strlen("");
+...
+
+strcpy(str1,"abc");
+strcat(str1,"def");
+strcpy(str1,"abc");
+strcpy(str2,"ghi";
+//
+str2 contains "defghi")
+
+
+
+
+
+
+
+char str[6] = "abc";
+strcat(str1,)
+
+
+
+strncat(str1,str2,sizeof(str1)- strlen ....)
+
+
+
 
 
 
