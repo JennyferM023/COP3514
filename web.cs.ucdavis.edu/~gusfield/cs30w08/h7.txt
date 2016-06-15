@@ -1,0 +1,29 @@
+CS 30, Winter 2008 HW 7.
+This homework is due monday March 10 at 11:59 pm. No late homeworks will be accepted.
+
+1. Do problem Problem 4b on p 236.
+
+Name your source code reverse.c and hand it in using: handin cs30a p7 reverse.c 
+
+Executable code will be posted later.
+
+2. Examine program raggedarray2.c posted on the class website.
+
+Write and add a new function called printdown that prints out the names in the reverse order to
+how they are printed in printnames. Thus Heisenberg comes first and Newton comes last.
+
+Write and add a new function called printchar that asks the user for a position less than or equal to the
+length of the shortest name, and then prints out the character in that position in each of the strings. 
+
+Write and add a new function called printallcharrev that prints each name reversed, but the order of the
+names is their original order.
+
+None of the three new functions can use any explicit arrays, so no square brackets are allowed, only 
+pointer logic is allowed.
+
+The output of your program should be the same as that of the executable which can be run on the csif machines at:
+
+~gusfield/cs30w08/raggedarray3
+
+Name your source code raggedarray3.c and hand it in using: handin cs30a p7 raggedarray3.c 
+

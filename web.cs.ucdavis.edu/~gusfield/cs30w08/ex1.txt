@@ -1,0 +1,29 @@
+
+CS 30 Winter 2008 First Exercise
+
+In this exercise will work your way through a tutorial on Unix. The tutorial is the 'ECS 30 Unix Tutorial'
+reached from 
+
+http://wwwcsif.cs.ucdavis.edu/~davis/30
+
+Before starting the tutorial also read the material on scripting that is posted on
+the CS 30 class website www.cs.ucdavis.edu/~gusfield/cs30w08. It will also be helpful to have read
+the posted material on using handin, although that is also covered during the tutorial.
+
+Then, after logging in to a csif machine, open a browser and get to the above Unix Tutorial on the browser.
+Also, open a unix window where you will issue your unix commands during the tutorial.
+
+Next, start reading the tutorial, and do any of the suggested commands discussed
+in the tutorial. 
+The tutorial takes you through
+basic Unix commands and the use of handin.  In that turtorial, two sections are mentioned, cs30a and cs30b.
+You should only use cs30a when you use handin.
+
+The handin for the tutorial needs to be completed by Tuesday Jan. 15 at 11:59pm. Note that the time stamp
+is the time the script is submitted via handin. You may be able to complete the tutorial on your own,
+but on Weds, Thurs. and Friday nights Jan. 9, 10, 11 from 6-7 there will be TAs in the CSIF labs to help out.
+
+
+NOTE: the webpage listed above is from ECS 30 this fall (2007), so the syllabus posted there is NOT
+for our class.  Other items linked from that webpage  may be of interest, and you will be directed to
+read some of them later.

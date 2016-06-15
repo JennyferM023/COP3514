@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Win">
+  <TITLE>The Unix Script Tool</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#000099" ALINK="#000099" VLINK="#000099">
+
+<P><FONT FACE="Arial"><HR ALIGN=LEFT></FONT></P>
+
+<H1><FONT FACE="Arial">Scripting:</FONT></H1>
+
+<H3><I><FONT COLOR="#990000">the Unix Script Tool for Beginners</FONT></I></H3>
+
+<H4><HR ALIGN=LEFT></H4>
+
+<BLOCKQUOTE>
+  <P>For many of the programs and excercises you will do, we want to
+see details of your on-line interactions with the program or with a tutorial etc. 
+  For example,  we would like to see both the program and the results of running
+  the program. The simplest way for you to do this is to use the
+  unix script command:</P>
+  <BLOCKQUOTE>
+    <P>Synopsis:</P>
+    <P><B><TT>script scriptfile</TT></B></P>
+    <P>or</P>
+    <P><B><TT>script -a scriptfile</TT></B></P>
+  </BLOCKQUOTE>
+  <P>Where <TT>scriptfile</TT> is the name of the file you want
+  script to create. Of course you can use a file name other than
+  scriptfile. The <TT>-a</TT> is an option that tells the script
+  command that you wish to append a new script to the file already existing scriptfile.
+If you don't use -a and scriptfile already exists, then the new script will overwrite the
+existing one. That is a mistake you may wish to avoid. </P>
+  <H4>Here is an example.</H4>
+  <P>Lets say you've written the required C programs program1.c, program2.c ... , for an
+  assignment and you've conveniently named the executables program1,
+  program2, etc. You would do the following to create a script file
+  to print out and hand in, or to send in using the handin program (which will be explained later). 
+Remember don't type the <B><TT>'&gt;'</TT></B>.</P>
+  <BLOCKQUOTE>
+    <P><B><TT>&gt;script scriptfile</TT></B></P>
+    <P><I>you will get a message saying a script has started.</I></P>
+    <P><B><TT>&gt;cat program1.c</TT> </B>&nbsp;&nbsp;&nbsp;&nbsp;<I>the
+    cat command will print out the contents of program1.c which
+    will also go to the scriptfile</I></P>
+    <P><B><TT>&gt; program1</TT></B>&nbsp;&nbsp;&nbsp;&nbsp;<I>this
+    will run your program</I></P>
+    <P><I>at this point you can repeat the steps for the other programs until
+    you have executed all of your programs</I></P>
+    <P><B><TT>&gt; exit</TT></B></P>
+    <P><I>stop scripting<BR>
+    ...do something else<BR>
+    if you want to add anything to your scriptfile use the following:</I></P>
+    <P><B><TT>&gt; script -a scriptfile</TT></B></P>
+  </BLOCKQUOTE>
+
+</BLOCKQUOTE>
+
+<P><HR ALIGN=LEFT>
+
+</BODY>
+</HTML>
+
+

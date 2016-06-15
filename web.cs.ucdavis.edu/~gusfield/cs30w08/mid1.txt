@@ -1,0 +1,87 @@
+Name:
+
+
+CS 30 Winter 2007 Midterm 1 - Open book and notes, but NOT open laptop (sorry).
+Write your answers on the exam (use side or back if needed). There are 
+130 total points possible.
+
+1. (30 pts - 5 pts each) Suppose you have a Unix file system as shown in the
+Figure 1. Names that are underlined are directories, and other names
+are regular files. Suppose you are presently in directory Tuesday.
+Show the unix commands needed to accomplish the following tasks,
+in the order given (that is, imagine you are on an actual unix
+system with this file structure, so each task done has had an effect
+before the next task is done. Also, each task may require several
+commands).
+
+a. Make a copy in directory Tuesday of the file inferno and call it inf1.
+
+b. Make a copy in directory Monday of the file inferno. 
+
+c. Change the name of file avacado to pizza.
+
+d. Move to the parent of directory Monday. 
+
+e. Delete directory Monday.
+
+f. Create a subdirectory below Weds named NextWeds, and move the file telescope to NextWeds.
+
+
+2. (20 pts) What does the following program print?
+
+#include<stdio.h>
+
+main()
+{
+int i;
+
+i = 17;
+while (i <= 28) {
+  printf("%d ", i++);
+  i = i + 3;
+}
+}
+
+
+
+3. (20 pts) Rewrite the program in problem 2 using a for loop instead of a while statement.
+
+
+
+
+
+
+
+
+
+
+
+
+4. (20 pts)  What does the following program print out?
+
+#include<stdio.h>
+
+main()
+{
+int i,j,k;
+
+
+for (i = 1;   i <= 2 ;  i++) {
+        for (j = i+1; j <= 4; j++) {
+                for (k = j+2; k <= 7; k++) {
+                printf("%d %d %d\n", i, j, k);
+                }
+        }
+}
+}
+
+
+
+5. (40 pts) Write a program that asks the user to input a list of
+real numbers which can either be positive or negative or zero.
+Inputing ends when the user enters the EOF symbol.  The program
+counts the number of input numbers that are strictly positive, the
+number that are zero and the number that are strictly negative, and
+prints out those three counts, along with appropriate explanation of 
+the output.  The program also computes the product of all
+the strictly positive numbers and prints that number.

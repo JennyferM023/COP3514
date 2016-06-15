@@ -1,0 +1,99 @@
+
+In class a few lectures ago I discussed how difficult it can be sometimes
+to keep track of the nesting of the brackets in a C program. It is often
+hard to figure out which left bracket is matched with which right bracket.
+In vi, and in some other editors, you can place the cursor over a bracket
+and hit shift-% and the cursor will move to the bracket it is matched too,
+by the syntax of C. You can then see if that match is what you intended.
+It is sometimes better to figure out all of the matchings in the program,
+so you can have a more global view of the nestings and matchings. Here is
+a systematic way to number the brackets and find all the matching pairs of brackets
+(according to C syntax).  
+
+
+Start at the top of the program. Set a counter to number 1.
+
+Scan down the program. 
+
+When you encounter a left bracket (i.e., {),
+write the current value of the counter at that bracket, and then increment the
+value of the bracket by 1.  It is essential that you write first, and then increment.
+
+When you encounter a right bracket (i.e. }) decrement the
+value of the counter by 1, and then write the current value of the counter by the
+bracket.   It is essential that you decrement first, and then write.
+
+If a right bracket has value X written by it, then it matches the closest left bracket above it
+which has X written by it. Equivalently,
+if a left bracket has value X written by it, then it matches the closest right bracket below it
+which has X written by it.
+
+
+For example, suppose the brackets encountered are as follows (with lots of code in between, which  makes
+it hard to see the overall pattern.
+
+{
+ {
+  {
+  }
+  {
+   {
+    {
+    }
+   }
+  }
+  {
+   {
+   }
+  }
+ }
+}
+
+
+Then the procdure will execute as follows:
+
+set counter to 1
+{ write 1 and increment counter to 2 
+ { write 2 and increment counter to 3
+  { 3 write 3 and incremenct counter to 4
+  }  decrement counter to 3 and write 3
+  {  write 3 and increment counter to 4
+   { write 4 and increment counter to 5
+    { write 5 and incrment counter to 6
+    } decrement counter to 5 and write 5
+   } decrement counter to 4 and write 4
+  } decrement counter to 3 and write 3
+  { write 3 and increment counter to 4
+   { write 4 and increment counter to 5
+   } decrement counter to 4 and write 4
+  } decrement counter to 3 and write 3
+ } decrement counter to 2 and write 2
+} decrement counter to 1 and write 1
+
+
+So after you run the procedure you have written
+
+{ 1
+ { 2
+  { 3
+  } 3
+  { 3
+   { 4
+    { 5
+    } 5
+   } 4
+  } 3
+  { 3 
+   { 4
+   } 4
+  } 3
+ } 2
+} 1
+
+And then you can find the matching brackets as explained above.
+Of course if you write these numbers 
+in an actual C program you have to put each number inside a comment:  /*  */.
+
+After you have figured out the matchings, you have to
+determine if they are what you actually wanted in your program, and correct
+them if not.

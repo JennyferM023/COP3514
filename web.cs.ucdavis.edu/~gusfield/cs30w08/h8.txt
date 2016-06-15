@@ -1,0 +1,51 @@
+CS 30, Winter 2008 HW 8.
+This homework is due monday March 17 at 11:59 pm. This is the last class day of the
+quarter, although our last class is March 13. No late homeworks will be accepted.
+
+This homework essentially asks you to understand the material of Sections 16.1, 16.2 and 16.3
+of the book, and the main example in Section 16.3, the Parts Database. You will then slightly
+extend that Database program. If you understand the program in the book, the extension should 
+be doable very quickly.   We will discuss the needed material, structures, in lecture March 11 and 13.
+
+First, download the three files readline.h, readline.c and invent.c from the class website.
+You can compile the program invent by issuing the following command:
+gcc invent.c readline.c -o invent
+
+Then the compiled program will be in file invent.  Read a description of the program on pages 339, 340
+and then try running program invent until you understand what it does. Look at the source code to
+understand how it works.  
+
+Problem: Solve problem 9 on page 356. In your program, use the operation code c to specify the operation
+of changing a price. If you use a different code, it will make it very hard to grade your program. 
+Your updated source code should be called invent.c (you might want to do "cp invent.c invent.sav" to
+save the original version of invent.c before making any changes).
+To compile your modified program, you need to again use the command:
+gcc invent.c readline.c -o invent
+
+An executable solution for problem 9 can be run on any csif machine by using
+~gusfield/cs30w08/invent
+
+Hand in your modified source code invent.c on a csif machine using the command:
+handin cs30a p8 invent.c readline.c readline.h
+
+Note that you should not have modified readline.c or readline.h, but handing them in with your invent.c
+will put a copy of all the components into your handin p8 directory, making it easier to compile
+and grade your program.
+
+For added credit (and fun) copy your completed "invent.c" to "inventextra.c".
+Then extend inventextra.c so that the
+search function asks the user if they want to search on a Part Number or a Part Name. If
+the user indicates the former, then the search is done as before, but if the user indicates that
+the search is on a Part Name,
+then the program asks for the Part Name and then searches using the Part Name input by the user.
+Your modified source code should be called inventextra.c.
+
+You can compile the program by issuing the following command:
+gcc inventextra.c readline.c -o inventextra
+
+The output of your program should be the same as the executable which can be run on the csif machines at:
+~gusfield/cs30w08/inventextra
+
+Hand in the inventextra.c file using the following command:
+handin cs30a p8 inventextra.c
+

@@ -1,0 +1,22 @@
+Instructions on using the utility Handin
+
+In this class you will sometimes hand in hardcopy printouts and sometimes send us files 
+online using a utility called ``handin".  Here is a basic explanation on how to do that.
+
+When you are logged on to one of the csif machines and you have  files there that you want to send in,
+you just type the following on the command line:
+
+handin cs30a subdirectory files...  
+
+Where
+``subdirectory" is a name of a subdirectory that we will give you for that exercise, and
+"files" is a list of your files that you want to turn in. We will also tell you how to name those files.
+
+For example,
+if you are sending in files that are for the first exercise, we may tell you to use
+a subdirectory called ex1, and name the files b1 and b2. Then   the command to use
+would be:
+
+handin cs30a ex1 b1 b2
+
+

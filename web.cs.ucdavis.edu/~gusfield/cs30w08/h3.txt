@@ -1,0 +1,67 @@
+CS 30 Winter 2008, Homework 3, Due Thursday. January 31, 11:59pm.
+
+No late homeworks accepted.  If you are not finished, turn in what you have done. Remember that each person must do their homework by themselves.
+Remember also that you need to get your programs running on a CSIF machine, and do the scripting on a CSIF machine, even if your programs work on some other machines.
+Start early on this assignment - it may be long.
+
+
+1. Modify the source code ifands2.c 
+(which you can get from the class website) to write out the deductions that the program is making at each step. You should first study the source code ifandsshort.c.
+
+You can run the executable version of the solution (no, we won't let you look at the source code!) by logging onto a csif machine and then issuing the command 
+
+~gusfield/cs30w08/ifands2
+
+Also try out numbers larger than 16 and smaller than 1.
+Your program should create output that looks EXACTLY like the output of our version of ~gusfield/cs30w08/ifands2
+
+Run your program many times to test it out with a variety of input, including numbers that are larger than 16 or smaller than 1.
+
+When you are satisfied that your program is correct, start a script session (turn on scripting);
+cat your source code (that is, have it written out on the screen); compile it; execute the program using all the integers from 0 to 17. Then exit scripting. 
+Rename the script file to ifands2script. You can look at it with any editor or
+word processor.  Don't worry if it has some ^M symbols at the end of lines. 
+
+Use handin to send file ifands2.c to cs30a directory p3.
+Use handin to send file ifands2script to cs30a directory p3.
+
+2. Write the program described in Exercise 6 on page 83 of the book.
+
+Call the source code converttime.c (this naming is crucial for the way your programs will
+be graded). Run your program many times to test it out with a variety of input. 
+
+Put in comments to explain how your program works.
+
+You can run the executable version of the solution by logging onto a csif machine and then issuing the command 
+
+~gusfield/cs30w08/converttime
+
+Your program should create output that looks EXACTLY like the output of our version of ~gusfield/cs30w08/converttime and be able to handle input that is not a correct time, as the solution program does. Try it out.
+
+When you are satisfied that your program is correct, start a script session (turn on scripting);
+cat your source code (that is, have it written out on the screen); compile it; execute the program
+using inputs 8:23, 12:00, 13:08, 23:56, 14:90, 28:13. Then exit scripting. Don't worry if it has some ^M symbols at the end of lines. 
+Rename the script file to converttimescript. 
+
+Use handin to send file converttime.c to cs30a directory p3.
+Use handin to send file converttimescript to cs30a directory p3.
+
+3. Write the program described in Exercise 15 on page 84 of the book.
+
+Call the source code writenumber.c 
+
+You can run the executable version of the solution by logging onto a csif machine and issuing the command
+
+~gusfield/cs30w08/writenumber
+
+Your program should produce the EXACT behavior and output given by the solution program.
+Name your source code writenumber.c
+Put in comments to explain how your program works. The Hint given in the book suggests you use two switch statements, but the solution program has three switch statements. Also, to see how to read in single digits of a two-digit number, see p. 49 of the book.
+
+When you are satisfied that your program is correct, start a script session (turn on scripting);
+cat your source code (that is, have it written out on the screen); compile it; execute the program
+using inputs 11, 35, 14, 26, 88, 97, 72. Then exit scripting. 
+Rename the script file to writenumberscript. 
+
+Use handin to send file writenumber.c to cs30a directory p3.
+Use handin to send file writenumberscript to cs30a directory p3.

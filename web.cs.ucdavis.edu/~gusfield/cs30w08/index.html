@@ -1,0 +1,849 @@
+<!--  token: -->
+<HTML>
+<HEAD>
+<TITLE>ECS 30 -  Programming and Problem Solving using C- Winter 2008 - Gusfield</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=white
+      BACKGROUND="http://web.cs.ucdavis.edu/~gusfield/cs30w08/Temple2.jpg">
+<H2> 
+Programming and Problem Solving using C - Winter 2008
+Gusfield
+</H2>
+
+<li> This index page will just link to the various course handouts that
+are available on the web, and provide some description of them. 
+
+<H3>Distribution List</H3>
+<ol>
+<LI> <A HREF="http://heather.cs.ucdavis.edu/~matloff/unix.html"> Matloff's tutorial page </a> In week one,
+read Matloff's tutorials on Unix (at least the sections titled `if you have no Unix background at all' and
+'the Unix file system'), and if you need a Unix based editor, read the tutorials on Vi, Vim and/or emacs. These
+are pdf files which should download to your computer.  If you want to install linux on your pc, read those pages.
+<br>
+<br>
+<li> There are three computer labs in CSIF, in the basement of Kemper Hall, that have computers for your use in this class.
+ Everyone who is enrolled should have a computer account set up for the computers 
+in the CS Instructional facility (CSIF) in the
+basement of Kemper Hall. Go to the glass window opposite room 83 to look up your user name - usually just your
+last name. Your initial password is the last 8 digits of your student ID (which has nine digits).  If you want
+to change your password, and you should want to, read the man file for the Unix command yppasswd 
+(type man yppasswd), to learn more about the command.
+Help is available in room 47 for using the labs. Note that this help is for using
+the labs, not help with CS 30. For specific help with CS 30, you need to see one of the course TAs.
+<br>
+<br>
+<li>
+You may also log into the CSIF machines remotely (details can be found 
+at 
+<a href = "http://wwwcsif.cs.ucdavis.edu/~davis/30/UC%20Davis%20Computer%20Science%20at%20Home.htm"> UCDAVIS
+computer science at home </a>). Or you can work on any other machine
+that has Unix, and a C compiler for writing C programs, and internet access. NOTE: Different
+systems (operating systems, computer type, configurations, libraries etc.) can behave differently, so a C program
+written on one machine and system might not behave the same on a different machine or system (an ugly reality!). 
+You may find it
+more convenient to do most of your work at home, or in another lab, BUT before handing in your program, you must
+make sure
+it works correctly on the machines in the CSIF. Those are the machines we will use when we compile, run and grade
+your programs. If your programs don't run correctly there, it will not matter to the grader that they ran correctly 
+elsewhere. It is your responsibility to port your programs in time to the CSIF and test them there. It will
+not be a legitimate excuse that the connection to the CSIF was down just before the assignment was due. Also,
+we (Professor Gusfield and the TAs) can only give very limited help on problems you encounter on machines and
+systems outside of the CSIF, and how to set up the software to work at home, or connect to the CSIF remotely.
+Campus IT staff and the CSIF staff can also help somewhat on those issues if you run into problems.
+<br>
+<br>
+<li> Unless stated otherwise on a homework assignment, all assignments are meant to be done individually. Of course
+you can discuss some aspects of the assignment with others, particularly what the assignment asks for, but each
+student is expected to individually figure out how to set up the program, how to use the correct parts of C 
+in the program, and how to write and test the program. 
+If you have any questions about the degree of individuality that is expected, please ask. We may routinely
+run all the submitted homework programs through a utility that finds pairs of programs that are 
+``too similar". We really don't like dealing with situations when we find such a pair of programs, so please 
+design and write your programs yourself.
+Also, you will learn much more that way, and be better prepared for exams.
+<br>
+<br>
+<br>
+<li>  Discussion sections (Weds. and Thurs.) WILL be held this week (Jan. 9, 10) as scheduled. 
+HOWEVER, for this week only, they will
+be held in the CSIF computer labs in the basement of Kemper Hall. Those are rooms 67 and 75 (come to room 67 first)
+in Kemper Hall. The  are to help you get going on your first assignment and on logging in etc. If you take
+a look at the assignment and think you need the help, please come to your assigned discussion section, so we 
+don't have too many people at any one.
+<br>
+Also, TAs will be in those rooms on Wed., Thurs, and Friday evenings from 6-7 pm, this week only,
+to help with the first assignment.
+<br>
+<li> After the first week, all the discussion sections will be held in their scheduled classrooms, rather than
+in the Kemper Hall computer labs.
+<br>
+<br>
+<LI> <A HREF= "syllcs30.pdf"> Brief Course Syllabus in pdf </a> 
+<br>
+<li> <a href = "scripting.html"> Instructions on how to Script an interactive session </a>
+<br>
+<li> <a href = "handininstructions.txt"> Instructions on how to use the utility handin </a>
+<br>
+<br>
+<li> TA office hours: Monday 1-3, Tuesday 5-8pm, Weds. 3-6 and also 6-9, Thursday 3-4 (this changed Jan. 10)
+<br>
+The TA's will be in Room 53 Kemper Hall (in the basement), or in one of the CSIF labs helping
+students. If they are
+in a lab, they will leave a note in 53 Kemper.
+<br>
+<br>
+<li> First Exercise, due by Tuesday. Jan. 15, 11:59pm. 
+<a href = "ex1.txt"> First Exercise </a>
+<br>
+<li> Professor Gusfield's Office Hours will be posted shortly.
+2125 Kemper Hall, or by appointment.
+<br>
+<li> The first midterm will be on February 7. The second will be scheduled later. 
+
+<li> The final exam will be March 19, 8:00 - 10:00 am as stated in the Winter 2008
+class schedule and registration guide. Plan carefully. No early or late
+exams will be given.
+
+<li> The following programs will be discussed on Jan. 15.
+<br>
+<a href = "pun.c"> pun.c </a>
+<br>
+<a href = "pun1.c"> pun1.c </a>
+<br>
+<a href = "pun2.c"> pun2.c </a>
+<br>
+<a href = "pun3.c"> pun3.c </a>
+<br>
+<a href = "pun4.c"> pun4.c </a>
+<br>
+<a href = "celcius.c"> celcius.c </a>
+<br>
+<a href = "dist.c"> dist.c </a>
+<br>
+<li> Starting the week of Jan. 14, the discussion sections will be held in their originally scheduled classrooms,
+not in the CSIF computer labs.
+<br>
+<li> Second Homework, due by Wed. Jan. 23, 11:59pm. 
+<a href = "h2.txt"> Second Homework </a>
+<li> The following programs were discussed on Jan. 17.
+<br>
+<a href = "floatproblem.c"> floatproblem.c </a>
+<br>
+<a href = "doublefloat.c"> doublefloat.c </a>
+<br>
+<a href = "io.c"> io.c </a>
+<br>
+<a href = "stock.c"> stock.c </a>
+<br>
+<a href = "molar.c"> molar.c </a>
+<br>
+<li> Jan. 22, 2008 I fixed a typo (cel2cript to cel2script in Problem 3) in HW 2. Since it is important
+that your files be names as specified (and expected) please be sure to name your script file cel2script, 
+but don't worry about it if you have already handed in your script file and called it cel2cript instead
+of cel2script.
+<br>
+<li> The following programs were discussed on Jan. 22.
+<br>
+<a href = "stock1.c"> stock1.c </a>
+<br>
+<a href = "stock2.c"> stock2.c </a>
+<br>
+<a href = "equaltest.c"> equaltest.c </a>
+<br>
+<a href = "badequaltest.c"> badequaltest.c </a>
+<br>
+<a href = "ifandsshort.c"> ifandsshort.c </a>
+<br>
+<a href = "ifands2.c"> ifands2.c </a>
+<br>
+<li> Professor Gusfield's Office hours will be Mondays 5:15 - 6:15 and Thursdays 4-5, or
+by appointment.
+<li> Program ifandshort.c has been updated (Jan. 23) so that for any number entered (1 through 8)
+the printed deductions precisely locate the  number. Previously, once the number had been deduced
+by the program, the last explicit deduction had not been printed.
+<li> The following programs were discussed on Jan. 24:
+<br>
+<a href = "tall.c"> tall.c </a>
+<br>
+<a href = "broker.c"> broker.c </a>
+<br>
+<a href = "testdowhile.c"> testdowhile.c </a>
+<br>
+<a href = "whiletest.c"> whiletest.c </a>
+<br>
+<a href = "numdigit.c"> numdigit.c </a>
+<br>
+<li> Third Homework, due by Thursday . Jan. 31, 11:59pm. 
+<a href = "h3.txt"> Third Homework </a>
+<br>
+<br>
+<li>URGENT: PLEASE READ: Jan. 28, 6:15. We just started testing an automated grading
+program for HW 2. It has INCORRECTLY written to all students that it cannot
+find their HW 2. We know this is an error and will correct it shortly. So
+please do not be alarmed. There is also no need to write to us about this.
+We are sorry for any panic it caused. 
+<br>
+<br>
+<li> If you submitted the source code for HW 2 but did not get an email from us with
+results (although there may not be any stated grade in that email), please write to
+freemalloc@yahoo.com
+<br>
+If you submitted executable code for HW 2 (about 15 students did this) and you have not
+gotten email about this, please write to pchowdhury@ucdavis.edu
+<br>
+In either case be sure to include the user name on your CSIF account, the directory that you used
+when you handed in HW 2, and your email address.
+<li> The following programs were discussed on Jan. 29:
+<br>
+<a href = "square2.c"> square2.c </a>
+<br>
+<a href = "loop1.c"> loop1.c </a>
+<br>
+<a href = "loop2.c"> loop2.c </a>
+<br>
+<a href = "pyth.c"> pyth.c </a>
+<br>
+<a href = "pyth1.c"> pyth1.c </a>
+<br>
+
+<li> <a href = "bracketmatching.txt">  An explanation on how to find the matching brackets in a program. </a>
+
+<li> <a href = "mid1.txt"> First midterm from winter 07 </a>
+This is midterm 1 from the CS30 class I taught last year. The figure for the first question is missing, but you
+can understand the **type** of question it is. The midterm this year might be a little longer since
+the class this year is a T,Th class, and last year the students only had 50 minutes.
+<br>
+<li> The following programs were discussed on February 1.
+<br>
+<a href = "breakloop.c"> breakloop.c </a>
+<br>
+<a href = "prime.c"> prime.c </a>
+<br>
+<a href = "checking.c"> checking.c </a>
+<br>
+<a href = "checkingchar.c"> checkingchar.c </a>
+<br>
+<a href = "testgetchar.c"> testgetchar.c </a>
+<li>
+<li> Fourth Homework, due by Tuesday. Feb. 12, 11:59pm. 
+<a href = "h4.txt"> Fourth Homework </a>
+<br>
+<br>
+<li> Sorry, Professor Gusfield will be out of the office on monday Feb. 4, so will not have office hours Feb. 4.
+<br>
+<br>
+<li> Sorry again, Professor Gusfield will be out of town on Thursday Feb. 8, so will not have office hours Feb. 8.
+<br>
+<br>
+<li> The midterm on Thursday Feb. 7 will be open book and notes. It is also suggested that you bring copies of programs
+distributed through the class website. No bluebooks will be required.  The midterm covers everything discussed in 
+class, and the readings in the book through chapter 7.
+<br>
+<br>
+<li> The protections on the source code (the .c files) on the csif machines, for the programs on HW 2 and 3 has now been set so that you can see the
+source code. 
+<br>
+<br>
+<li> The following programs were discussed on February 5.
+<br>
+<a href = "http://web.cs.ucdavis.edu/~gusfield/cs30w08/reverse.c"> reverse.c </a>
+<br>
+<a href = "repdigit.c"> repdigits.c </a>
+<br>
+<a href = "interest1.c"> interest1.c </a>
+<br>
+<br>
+<li>
+<a href = "mid1sol.txt"> solutions to the sample (2007) midterm </a>
+<li> twin prime update - contrary to what was written in the original 
+homework 4 writeup, 9 is not a prime number. The hw 4 writeup has
+been modified to correct that brain hiccup.
+<br>
+<li> The executable for prettyline can be executed on a csif machine by typing
+<br>
+~gusfield/cs30w08/prettyline
+<br>
+It has been reported that my program does not do the right thing if one puts in spaces after the last non-space
+character on a line (i.e., before the return). So, don't use such lines in your test input (I guess I didn't).
+If your program does not have that problem, don't change
+it to have that problem. In other words: "do what I say, not what I do".
+<br>
+<li>
+The programs discussed in class Feb. 12:
+<br>
+<a href = "array.c"> array.c </a>
+<br>
+<a href = "array1.c"> array1.c </a>
+<br>
+<a href = "drunk.c"> drunk.c </a>
+<br>
+<a href = "deal.c"> deal.c </a>
+<br>
+<a href = "deal1.c"> deal1.c </a> This is a modified version of deal.c needed for HW 5.
+<br>
+<li> Statistics for the first midterm:
+<br>
+Max possible: 125,
+Max obtained: 125 (yes, it used to say 124, but that was an error),
+Mean : 93.6,  
+Median: 100,  
+std dev: 20.6,  
+total number of scores: 158  
+<li> Fifth Homework, due by Thursday Feb. 21, 11:59pm. 
+<a href = "h5.txt"> Fifth Homework </a>
+<br>
+<li> Midterm Solutions: 
+<a href = "smid1.08.txt"> Midterm Solutions </a> (most of them)
+<br>
+<br>
+<li> The executables for walk and walk5000 are available for execution. Download the instructions for 
+the fifth homework for details. Also, the instructions have been slightly modified for the walk program.
+Read the instructions for details.
+<li>
+The programs discussed in class Feb. 14:
+<br>
+<a href = "valuetest.c"> valuetest.c </a>
+<br>
+<a href = "sumarrayexecution.c"> sumarrayexecution.c </a>
+<br>
+<a href = "average.c"> average.c </a>
+<br>
+<a href = "testscope.c"> testcope.c </a>
+
+<li> A student just pointed out that unless the correspondence between the numbers 0, 1, 2, 3
+and the legal moves in program walk.c are the same in my and your program, we will not get the
+same results.  In my program 0 corresponds to up, 1 to left, 2 to down and 3 to right.
+
+<li> The solution programs from HW 4:
+<br>
+<a href = "twinprimes.c"> twinprimes.c </a>
+<br>
+<a href = "prettyline.c"> prettyline.c </a>
+
+<li>The programs discussed in class Feb. 18:
+<br>
+<a href = "functiontest.c"> functiontest.c </a>
+<br>
+<a href = "isort.c"> isort.c </a>
+<br>
+<a href = "power.c"> power.c </a>
+<br>
+<br>
+<li> Mini-Midterm Feb. 28.  As I announced in class yesterday, there will
+be a mini-midterm covering chapters 8,9,10 on Feb. 28. with emphasis on 
+arrays and functions. There is not much new material in Chapter 10, and we
+will cover it quickly in the next lecture. The midterm will only be 45 minutes
+long, so we can have a partial lecture on Feb. 28 also.
+<li>  David Camp will try to have extra TA office hours Thursday, Feb. 21 from 5-7
+<br>
+<li>The programs discussed in class Feb. 21:
+<br>
+<a href = "binary1.c"> binary1.c </a>
+<br>
+<a href = "qsort.c"> qsort.c </a>
+<br>
+<li> Sixth Homework, due by Friday Feb. 29, 11:59pm. 
+<a href = "h6.txt"> Sixth Homework </a>
+<br>
+<a href = "binary2script"> binary2script </a>
+<br>
+<a href = "infile"> infile </a>
+<br>
+I said in class yesterday that this homework would require you to write a recursive program for
+binary search, but later I decided against that. It is still a good exercise for you to consder
+doing sometime.
+<br>
+<li> The solution programs from HW 5:
+<br>
+<a href = "walk.c"> walk.c </a>
+<br>
+<a href = "permute.c"> permute.c </a>
+<li> Two sample array problems for midterm 2:
+<a href = "midarr.txt">  array problems </a>
+<li> The executable version of funarr (for HW 6) can be run on any csif machine by
+typing: ~gusfield/cs30w08/funarr
+<br>
+You can also make an infile and use redirection to reduce your typeing  when working on 
+your version of funarr.c
+<li>The programs discussed in class Feb. 25:
+<br>
+<a href = "static1.c"> static1.c </a>
+<br>
+<a href = "external.c"> external.c </a>
+<br>
+<a href = "pointer.c"> pointer.c </a>
+<br>
+<a href = "decompose.c"> decompose.c </a>
+<br>
+<br>
+<li> The solution programs from HW 6:
+<br>
+<a href = "binary2.c"> binary2.c </a>
+<br>
+<a href = "funarr.c"> funarr.c </a>
+<br>
+<li>The programs discussed in class Feb. 28:
+<br>
+<a href = "fwsum1.c"> fwsum1.c </a>
+<br>
+<a href = "wpsum.c"> wpsum.c </a>
+<br>
+<a href = "maxp.c"> maxp.c </a>
+<br>
+<a href = "decomposepp.c"> decomposepp.c </a>
+<br>
+<br>
+
+<li>The programs to be discussed in class March 3:
+<br>
+<a href = "lettersp.c"> lettersp.c </a>
+<br>
+<a href = "stest.c"> stest.c </a>
+<br>
+<a href = "printnames.c"> printnames.c </a>
+<br>
+<a href = "raggedarray.c"> raggedarray.c </a>
+<br>
+<a href = "raggedarray2.c"> raggedarray2.c </a>
+<br>
+<li> NOTE: Now that we only have four lectures left, we will be going faster in lecture. Also,
+now that we are discussing pointers and arrays, the material is more confusing than before.
+Therefore, I strongly advise people to attend the lectures. I know that up to now, many people have
+been able to follow the class up to now just by reading the class website, looking at the
+programs presented in each class, doing the HWs etc, but I think that will be more difficult
+to do from here on.
+<li> Seventh Homework, due by Monday March 10, 11:59pm. 
+<a href = "h7.txt"> Seventh Homework </a>
+<li> <a href = "http://wwwcsif.cs.ucdavis.edu/~davis/30/gdb_Tutorial.htm"> Tutorial on gdb and ddd </a>
+Teach yourself the basics of the gdb debugger and debugging. At a minimum learn how to list, execute one
+line at a time, set and unset breakpoints, print variable values. The use of a debugger is often essential.
+gdb is available on most unix based systems. ddd is a GUI based on gdb. Use it if you have it.
+<li> The executable for problem 4b (part of HW 7) can be run on a csif machine by typing
+<br>
+~gusfield/cs30w08/bb4
+<br>
+<li>The programs discussed in class March 6:
+<br>
+<a href = "ps3.c"> ps3.c </a>
+<br>
+<a href = "ps4.c"> ps4.c </a>
+<br>
+<a href = "ps5.c"> ps5.c </a>
+<br>
+<a href = "i3stringsort.c"> i3stringsort.c </a>
+<br>
+<a href = "stringidiom.c"> stringidiom.c </a>
+<br>
+<br>
+<li>The programs needed for HW 8, to be discussed in class March 11:
+<br>
+<a href = "readline.c"> readline.c </a>
+<br>
+<a href = "invent.c"> invent.c </a>
+<br>
+<a href = "readline.h"> readline.h </a>
+<br>
+<li>
+<a href = "h8.txt"> Eighth Homework </a>
+Due Monday March 17, 11:59 pm.
+<br>
+<li>The programs discussed in class March 11:
+<br>
+<a href = "structarr.c"> structarr.c </a>
+<br>
+<a href = "structexample.c"> structexample.c </a>
+<br>
+<a href = "structexample1.c"> structexample1.c </a>
+<br>
+<a href = "students.dat"> students.dat </a> Small data file for use in structexample1.c 
+<br>
+<li>The programs discussed in class March 13:
+<br>
+<a href = "dataprint.c"> dataprint.c </a>
+<br>
+<a href = "m3stringsort.c"> m3stringsort.c </a>
+<br>
+<a href = "sorter.h"> sorter.h </a>
+<br>
+<a href = "malloconed.c"> malloconed.c</a>
+<br>
+<a href = "malloctwodbracket.c"> malloctwodbracket.c</a>
+<br>
+<a href = "malloctwod.c"> malloctwod.c</a>
+<br>
+<li> The final exam will be open book and notes, exactly as in the midterms (no laptops or neighbors - if the
+person sitting next to you has the same name, first or last, please move). All material from the entire course
+is fair game, but the emphasis will be on material since the second midterm. The material since the midterm
+is covered in: All of chapter 13 (except command line arguments); 15.1, most of 15.2, p. 320 - 322 on makefiles;
+16.1, 16.2, 16.3; 17.1, 17.2, 17.3 (but I didn't mention realloc in lecture), p. 368, 369 of 17.4 (the free
+function); I briefly mumbled somthing about linked lists (section 17.5) at the end of the last lecture. I won't
+include that on the exam, but you should read 17.5 if you are going on to cs 40 (or if you just want to know about
+linked lists).
+<li> 
+<li> The CS30 final exam from Winter 2007 
+<a href = "final.txt">  final 2007. </a> At least two problems in that exam were 
+based explicitly on programs seen
+in that class, and so they will probably seem much harder to you then they did to the 2007 class. So
+don't panic if this exam seems very hard. Also, there is a question about recursive programs on the 2007
+exam, but we did not go into recursion as heavily this year, so I will not ask such a hard question
+about recursion on the 2008 exam.  However, some question about recursive  programs is fair.
+<li> Programs solving HW 7
+<br>
+<a href = "bb4.c"> bb4.c </a>
+<br>
+<a href = "raggedarray3.c"> raggedarray3.c </a>
+<br>
+<li> Program solving HW 8
+<br>
+<a href = "inventextra.c"> inventextra.c </a>
+This should be compiled as:
+gcc inventextra.c readline.c -o inventextra, but
+right now it is having a compiling problem. Still you can
+study the code to see how the solution works.
+<br>
+<li> <a href = "notes.doc"> Detailed notes on the book and course,
+compiled by Pooja Deopura, a student in CS30. Thank you Pooja!
+<!--  
+XXXX
+<a href = "molar.c"> molar.c </a>
+<br>
+<a href = "tall.c"> tall.c </a>
+<br>
+<a href = "ifandsshort.c"> ifandsshort.c </a>
+
+<br>
+<a href = "ifands.c"> ifands.c </a>
+<br>
+<a href = "cheatingifands.c"> cheatingifands.c</a>
+<br>
+<li> <a href = "h1"> Homework 2, First programming exercises, due Jan. 17 </a>
+<li>
+<a href = "binary.c"> a faulty binary search program </a>
+<br>
+<a href = "binary1.c"> a fixed binary search program </a>
+<br>
+<li> You should be finished reading Chapters 2 and finish up reading chapter 3 
+and start reading Chapter 4 for the week of Jan. 15.
+<br>
+<li> The programs discussed in class Wed. Jan. 17 are:
+<br>
+<a href = "mean.c"> a flawed mean program  </a>
+<br>
+<a href = "mean1.c"> a fixed mean program </a>
+<br>
+<a href = "equaltest.c"> a demonstration of equality testing  </a>
+<br>
+<a href = "badequaltest.c"> a classic mistake in equality testing </a>
+<br>
+<li> <a href = "h2"> Homework 3, Second programming exercises, due Jan. 24 </a>
+<br> NOTE: I added a note at 9:55am Jan. 18 on the difference between source code and
+executable code, so if you downloaded h2 before then, download it again. Also, SORRY,
+I had to change the second problem on the homework (simpler now) because when I 
+programmed it I saw some problems in the original statement. So be sure to check the
+current version of h2 before you start working on problem 2. 
+<br>
+<li> You can execute the executable code for graph.c  by logging into a csif
+machine and then issuing the command
+<br>
+~gusfield/cs30/graph
+<br>
+That gives the path to the executable file graph.
+<br>
+<li> You can execute the executable code for formula.c  by logging into a csif
+machine and then issuing the command
+<br>
+~gusfield/cs30/formula
+<br>
+<li> Programs discussed in class Jan. 19
+<a href = "loop.c"> loop with a real variable </a>
+<br>
+<a href = "loop1.c"> another loop with a real variable </a>
+<br>
+Be sure you understand what the problem is in the second program.
+<br>
+<a href = "loop2.c"> a fix for the above program </a>
+<br>
+<a href = "pyth.c"> The first pythagorian program </a>
+<br>
+<a href = "pyth1.c"> The improved pythagorian program</a>
+<br>
+This is the program I showed at the end of the class, but then
+when I ran it, the wrong output come out, so we thought it had a
+problem. Actually, it is fine, but in class I ran the wrong program
+by accident.
+<br>
+<li> Programs discussed in class Jan. 22
+<br>
+<a href = "prime.c"> program for identifying prime numbers </a>
+<br>
+<a href = "balance.c"> program to balance a checking account </a>
+<br>
+<a href = "p1.c"> demonstration program for casting </a>
+<br>
+<li> <a href = "h1scrubbed.txt"> Solutions to Homework 1 </a>
+<br>
+<li> Programs solving problems 2,3,5,6 of Homework 2 (there are of course other ways to solve these problems)
+<br>
+<a href = "tall1.c"> program tall1.c </a>
+<br>
+<a href = "tall2.c"> program tall2.c </a>
+<br>
+<a href = "ifands1.c"> program ifands1.c </a>
+<br>
+<a href = "ifands2.c"> program ifands2.c </a>
+<li> Midterm Friday Jan. 26. This will be open book and notes. The material
+covered will be Unix commands, and up through Chapter 4 in the text. Emphasis
+will be on material covered in class and homeworks, not on the sections in the text
+we skipped. The best preparation is to review all the readings, homeworks and
+programs discussed in class. Practice midterm #1 on Sean Davis's website
+<br>
+<href = "http://wwwcsif.cs.ucdavis.edu/~davis/30/PracMid1.htm"> Practice </a>
+contains questions of the style and difficulty of the questions that will be on our midterm, 
+except for question 1 covering some material that we didn't cover.
+<li> Course grading will be based 34% on the Homeworks (programs), 33% on the two midterms,
+and 33% on the final exam.
+<li> Programs discussed in class Wed. Jan. 24
+<br>
+<a href = "grade.c"> grade.c </a>
+<br>
+<a href = "testgetchar.c"> testgetchar.c </a>
+<br>
+<a href = "returntest.c"> returntest.c </a>
+<br>
+<a href = "mult.c"> mult.c </a>
+<li> <a href = "h3"> Homework 4, Third programming exercises, due Jan. 31 </a>
+<br>
+Change of due date: Homework 4 has been extended to Friday Feb. 2, 11:59pm
+<li> Programs discussed in class Jan. 29
+<br>
+<a href = "mult.c"> mult.c </a>
+<br>
+<a href = "testscope.c"> testscope.c </a>
+<br>
+<a href = "macro.c"> macro.c </a>
+<br>
+<li> January 30 - two small clarifications were added to the description of Homework
+4. Please take a look before submitting Homework 4.
+<li> Also, when you use handin to submit Homework 4, send it to cs30a directory p3.
+<li> Programs discussed in class Friday. Feb. 2
+<br>
+<a href = "football.c"> football.c </a>
+<br>
+<a href = "array.c"> array.c </a>
+<br>
+<a href = "array.c"> array.c </a>
+<br>
+<li> Programs solving homework 3
+<br>
+<a href = "graph.c"> graph.c </a>
+<br>
+<a href = "formula.c"> formula.c </a>
+<br>
+<li> Programs solving homework 4
+<br>
+<a href = "phone.c"> phone.c </a>
+<br>
+<a href = "exptest.c"> exptest.c </a>
+<br>
+<a href = "functiontest.c"> functiontest.c </a>
+<br>
+<li> <a href = "h4"> Homework 5, Fourth programming exercises, due Feb. 9</a>
+<br>
+<li> <a href = "mid1sol.txt"> Solutions to midterm 1, problems 2 through 5</a>
+<li> Programs discussed in class Monday . Feb. 5
+<br>
+<a href = "sumarrayexecution.c"> sumarrayexecution.c </a>
+<br>
+<a href = "string.c"> string.c </a>
+<br>
+<a href = "string1.c"> string1.c </a>
+<br>
+<li> Sorry, my (Gusfield) tuesdays office hours for Feb. 6 will be 1-2, and 4-5 instead of 1-3. 
+<li> The executable for HW 5 should be working at the usual place, on
+the csif machines ~gusfield/cs30/arrayoflight. Please let me know if you
+are having trouble accessing them.
+<li> Programs discussed in class Weds. Feb. 7
+<br>
+<a href = "string2.c"> string2.c </a>
+<br>
+<a href = "arrayfunc.c"> arrayfunc.c </a>
+<br>
+<a href = "twodarray.c"> twodarray.c </a>
+<br>
+<li> 
+Be sure to write your homework programs so that the input to the program is as described in the problem, and as 
+exhibited by the posted executable program (when there is one). For example, problem 2 in homework 5 
+specifies that the program should get the series
+of integers first, and then p. Also, the executable program does not expect a comma between each integer in
+the series. The reason for requiring this uniformity in input and output is to speed up the grading of your program.
+If your input and output design is different than what is expected, it really takes more time to grade, meaning
+that less attention can be given to each students work.
+<li> Feb. 8, Along the lines of the above message, I would like to make a small change to the instructions
+of problem 2 in homework 5. Instead of inputing a series of integers, input a series of POSITIVE integers,
+and instead of ending the series with an EOF, end with a negative number. Otherwise the instructions
+for homework 5 are the same. This change will allow you (and us) to more easilly execute the program
+by inputing from a file, instead of at the keyboard. That will make grading much faster.
+If you have already submitted you homework, you can make the change to the program and resubmit via
+handin (it just replaces the prior submission). If you have submitted and can't make the change,
+that is ok also. Thanks.
+<li> Programs discussed in class Friday Feb. 9
+<br>
+<a href = "twodarray.c"> twodarray.c </a>
+<br>
+<a href = "stingarray.c"> stingarray.c </a>
+<br>
+<a href = "stingarray1.c"> stingarray1.c </a>
+<br>
+<li> <a href = "h5"> Homework 6, Fifth programming exercises, due on or before Feb. 17</a>
+<li> <a href = "arrayoflight.c"> arrayoflight.c </a> Solution to problem 2 of homework 5.
+<li> Programs discussed in class Monday Feb. 12 
+<br>
+<a href = "pointer.c"> pointer.c </a>
+<br>
+<a href = "decompose.c"> decompose.c </a> We didn't get to this but planned to.
+<li> Programs discussed in class Wed. Feb. 14  
+<br>
+<a href = "decompose.c"> decompose.c </a> 
+<br>
+<a href = "decomposepp.c"> decomposep.c </a> 
+<br>
+<a href = "maxp.c"> maxp.c </a> 
+<li> Note that the second midterm will be on Friday Feb. 23, NOT on Weds. Feb. 21.
+It will emphasize material we covered in the class from 
+Chapters 5, 6  and section 7.1. (recall we skipped sections 
+5.7, 5.8, 5.10, 6.9, 6.10, 6.12 ). Review the programs discussed
+in class, and the assignments as well as the readings.  The style and format of the 
+midterm will be similar to the first midterm.
+<li> Programs discussed in class Friday. Feb. 16  
+<br>
+<a href = "lettersp.c"> lettersp.c </a> 
+<br>
+<a href = "fwsum.c"> fwsum.c </a> 
+<br>
+<a href = "fwsum1.c"> fwsum1.c </a> 
+<br>
+<a href = "wpsum.c">  wpsum.c </a> 
+<br>
+<a href = "psum.c">  psum.c </a> 
+<li> The midterm will ask something about program decomposep.c above. Note, an updated version was placed there
+Feb. 16 that includes an added function.
+<li> <a href = "h6"> Homework 7, Sixth programming exercises, due Monday Feb. 26 11:59pm. </a>
+<li> Professor Gusfield will be gone Feb. 20 - 23, so no office hours that week. The TAs will hold their normal
+offic hours.
+<li> Programs solving homework 6
+<br>
+<a href = "isort.c">  isort.c </a>
+<br>
+<a href = "i2sort.c">  i2sort.c </a>
+<br>
+<a href = "i2stringsort.c">  i2stringsort.c </a>
+<li> BJs office hours for the next days:
+<br>
+Wednesday the 21st: 5-7
+<br>
+Thursday the 22nd: 1-3 and 4:30-5:30
+<br>
+Monday the 26th: none
+<br>
+Tuesday the 27th: 2-4 
+<li> On the way back from Puerto Rico on  Saturday I got stuck in Miami due to
+bad weather, so the due date for HW 7 will be extended until Weds. 11:59pm.
+<li>
+Programs discussed in class Weds Feb. 28
+<br>
+<a href = "ps1.c">  ps1.c </a>
+<br>
+<a href = "ps2.c">  ps2.c </a>
+<br>
+<a href = "ps3.c">  ps3.c </a>
+<br>
+<a href = "printnames.c">  printnames.c </a>
+<br>
+<a href = "raggedarray.c">  raggedarray.c </a>
+<li> Comment on HW7 circular shift problem.
+<br>
+Since the size of an array must be explicitly declared (up to
+this point in the class), your program will only work for strings up to some fixed length. Assume that the program
+should work for strings up to length 100. With that point, you should be able to use only one pair of square brackets,
+but it is a bit of a trick. If you need to, you can use two pairs of square brackets in the program.
+<li> Program i3stringsort from homework 7
+<br>
+<a href = "i3stringsort.c">  i3stringsort.c </a>
+<li> <a href = "h7"> Homework 8, Seventh programming exercises, due Thursday March 8 11:59pm. </a>
+<li> Programs for the class on March 2, 2007
+<br>
+<a href = "f.c"> f.c </a> Recursive factorial program.
+<br>
+<a href = "tower2.c"> tower2.c </a> Recursive Tower of Hanoi program
+<li> Programs for the class on March 5, 2007
+<br>
+<a href = "malloconed.c"> malloconed.c </a>  Use of malloc for a dynamically allocated one dimensional array.
+<br>
+<a href = "malloctwod.c"> malloctwod.c </a>  Use of malloc for dynamic two dimensional array using
+pointers to access the array elements.
+<br>
+<a href = "malloctwodbracket.c"> malloctwodbracket.c </a>  Use of malloc for a dynamic two dimensional array
+using subscript (bracket) syntax to access the array elements.
+<br>
+An exercise on your next homework will be to extend the last program to dynamically allocated three dimensional
+arrays.
+<li> An executable for the recursive binomial coefficient program rbinc is now on the csif machines in the usual
+place. Make the input and output of your program agree with the input/output of the executable.
+<li> Programs for the class on March 7, 2007
+<br>
+<a href = "external.c"> external.c </a>  Use of an external variable.
+<br>
+<a href = "static.c"> static.c </a>  A program that doesn't work.
+<br>
+<a href = "static1.c"> static1.c </a>  A fix of the previous program by declaring a variable
+to be static.
+<br>
+<a href = "structexample.c"> structexample.c </a>  First structure example
+<br>
+<a href = "structexample1.c"> structexample1.c </a>  Second structure example
+<br>
+<a href = "students.dat"> students.dat </a> Small data file for use in structexample1.c 
+<br>
+<li> <a href = "h8"> Homework 9, Eighth programming exercises, due Wed. March 14, 11:59pm. </a>
+<li> Note on passing the array of structures students to the sorting function or other functions:
+Look at 
+<a href = "strucfunction.c"> strucfunction.c </a> 
+
+Note that the structure is defined outside of
+main, so that the function prototype of function f can come after the declaration of the structure. Also, since
+students is an array of structures, and whenever an array name is used by itself, it is actually the address of
+the first element, we can pass the array in the call to f by just naming the array, i.e., without any
+explicit address operator. 
+<li> Programs solving HW 7
+<br>
+<a href = "parrayfunc.c"> parrayfunc.c </a>
+<br>
+<a href = "rightshift.c"> rightshift.c </a>
+<br>
+<li> Programs solving HW 8
+<br>
+<a href = "Makefile"> Makefile </a>  Makefile for the first problem.
+<br>
+<a href = "rbinc.c"> rbinc.c </a>  Computing Binomial Coefficients Recursively. 
+<br>
+<li> 
+<a href = "smid2.txt"> Solutions to midterm 2 </a>  
+<li> Programs discussed March 12 and 14
+<br>
+<a href = "treebuild.c"> treebuild.c </a>
+<br>
+<a href = "inordersort.c"> inordersort.c </a>
+<li> B.J. has volunteered to hold a review session on thursday from 2:10 to 4:00 pm in the
+normal classroom.
+<li> B.J. has posted another sample datafile for HW 9 in case you want to try out
+your program on a larger file. It is at
+<br>
+<a href = "http://wwwcsif.cs.ucdavis.edu/~orvis/cs30ta/"> HW 9 datafile </a> 
+<li> Unless you see otherwise, posted here later, the final exam will be in our usual classroom
+in Surge III. The CS department website may have that listed incorrectly.
+</oL>
+-->
+</BODY>
+</HTML>
+

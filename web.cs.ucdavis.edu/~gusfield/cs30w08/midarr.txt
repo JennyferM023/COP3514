@@ -1,0 +1,33 @@
+Midterm 2 from Winter 2007 had the following two problems about arrays. The rest of the
+midterm was about material we have not gotten to yet. Remember that your midterm will also
+cover functions, and chapter 10 of the book.
+
+Problem 1 (15 pts):
+Will the following program compile? If so, will it work correctly, i.e. do what the comment says it will do? If not, what errors can occur?  If incorrect, how
+can the program be fixed?
+
+/* This program reads in a  list of 10 integers, and then asks the user to select which element in the list
+to print, and then prints that element */
+
+#include<stdio.h>
+main()
+{
+int a[10], i, col;
+
+printf("Input a list of ten integers\n");
+for (i = 0; i < 10; i++) scanf("%d", &a[i]);
+
+printf ("Specify from 1 to 10 which element in the list you want to print out\n");
+scanf("%d", &col);
+printf ("%d", a[col]);
+}
+
+
+-----------------
+Problem 2: (25 points)
+Suppose A is a two-dimensional integer array with n rows and n columns (the same number of
+rows as columns); suppose A already has
+values in all cells. Write the part of a program that adds together all the values in A along the
+main diagonal of A, i.e. along the diagonal from the top left to the bottom right. Use the integer
+variable sum to hold the result.
+

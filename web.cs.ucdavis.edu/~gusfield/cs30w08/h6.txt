@@ -1,0 +1,46 @@
+
+CS 30, Winter 2008 HW 6.
+This homework is due friday February 29 (yes 29) at 11:59 pm. No late homeworks will be accepted.
+
+
+1. Review the source code binary1.c on the class website until you understand the logic behind binary search.
+
+Modify the source code binary1.c to create  source binary2.c, which takes in an ordered list of
+numbers (in increasing order) and then a target number. The numbers in the input can be positive or
+negative, can be floating point numbers, so they need not be consecutive. The program next takes in
+a target number and then determines (using the logic of binary search) if the target is in the
+list, and if so, where it is in the list. If it is not in the list, the program determines which numbers
+in the list most closely bracket the target, or if it is larger or smaller than all the numbers in the list.
+
+Look at the file binary2script on the class website for a scripting of one execution of the program.
+An executable can be run on any csif machine by typing
+~gusfield/cs30w08/binary2
+
+Your program should produce output that is EXACTLY the same as produced by this executable.
+
+As a convenience in testing and debugging your program, remember that you can use "redirection" from
+a file to specify the input to your program. For example, if you have all the input written in file infile,
+you can run your program as: binary2 < infile
+
+An example of infile can be found on the class website. Put it in your csif directory
+and try 
+~gusfield/cs30w08/binary2 < infile
+
+You can then modify entries in infile to exercise your program without having to do so much typing.
+Use handin to send your source code: handin cs30a p6 binary2.c 
+
+2. Write a program whose source is called funarr.c. In the main, an array A[N][N] is declared,
+where N is defined by a compiler directive to be 100.  The user is asked for values
+of n and m, which are integers at most 100.  The program then calls in turn functions justfunin, biggestfun,
+oddfun, evenmorefun. Each of these functions is passed array A, and variables n and m.
+Function justfunin asks the user for n rows of m integer numbers each, and fills in an n by m subarray of A,
+in rows indexed 0 through n-1 and columns indexed 0 through m-1. 
+The 
+effect in the main is that this n by m subarray of array A gets values.  Function biggestfun
+finds and returns the largest number in A. Function oddfun 
+finds and returns the number of odd numbers in array A. Function evenmorefun 
+computes and returns the average of all the numbers in the columns whose index is even 
+(remember indices start with 0).
+
+We will put up an executable for this program later, but you should be able to write the core of
+this now.

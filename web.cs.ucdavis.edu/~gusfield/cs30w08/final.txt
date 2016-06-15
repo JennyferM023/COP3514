@@ -1,0 +1,424 @@
+CS 30 Winter 2007 Final Exam. Open books and notes (used in the class). 
+No laptops.
+
+Problem 1. 
+a) (15 pts) In the program below, what is printed out if the entered
+input is 2 4? What about if 1 5 is entered - what might happen? What     
+happens if we add another occurrence of block A after block C - what would
+the added print out be?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b) (10 pts) Block B and Block C are identical and print out the five names.
+However, the order that the names are printed out might not be the same.
+Explain how that happens, even though the name array is not changed in  
+this program.
+
+
+
+
+
+
+
+c) (10 pts) Write a single function, called printnames to replace Blocks B and C,
+and make all other needed changes to the program so that it computes
+exactly the same results as before, using printnames in place of Blocks B
+and C. You can write printnames here, and make the other needed
+changes on the program below. Can that printnames also replace 
+Block A? Explain your answer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+main()
+{
+
+int i, n1, n2;
+char * pc[5],  * pt;
+char  name[][10] = {"dave", "john", "peter", "yolanda", "henry"};
+
+/*Block A */
+for (i = 0; i < 5; i++)
+printf("%s\n", name + i);
+printf("\n");
+/* end of Block A */
+
+for (i = 0; i < 5; i++)
+ pc[i] = name[i];
+
+/* Block B */
+for (i = 0; i < 5; i++) {
+printf("%s\n", pc[i]);
+}
+printf("\n");
+/* end of Block B */
+
+scanf("%d%d", &n1, &n2);
+
+pt = pc[n1];
+pc[n1] = pc[n2];
+pc[n2] = pt;
+
+/* Block C */
+for (i = 0; i < 5; i++) {
+printf("%s\n", pc[i]);
+}
+printf("\n");
+/* end of Block C */
+
+}
+
+----------------------------
+
+
+Problem 2 (25 pts):
+
+NOTE to CS 30 Winter 2008: We didn't cover recursion very extensively
+this year, so I would not have as hard a problem as this on recursion
+this year. But in case you want to see last year's problem on recursion,
+here it is:
+ 
+This problem concerns a recursive program to compute the a number S(n,m),
+called the Sterling Number, for two non-negative integers n and m, where n
+is larger or equal to m. The recursive formula for S(n,m), where n and m
+are both non-negative integers, is S(n,m) = S(n-1, m-1) + m x S(n-1, m).
+There are three base cases: S(n,0) = 0 for any n > 0; S(n,m) = 0 if n is  
+less than m; S(n,m) = 1 n = m.
+
+Write the program to take in pairs of integers n and m, computing S(n,m)
+each time, until the user inputs a negative number for either n or m.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------
+
+Problem 3: (25 pts)
+Suppose S is the string 'abcdefg'. A left-circular shift of S by 3 places
+creates the string defgabc. A left-circular shift of S by 5 places creates
+the string fgabcde. Write a function called leftshift that is passed S, n
+and p and implements a left-circular shift of S by p places. The main
+reads in S, finds its string length (you can use a function in string.h 
+for that) and calls leftshift. 
+
+Hint: There is a simple relationship between left shift and right shift.
+If you can see it quickly, you should be able to quickly modify the right
+shift program. However, you can always think through how to do a left
+shift from scratch.
+
+Note to CS 30 Winter 2008. In 2007 one of the homework problems was to
+write a program to do right shift, so this problem was not as hard for
+the 2007 class at it might seem to you, since you have not thought previously
+about shifting problems at all.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------
+
+Problem 4: (25 pts) The following is the start of a program that holds 
+the x,y coordinates of the four corners of a number of rectangles. The 
+four corners of each rectangle are collected into a struct called (duh!)
+rectangle. To be a proper rectangle, the x coordinate of the lower right
+corner should be greater than the x coordinate of the upper left corner,
+and the y coodinate of the lower right corner should be less than the y
+coordinate of the upper left corner. Your task is to complete the program
+where the comments say to add code. You must add the code in those locations
+of the program. That is, the modifications go there, but if you need more
+room to write the answers, use the back of the sheet.
+
+
+#include<stdio.h>
+
+struct rectangle {
+	int UL[2]; /* holds the x,y coordinates of the upper left corner 
+                   - the others are similar */
+        int UR[2];
+	int LL[2];
+	int LR[2];
+};
+
+main()
+{
+int i,j, xul, yul, xlr, ylr;
+struct rectangle my[10];
+
+for (i = 0; i < 2; i++) { 
+printf("input the x,y coordinates of the upper-left corner of a rectangle\n");
+scanf("%d%d", &xul, &yul);
+my[i].UL[0] = xul;
+my[i].UL[1] = yul;
+
+printf("input the x,y coordinates of the \
+lower-right corner of the same rectangle\n");
+
+scanf("%d%d", &xlr, &ylr);
+my[i].LR[0] = xlr;
+my[i].LR[1] = ylr;
+
+/* Put code here to check that the x,y coordinates of the two entered 
+corners are in the correct relationship as discussed above. If not,
+just print that fact and print out i. */
+
+
+
+
+
+
+
+
+}
+
+for (i = 0; i < 2; i++) {
+
+/* Put code here to finish filling in the fields for the rectangles in array my. 
+Do not ask the user for more input, but rather use the information already input. 
+Think about how the x,y coordinates of a rectangle relate to each other, 
+and what has already been input */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+printf("input an index (from 0 to 9) for one of the rectangles\n");
+scanf("%d", &i);
+printf("The upper right x and y coordinates for rectangle %d are: ", i);
+/* Put code here to print out the proper coordinates */
+
+
+
+
+
+
+printf("The lower left x and y coordinates for rectangle %d are: ", i);
+/* Put code here to print out the proper coordinates */
+
+
+
+
+
+}
+--------------------------------
+
+Problem 5: (25 pts)
+
+The following program is extracted from the program twodarray.c that we
+looked at in the class. It is supposed to compute the transpose of an
+array. Recall that the transpose of an array changes the rows into columns
+and the columns into rows. For example if ar is
+
+1 2 3
+4 5 6
+then the transpose tr is
+1 4
+2 5
+3 6
+
+The following program works fine when n equals m, and MAXROW equal MAXCOL,
+but has problems when either n is not equal to m, or if we change the
+definitions so that MAXROW is not equal to MAXCOL.  Explain what those two
+problems are, and how to fix the first one.
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+#define MAXROW 10
+#define MAXCOL 10 
+
+main()
+{
+int ar[MAXROW][MAXCOL], tr[MAXROW][MAXCOL],n, m, i,j;
+
+        do {
+        printf("Enter the number of rows and columns for the array\n");
+        scanf("%d%d", &n, &m);
+        }
+        while (n > MAXROW || m > MAXCOL);
+
+        for (i = 0; i < n; i++) {
+		for (j = 0; j < m; j++) {
+                  printf("Enter an integer for cell %d, %d \n", i, j);
+                  scanf ("%d", &ar[i][j]);
+	        }
+        }
+
+
+  /*Here we create the transpose of the array*/
+        for (i = 0; i < n; i++) {
+		for (j = 0; j < m; j++) {
+			tr[j][i] = ar[i][j];
+	        }
+                printf("\n");
+        }
+
+   printf("The transpose of the input array is \n");
+        for (i = 0; i < n; i++) {
+		for (j = 0; j < m; j++) {
+                  printf("%d ", tr[i][j]);
+	        }
+                printf("\n");
+        }
+
+}
+
+------------------------
+Problem 6: (25 pts)
+In the program below, add the needed code so that the program prints
+out the array, but with the order of the columns reversed. 
+For example, if the input is 3 4, then the output would be:
+
+0 1 2 3 
+1 2 3 4 
+2 3 4 5 
+
+3 2 1 0 
+4 3 2 1 
+5 4 3 2 
+
+
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+int i,j, k, n,m ;
+int * p;
+
+printf("Input the two dimensions of the dynamically allocated array \n");
+scanf("%d%d", &n, &m);
+
+p = malloc(n*m * sizeof(int));
+
+for (i = 0; i < n; i++) {
+	for (j = 0; j < m; j++) {
+		
+        k = i*m + j;
+	*(p + k) = i+j; 
+        }
+}
+
+for (i = 0; i < n; i++) {
+	for (j = 0; j < m; j++) {
+        k = i*m + j;
+       printf("%d ", *(p+k));
+        }
+    printf("\n");
+}
+    printf("\n");
+
+/* Add the code here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+---------------------
+
+Fake Extra credit problem:
+
+Complete the following sentence: I love C because ______
+
+
+Note to CS30 Winter 2008. There were some very interesting responses
+to this question. You might think about it yourself.

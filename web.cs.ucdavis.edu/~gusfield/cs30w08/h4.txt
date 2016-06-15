@@ -1,0 +1,43 @@
+This homework is due Tuesday February 12 at 11:59 pm. No late homeworks will be accepted.
+
+
+1. A twin prime is a prime number that is exactly two larger than the largest prime number that is smaller than it. For
+example, 7 is a twin prime because it is exactly two larger than 5.  But 17 is not a twin prime because the largest
+prime less than 17 is 13.
+
+Write a program that asks the user how many twin primes the user wants to find, reads in that goal, and 
+then successively examines 
+the numbers starting at 2 to see if the number is a twin prime. The program stops when the specified number of
+twin primes has been found. It then prints out information, as you will see in the executable version of
+the solution. The executable can be executed on a csif machine by typing
+
+~gusfield/cs30w08/twinprimes
+
+Your program should produce EXACTLY the same output as the above program.
+Name your source code twinprimes.c and use handin as follows "handin cs30a p4 twinprimes.c" to send your
+file twinprimes.c to account cs30a directory p4. 
+Do not send a scriptfile (the output is too large).
+Remember that when you compile your source code to create executable code,
+do NOT name your executable file twinprims.c.  Also, do not send in your executable file, only the source
+code twinprimes.c
+
+2.  Write a program that asks the user to write several lines of text, each ending with the return key. 
+After each time the return key is pressed,
+the program processes what was typed (since the last time return was entered), and replaces any 
+two or more consecutive blanks with only a single
+blank, printing out the prettier line. For example, if the user enters:
+This     line has        many   large gaps   in    it.
+the program would write out:
+This line has many large gaps in it.
+
+
+When the user enters the EOF key (cntrl-d for example), the program ends.
+
+Name your source code prettyline.c.  Use handin to submit your source code prettyline.c to cs30a p4 as follows 
+"handin cs30a p4 prettyline.c". You may also handin
+a scriptfile, called prettyscript, if you wish, to show your program working on lines you make up and type in.
+
+The executable can be executed on a csif machine by typing
+
+~gusfield/cs30w08/prettyline
+
