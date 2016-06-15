@@ -10,30 +10,24 @@
  *
  */
 #include <stdio.h>
-
 /*
  * You will be writing 4 functions this time. clockwiseRotateTriangle,
  * reflectTriangle translateTriangle, and printTriangle.
  */
-
 void clockwiseRotateTriangle (
   int  points,
   int  newPoints
   );
-
 int reflectTriangle (
   int  points,
   int  newPoints
   );
-
 void translateTriangle (
   int  x,
   int  y
   );
-
 void printTriangle (
   int points[]);
-
 int main(
   int         argc,
   const char  *argv[]
