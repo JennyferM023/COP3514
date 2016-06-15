@@ -85,12 +85,14 @@ int main(
 
       }
 
+  clockwiseRotateTriangle(originalArray);
   return 0;
 } /* main */
 void clockwiseRotateTriangle (
   int points[3][2]){
 int newPoints[3][2];
 
+int i, j;
 
   for(i = 0; i < 3; i ++)
       {
@@ -133,6 +135,7 @@ char reflectTriangle (
   int points[3][2]){
 int newPoints[3][2];
 
+int i, j;
 
   for(i = 0; i < 3; i ++)
       {
@@ -200,6 +203,8 @@ void translateTriangle (
 } /* translateTriangle */
 void printTriangle (
   int points[3][2]) {
+
+int i, j;
 
   for(i = 0; i < 3; i ++)
       {
