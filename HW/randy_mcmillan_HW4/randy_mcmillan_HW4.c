@@ -36,19 +36,27 @@ int main(
 {
 
   /*
-   * To exemplify using arrays as both input and output values of functions,
-   * I want you to write a program that deals with triangle transformations.
-   * You will ask the user to input 3 sets of x and y pair coordinate points
-   * and operate on those original points (remember, a triangle can be
-   * represented with 3 points on a plane). You will be storing these points in
-   * a multidimensional array with 3 rows and 2 columns ([3][2]). You will ask
-   * the user to enter in each point pair one at a time. Refer to the sample
-   * input/output for how.
+   * To exemplify using arrays as both input and output
+   * values of functions,
+   * I want you to write a program that deals with triangle
+   * transformations.
+   * You will ask the user to input 3 sets of x and y pair
+   * coordinate points
+   * and operate on those original points (remember, a
+   * triangle can be
+   * represented with 3 points on a plane). You will be
+   * storing these points in
+   * a multidimensional array with 3 rows and 2 columns
+   * ([3][2]). You will ask
+   * the user to enter in each point pair one at a time.
+   * Refer to the sample input/output for how.
    */
   /*
-   * This program is a good example of using arrays as points and reiterates
-   * using arrays as paramaters for functions. Only do your scanning in main.
-   * You should be encapsulating functionality in your functions.
+   * This program is a good example of using arrays as points
+   * and reiterates using arrays as paramaters for functions.
+   * Only do your scanning in main.
+   * You should be encapsulating functionality in your
+   * functions.
    */
 
   int originalArray[3][2];
