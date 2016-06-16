@@ -91,7 +91,7 @@ int main(
 
   clockwiseRotateTriangle(originalArray);
   printf("Enter axis to reflect (x or y): ");
-  scanf("%s\n", &reflectAxis );
+  scanf("%s", &reflectAxis );
   reflectTriangle(originalArray, reflectAxis);
 
   return 0;
