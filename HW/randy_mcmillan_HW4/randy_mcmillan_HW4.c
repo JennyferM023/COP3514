@@ -92,7 +92,7 @@ void clockwiseRotateTriangle (
   int points[3][2]){
 int newPoints[3][2] = { '\0' };
 
-int i, j;
+int i, j = 0;
 
   for(i = 0; i < 3; i ++)
       {
@@ -106,10 +106,35 @@ int i, j;
 
       }
 
+  /* flip x = (-1*x) */
+  newPoints[0][0] = -1 * points[0][0];
+  newPoints[0][1] = points[0][1];
+  newPoints[1][0] = -1 * points[1][0];
+  newPoints[1][1] = points[1][1];
+  newPoints[2][0] = -1 * points[2][0];
+  newPoints[2][1] = points[2][1];
 
+
+  /* new y = new x */
+  newPoints[0][1] = newPoints[0][0];
+  /* new x = y */
+  newPoints[0][0] = points[0][1];
+  /* new y = new x */
+  newPoints[1][1] = newPoints[1][0];
+  /* new x = y */
+  newPoints[1][0] = points[1][1];
+  /* new y = new x */
+  newPoints[2][1] = newPoints[2][0];
+  /* new x = y */
+  newPoints[2][0] = points[2][1];
+
+
+  i = 0;
+  j = 0;
 
   for(i = 0; i < 3; i ++)
       {
+      //printf("newPoints[%d][%d] = %d\n", i, j, newPoints[i][j]);
 
       for(j = 0; j < 2; j ++)
           {
