@@ -62,7 +62,7 @@ int main(
   int   i, j;
   char  reflectAxis;/* for reflection function */
 
-  /* get user input */
+  /* get triangle coords from user */
   for(i = 0; i < 3; i ++)
       {
 
@@ -77,18 +77,6 @@ int main(
 
       }
 
-  for(i = 0; i < 3; i ++)
-      {
-
-      for(j = 0; j < 2; j ++)
-          {
-
-          /*printf("originalArray[%d][%d] = %d\n", i, j, originalArray[i][j]);*/
-
-          }
-
-      }
-
   clockwiseRotateTriangle(originalArray);
   printf("Enter axis to reflect (x or y): ");
   scanf("%s", &reflectAxis );
@@ -98,9 +86,9 @@ int main(
 } /* main */
 void clockwiseRotateTriangle (
   int points[3][2]){
-int newPoints[3][2] = { '\0' };
 
-int i, j = 0;
+int  newPoints[3][2] = { '\0' };
+int  i, j = 0;
 
   for(i = 0; i < 3; i ++)
       {
