@@ -18,7 +18,9 @@
 void clockwiseRotateTriangle (
   int points[3][2]);
 char reflectTriangle (
-  int points[3][2]);
+  int   points[3][2],
+  char  reflectAxis
+  );
 void translateTriangle (
   int  x,
   int  y
@@ -57,8 +59,10 @@ int main(
 
   int originalArray[3][2] = { '\0' };
 
-  int i, j;
+  int   i, j;
+  char  reflectAxis;/* for reflection function */
 
+  /* get user input */
   for(i = 0; i < 3; i ++)
       {
 
@@ -79,13 +83,17 @@ int main(
       for(j = 0; j < 2; j ++)
           {
 
-          printf("originalArray[%d][%d] = %d\n", i, j, originalArray[i][j]);
+          //printf("originalArray[%d][%d] = %d\n", i, j, originalArray[i][j]);
 
           }
 
       }
 
   clockwiseRotateTriangle(originalArray);
+  printf("Enter axis to reflect (x or y): ", nil );
+  scanf("%s\n", reflectAxis);
+  reflectTriangle(originalArray);
+
   return 0;
 } /* main */
 void clockwiseRotateTriangle (
@@ -100,7 +108,7 @@ int i, j = 0;
       for(j = 0; j < 2; j ++)
           {
 
-          printf("points[%d][%d] = %d\n", i, j, points[i][j]);
+          //printf("points[%d][%d] = %d\n", i, j, points[i][j]);
 
           }
 
@@ -108,12 +116,11 @@ int i, j = 0;
 
   /* flip x = (-1*x) */
   newPoints[0][0] = -1 * points[0][0];
-  newPoints[0][1] = points[0][1];
+  newPoints[0][1] =      points[0][1];
   newPoints[1][0] = -1 * points[1][0];
-  newPoints[1][1] = points[1][1];
+  newPoints[1][1] =      points[1][1];
   newPoints[2][0] = -1 * points[2][0];
-  newPoints[2][1] = points[2][1];
-
+  newPoints[2][1] =      points[2][1];
 
   /* new y = new x */
   newPoints[0][1] = newPoints[0][0];
@@ -139,11 +146,20 @@ int i, j = 0;
       for(j = 0; j < 2; j ++)
           {
 
-          printf("newPoints[%d][%d] = %d\n", i, j, newPoints[i][j]);
+          //printf("newPoints[%d][%d] = %d\n", i, j, newPoints[i][j]);
 
           }
 
       }
+
+
+
+  printf("Rotated Triangle: (%d, %d)(%d, %d)(%d, %d)\n",
+      newPoints[0][0], newPoints[0][1],
+      newPoints[1][0], newPoints[1][1],
+      newPoints[2][0], newPoints[2][1]
+      );
+
 
   /*
    * The clockwiseRotateTriangle will rotate the triangle 90
@@ -157,7 +173,9 @@ int i, j = 0;
    */
 } /* clockwiseRotateTriangle */
 char reflectTriangle (
-  int points[3][2]){
+  int   points[3][2],
+  char  reflectAxis
+  ){
 int newPoints[3][2] = { '\0' };
 
 int i, j;
@@ -187,6 +205,12 @@ int i, j;
 
       }
 
+
+  printf("Reflected Triangle: (%d, %d)(%d, %d)(%d, %d)\n",
+      newPoints[0][0], newPoints[0][1],
+      newPoints[1][0], newPoints[1][1],
+      newPoints[2][0], newPoints[2][1]
+      );
   /*
    * The reflectTriangle will reflect the triangle over the x
    * or y axis.
