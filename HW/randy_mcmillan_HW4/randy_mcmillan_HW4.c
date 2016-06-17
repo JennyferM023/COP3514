@@ -171,11 +171,43 @@ int i, j;
       for(j = 0; j < 2; j ++)
           {
 
-          printf("points[%d][%d] = %d\n", i, j, points[i][j]);
-
+          /*printf("points[%d][%d] = %d\n", i, j, points[i][j]);
+           */
           }
 
       }
+
+
+  if (reflectAxis == 89 | reflectAxis == 121)
+     {
+
+     printf("reflectAxis y axis\n");
+
+     }
+  else
+  if (reflectAxis == 78 | reflectAxis == 110 )
+          {
+
+          printf("reflectAxis x axis\n");
+
+          }
+  else
+      {
+
+      printf("Reflected Triangle: Invalid Axis. Next time enter x or y.\n");
+
+      }
+
+
+
+
+
+
+
+
+
+
+
 
 
   for(i = 0; i < 3; i ++)
