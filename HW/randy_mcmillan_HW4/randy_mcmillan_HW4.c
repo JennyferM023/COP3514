@@ -182,6 +182,14 @@ int i, j;
      {
 
      printf("reflectAxis y axis\n");
+     newPoints[0][0] = -1 * points[0][0];
+     newpoints[0][1] =      points[0][1];
+     newPoints[1][0] = -1 * points[1][0];
+     newpoints[1][1] =      points[1][1];
+     newPoints[2][0] = -1 * points[2][0];
+     newpoints[1][1] =      points[1][1];
+
+     //
 
      }
   else
@@ -189,6 +197,12 @@ int i, j;
           {
 
           printf("reflectAxis x axis\n");
+          newPoints[0][0] =      points[0][0];
+          newPoints[0][1] = -1 * points[0][1];
+          newPoints[1][1] =      points[1][1];
+          newPoints[1][1] = -1 * points[1][1];
+          newPoints[2][0] =      points[2][0];
+          newPoints[2][1] = -1 * points[2][1];
 
           }
   else
