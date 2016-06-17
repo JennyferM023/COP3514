@@ -1,0 +1,66 @@
+1/5 of test 2 is POINTER ARITHMETIC
+
+
+https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/BitOp/pointer.html
+
+http://www.tutorialspoint.com/cprogramming/c_pointer_arithmetic.htm
+
+http://stackoverflow.com/questions/394767/pointer-arithmetic
+
+String Idioms
+
+size_t strlen(const char *s){
+
+size_t n;
+
+for (n = 0; *s != '\0'; s++)
+  n++;
+
+  OR
+
+  while(*s)
+    s++;
+
+  return n;
+
+  OR
+
+  return s - p;
+}
+
+
+
+while (*s)
+  s++;
+
+  OR
+
+  while(*s++)
+    ...
+
+
+    strcpy(str1,str2);
+
+
+    char *strcat(char *s1, const char *s2){
+
+char *p = s1;
+
+while (*p != '\0')
+  p++;
+
+  while (*s2 ~= '\0'){
+
+*p = *s2;
+
+
+
+  }
+
+
+    }
+
+
+
+
+//
