@@ -20,14 +20,18 @@
 
 #include <stdio.h>
 #include <math.h>
-#include <complex.h>
+#include <complex.h>//C99
 
 void cargDemo (
-  double complex);
+  double complex z);
+
+
 void ccoszDemo (
   double  a,
   double  b
   );
+
+
 
 int main(
   int         argc,
@@ -41,6 +45,8 @@ double complex  z = -4.4 + 3.3 * I;
 
   return 0;
 } /* main */
+
+
 void cargDemo(
   double complex z){
 
@@ -55,6 +61,8 @@ double  argument = carg(z);
 
 
 } /* cargDemo */
+
+
 void ccoszDemo(
   double  a,
   double  b
