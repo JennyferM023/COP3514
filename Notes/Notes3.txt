@@ -120,6 +120,54 @@ structs have block scope
 
 structs have their own namespace
 
+struct {THIS IS A TYPE DELCLARATION} struct1;
+
+DOT OPERATOR TAKE PRECEDENCE over the & operator
+
+
+
+struct part{
+
+int number;
+char name[NAME_LEN+1];
+
+}
+
+
+struct point{
+int x,y;
+
+
+}
+
+struct point point1;
+
+....
+
+struct point point2;
+
+
+
+struct point point2 = point1;
+
+
+============================
+============================
+
+typedef struct{
+int number;
+char name[NAME_LEN+1];
+int on_hand;
+
+} Part;
+
+Part part1,part2;
+
+//
+===========================
+===========================
+
+
 
 
 //
