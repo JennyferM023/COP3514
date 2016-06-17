@@ -45,8 +45,6 @@ double complex  z = -4.4 + 3.3 * I;
 
   return 0;
 } /* main */
-
-
 void cargDemo(
   double complex z){
 
@@ -61,8 +59,6 @@ double  argument = carg(z);
 
 
 } /* cargDemo */
-
-
 void ccoszDemo(
   double  a,
   double  b

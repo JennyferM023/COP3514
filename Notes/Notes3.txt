@@ -61,6 +61,65 @@ while (*p != '\0')
     }
 
 
+A pointer can point at anything
+
+its when you call them is when the problem arises
+
+
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+Chapter 13 Pointer arithmetic
+
+Anything that IS NOT ZERO evals to TRUE
+
+EVEN negative numbers
+
+RAGGED ARRAY or a SPARCE ARRAY
+
+array of arrays
+
+
+structs
+
+Structure Variables
+
+mixed types
+
+
+//like int x;
+struct{
+int number;
+char name[NAME_LEN+1];
+int in_hand;
+} part1;
+
+// like int x,y;
+struct{
+int number;
+char name[NAME_LEN+1];
+int in_hand;
+} part1,part2;
+
+
+
+
+}
+
+
+
+
+structs have block scope
+
+structs have their own namespace
+
 
 
 //
