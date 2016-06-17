@@ -177,31 +177,42 @@ int i, j;
 
       }
 
-
+  /* y case */
   if (reflectAxis == 89 | reflectAxis == 121)
      {
 
      printf("reflectAxis y axis\n");
+     /*x*/
      newPoints[0][0] = -1 * points[0][0];
-     newpoints[0][1] =      points[0][1];
+     /*y*/
+     newPoints[0][1] =      points[0][1];
+     /*x*/
      newPoints[1][0] = -1 * points[1][0];
-     newpoints[1][1] =      points[1][1];
+     /*y*/
+     newPoints[1][1] =      points[1][1];
+     /*x*/
      newPoints[2][0] = -1 * points[2][0];
-     newpoints[1][1] =      points[1][1];
+     /*y*/
+     newPoints[1][1] =      points[1][1];
 
-     //
 
      }
-  else
-  if (reflectAxis == 78 | reflectAxis == 110 )
+  else/* x case */
+  if (reflectAxis == 88 | reflectAxis == 120 )
           {
 
           printf("reflectAxis x axis\n");
+          /*x*/
           newPoints[0][0] =      points[0][0];
+          /*y*/
           newPoints[0][1] = -1 * points[0][1];
-          newPoints[1][1] =      points[1][1];
+          /*x*/
+          newPoints[1][0] =      points[1][0];
+          /*y*/
           newPoints[1][1] = -1 * points[1][1];
+          /*x*/
           newPoints[2][0] =      points[2][0];
+          /*y*/
           newPoints[2][1] = -1 * points[2][1];
 
           }
@@ -211,16 +222,6 @@ int i, j;
       printf("Reflected Triangle: Invalid Axis. Next time enter x or y.\n");
 
       }
-
-
-
-
-
-
-
-
-
-
 
 
 
